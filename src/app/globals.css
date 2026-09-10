@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-script {
+  font-family: "Alex Brush", cursive, serif;
+}
+
+@layer base {
+  :root {
+    /* =========================
+       PREMIUM BRAND COLORS
+       ========================= */
+
+    /* Warm Brown */
+    --brand-primary: #9a6a4f;
+    --brand-primary-hover: #b17b5d;
+    --brand-primary-light: #f5ede6;
+    --brand-primary-dark: #493831;
+
+    /* Champagne Gold */
+    --brand-gold: #b9965b;
+    --brand-gold-hover: #9d7b47;
+    --brand-gold-light: #f3ead9;
+
+    /* Main Background / Charcoal Dark */
+    --brand-dark: #252525;
+    --brand-bg: #252525;
+
+    /* Warm Ivory */
+    --brand-ivory: #faf7f2;
+
+    /* Cards */
+    --brand-card: #2e2e2e;
+
+    /* Borders */
+    --brand-border: #3d3d3d;
+
+    /* Typography */
+    --brand-text: #faf7f2;
+    --brand-muted: #a8a29e;
+  }
+
+  body {
+    background-color: #252525;
+    color: var(--brand-text);
+    font-family: var(--font-plus-jakarta), Arial, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-serif-luxury {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+
+  button,
+  input,
+  select,
+  textarea,
+  label,
+  nav,
+  .font-sans-modern {
+    font-family: var(--font-plus-jakarta), Arial, sans-serif;
+  }
+}
+
+/* =================================
+   GLASSMORPHISM
+   ================================= */
+
+.glass-card {
+  background: rgba(46, 46, 46, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-dark {
+  background: rgba(30, 30, 30, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(185, 150, 91, 0.25);
+}
+
+.glass-nav {
+  background: rgba(37, 37, 37, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* =================================
+   PREMIUM GRADIENT TEXT
+   ================================= */
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #816235 0%, #b9965b 50%, #d6b987 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.burgundy-gradient-text,
+.brand-gradient-text {
+  background: linear-gradient(135deg, #493831 0%, #9a6a4f 50%, #b17b5d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* =================================
+   PREMIUM SHADOWS
+   ================================= */
+
+.subtle-shadow {
+  box-shadow: 0 10px 30px -10px rgba(154, 106, 79, 0.08);
+}
+
+.card-hover-effect {
+  transition:
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -14px rgba(154, 106, 79, 0.16);
+}
+
+/* =================================
+   GOLD HOVER EFFECT
+   ================================= */
+
+.gold-hover {
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.gold-hover:hover {
+  color: var(--brand-gold-hover);
+}
+
+/* =================================
+   PREMIUM SCROLLBAR
+   ================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9a6a4f;
+  border-radius: 9999px;
+  border: 1px solid #3d3d3d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9a6a4f;
+}
+
+/* =================================
+   PRIVACY BLUR
+   ================================= */
+
+.privacy-blur {
+  filter: blur(14px);
+  transition: filter 0.3s ease;
+  user-select: none;
+}
+
+/* =================================
+   LUXURY SELECTION
+   ================================= */
+
+::selection {
+  background: #9a6a4f;
+  color: #fffdf9;
+}
+
+/* =================================
+   FOCUS STATES
+   ================================= */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #b9965b;
+  outline-offset: 3px;
+}
+
+/* =================================
+   SMOOTH IMAGE EFFECT
+   ================================= */
+
+.luxury-image {
+  transition:
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.6s ease;
+}
+
+.luxury-image:hover {
+  transform: scale(1.025);
+}
+
+/* =================================
+   GOLD DIVIDER
+   ================================= */
+
+.gold-divider {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #b9965b, transparent);
+}
+
+/* =================================
+   PREMIUM BUTTON
+   ================================= */
+
+.luxury-button {
+  background: #9a6a4f;
+  color: #fffdf9;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.luxury-button:hover {
+  background: #b17b5d;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(154, 106, 79, 0.2);
+}
+
+/* =================================
+   GOLD BUTTON
+   ================================= */
+
+.gold-button {
+  background: #b9965b;
+  color: #171615;
+  transition:
+    background-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.gold-button:hover {
+  background: #9d7b47;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(185, 150, 91, 0.2);
+}
