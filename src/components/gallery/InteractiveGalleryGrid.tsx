@@ -133,14 +133,27 @@ const GALLERY_ITEMS: GalleryItem[] = [
 type CategoryFilter = "all" | "nikah" | "walima" | "rings";
 
 export const InteractiveGalleryGrid: React.FC = () => {
-  const [activeFilter, setActiveFilter] = useState<CategoryFilter>("all");
+  const [galleryItems, setGalleryItems] = useState<GalleryItem[]>(GALLERY_ITEMS);
+  const [activeFilter, setActiveFilter] = useState<string>("all");
   const [activePhotoIdx, setActivePhotoIdx] = useState<number | null>(null);
   const gridRef = useRef<HTMLDivElement | null>(null);
 
+  useEffect(() => {
+    fetch("/api/gallery")
+      .then((res) => res.json())
+      .then((json) => {
+        if (json.success && Array.isArray(json.data) && json.data.length > 0) {
+          setGalleryItems(json.data);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   const filteredItems =
     activeFilter === "all"
-      ? GALLERY_ITEMS
-      : GALLERY_ITEMS.filter((item) => item.category === activeFilter);
+      ? galleryItems
+      : galleryItems.filter((item) => item.category === activeFilter);
+
 
   // GSAP Stagger Animation on filter change
   useEffect(() => {

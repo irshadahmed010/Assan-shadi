@@ -42,29 +42,29 @@ export const Footer: React.FC = () => {
               </div>
 
               <div className="flex flex-col">
-                <span className="text-2xl sm:text-[28px] font-bold font-serif-luxury tracking-tight text-[#E5D2B0] group-hover:text-[#B9965B] transition-colors leading-none">
+                <span className="text-2xl sm:text-[28px] font-bold font-serif-luxury tracking-tight text-[#FAF7F2] group-hover:text-[#FFD78A] transition-colors leading-none">
                   Assan Shadi
                 </span>
-                <span className="text-[10px] sm:text-[11px] font-medium tracking-[0.25em] text-[#B9965B]/80 uppercase mt-1.5 font-sans-modern">
+                <span className="text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] text-[#FFD78A] uppercase mt-1.5 font-sans-modern">
                   FAITH • FAMILIES • FOREVER
                 </span>
               </div>
             </Link>
 
             {/* Platform Description */}
-            <p className="text-sm text-[#FAF7F2]/75 leading-relaxed max-w-md font-normal">
+            <p className="text-sm text-stone-200 leading-relaxed max-w-md font-normal">
               Empowering families with a dignified, transparent, and sunnah-inspired matrimonial platform. No commercial exploitation, no dowry culture, and 100% guardian-verified biodatas.
             </p>
 
             {/* Verification & Privacy Badges */}
             <div className="flex flex-wrap items-center gap-3 pt-1">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#B9965B]/30 bg-[#28211b]/80 text-xs font-medium text-[#FAF7F2]/90 shadow-sm hover:border-[#B9965B]/60 transition-colors">
-                <ShieldCheck className="w-4 h-4 text-[#B9965B] shrink-0" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#E5C384]/40 bg-[#28211b] text-xs font-semibold text-stone-100 shadow-sm hover:border-[#FFD78A] transition-colors">
+                <ShieldCheck className="w-4 h-4 text-[#FFD78A] shrink-0" />
                 <span>100% Guardian Verified</span>
               </div>
 
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#B9965B]/30 bg-[#28211b]/80 text-xs font-medium text-[#FAF7F2]/90 shadow-sm hover:border-[#B9965B]/60 transition-colors">
-                <Lock className="w-4 h-4 text-[#B9965B] shrink-0" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#E5C384]/40 bg-[#28211b] text-xs font-semibold text-stone-100 shadow-sm hover:border-[#FFD78A] transition-colors">
+                <Lock className="w-4 h-4 text-[#FFD78A] shrink-0" />
                 <span>Strict Photo Privacy</span>
               </div>
             </div>
@@ -142,10 +142,10 @@ export const Footer: React.FC = () => {
           {/* Col 2: Quick Links (Span 2 on LG) */}
           <div className="lg:col-span-2 space-y-4">
             <div className="relative inline-block pb-2">
-              <h4 className="text-[#FAF7F2] font-semibold text-lg sm:text-xl font-serif-luxury tracking-wide">
+              <h4 className="text-[#FAF7F2] font-bold text-lg sm:text-xl font-serif-luxury tracking-wide">
                 Quick Links
               </h4>
-              <span className="absolute bottom-0 left-0 w-8 h-[2px] bg-[#B9965B] rounded-full" />
+              <span className="absolute bottom-0 left-0 w-8 h-[2px] bg-[#FFD78A] rounded-full" />
             </div>
 
             <ul className="space-y-2.5 text-sm pt-1">
@@ -159,10 +159,10 @@ export const Footer: React.FC = () => {
                 <li key={idx}>
                   <Link
                     href={item.href}
-                    className="flex items-center justify-between text-[#FAF7F2]/75 hover:text-[#B9965B] transition-all duration-200 group py-1"
+                    className="flex items-center justify-between text-stone-300 hover:text-[#FFD78A] transition-all duration-200 group py-1"
                   >
                     <span>{item.label}</span>
-                    <ChevronRight className="w-4 h-4 text-[#B9965B]/60 group-hover:text-[#B9965B] group-hover:translate-x-1 transition-all" />
+                    <ChevronRight className="w-4 h-4 text-[#FFD78A]/70 group-hover:text-[#FFD78A] group-hover:translate-x-1 transition-all" />
                   </Link>
                 </li>
               ))}
@@ -172,10 +172,10 @@ export const Footer: React.FC = () => {
           {/* Col 3: Legal & Support (Span 2 on LG) */}
           <div className="lg:col-span-2 space-y-4">
             <div className="relative inline-block pb-2">
-              <h4 className="text-[#FAF7F2] font-semibold text-lg sm:text-xl font-serif-luxury tracking-wide">
+              <h4 className="text-[#FAF7F2] font-bold text-lg sm:text-xl font-serif-luxury tracking-wide">
                 Legal & Support
               </h4>
-              <span className="absolute bottom-0 left-0 w-8 h-[2px] bg-[#B9965B] rounded-full" />
+              <span className="absolute bottom-0 left-0 w-8 h-[2px] bg-[#FFD78A] rounded-full" />
             </div>
 
             <ul className="space-y-2.5 text-sm pt-1">
@@ -187,10 +187,10 @@ export const Footer: React.FC = () => {
                 <li key={idx}>
                   <Link
                     href={item.href}
-                    className="flex items-center justify-between text-[#FAF7F2]/75 hover:text-[#B9965B] transition-all duration-200 group py-1"
+                    className="flex items-center justify-between text-stone-300 hover:text-[#FFD78A] transition-all duration-200 group py-1"
                   >
                     <span>{item.label}</span>
-                    <ChevronRight className="w-4 h-4 text-[#B9965B]/60 group-hover:text-[#B9965B] group-hover:translate-x-1 transition-all" />
+                    <ChevronRight className="w-4 h-4 text-[#FFD78A]/70 group-hover:text-[#FFD78A] group-hover:translate-x-1 transition-all" />
                   </Link>
                 </li>
               ))}

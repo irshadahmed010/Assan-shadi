@@ -1,32 +1,10 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Users, Lock, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-
-// Mosque Silhouette Icon matching the exact Islamic Values icon from the design
-const MosqueIcon: React.FC<{ className?: string }> = ({ className = "w-7 h-7" }) => (
-  <svg
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    {/* Crescent finial on top */}
-    <path d="M12 2v2" />
-    <path d="M12 3a1.2 1.2 0 0 1 1-1" />
-    {/* Dome shape */}
-    <path d="M12 4c-3.2 1.8-6.2 5-6.2 9v5h12.4v-5c0-4-3-7.2-6.2-9z" />
-    {/* Mihrab / Arch doorway */}
-    <path d="M9.5 18v-3.5a2.5 2.5 0 0 1 5 0v3.5" />
-    {/* Base line */}
-    <path d="M4 20h16" />
-  </svg>
-);
 
 export const TrustedMatchmakingSection: React.FC = () => {
   const features = [
@@ -34,25 +12,25 @@ export const TrustedMatchmakingSection: React.FC = () => {
       id: "verified-profiles",
       title: "Verified Profiles",
       desc: "Manually checked with phone verification.",
-      icon: ShieldCheck,
+      image: "/images/Trusted_Matchmaking/img_01.png",
     },
     {
       id: "genuine-members",
       title: "Genuine Members",
       desc: "Serious individuals and families only.",
-      icon: Users,
+      image: "/images/Trusted_Matchmaking/img_02.png",
     },
     {
       id: "islamic-values",
       title: "Islamic Values",
       desc: "Built on trust, respect and shared deen.",
-      icon: MosqueIcon,
+      image: "/images/Trusted_Matchmaking/img_03.png",
     },
     {
       id: "safe-private",
       title: "Safe & Private",
       desc: "Your information stays confidential.",
-      icon: Lock,
+      image: "/images/Trusted_Matchmaking/img_04.png",
     },
   ];
 
@@ -83,22 +61,22 @@ export const TrustedMatchmakingSection: React.FC = () => {
           <div className="max-w-2xl mb-14">
             {/* Eyebrow with decorative line */}
             <div className="inline-flex items-center gap-3 mb-4">
-              <span className="w-10 h-[2px] bg-[#b9965b]" />
-              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#b9965b] font-semibold font-sans-modern">
+              <span className="w-10 h-[2px] bg-[#FFD78A]" />
+              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#FFD78A] font-bold font-sans-modern">
                 Trusted Matchmaking
               </span>
             </div>
 
             {/* Main Headline */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-[#FAF7F2] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-white mb-4">
               Why{" "}
-              <span className="text-[#c88a64] italic font-serif-luxury font-medium">
+              <span className="text-[#FFD78A] italic font-serif-luxury font-medium">
                 Choose Asaan Shaadi?
               </span>
             </h2>
 
             {/* Subtitle Description */}
-            <p className="text-stone-300 text-base sm:text-lg font-sans-modern leading-relaxed">
+            <p className="text-stone-200 text-base sm:text-lg font-sans-modern leading-relaxed">
               We combine trust, technology and values to help you find a
               compatible life partner — the halal way.
             </p>
@@ -106,33 +84,49 @@ export const TrustedMatchmakingSection: React.FC = () => {
         </ScrollReveal>
 
         {/* 4 Feature Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 items-stretch">
           {features.map((feature, idx) => {
-            const Icon = feature.icon;
             return (
               <ScrollReveal
                 key={feature.id}
                 direction="up"
                 delay={idx * 0.1}
-                className="group relative bg-[#2a2a2a]/95 hover:bg-[#323232] border border-white/10 hover:border-[#b9965b]/50 rounded-[5px] p-8 text-center transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#9a6a4f]/15 hover:-translate-y-2 flex flex-col items-center justify-between min-h-[230px]"
+                className="h-full"
               >
-                {/* Circular Icon Container with High-Contrast Brand Colors */}
-                <div className="w-16 h-16 rounded-full bg-[#9a6a4f]/25 group-hover:bg-[#9a6a4f]/35 border border-[#9a6a4f]/50 flex items-center justify-center text-[#e8a379] group-hover:text-[#ffd6b8] group-hover:scale-110 transition-all duration-300 mb-6 shadow-md shadow-[#9a6a4f]/20">
-                  <Icon className="w-7 h-7" />
+                <div className="group relative h-full flex flex-col justify-between bg-[#2a2825]/95 hover:bg-[#322f2b] border border-white/15 hover:border-[#FFD78A]/60 rounded-[5px] overflow-hidden transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#c2794c]/20 hover:-translate-y-2">
+                  {/* Modern Edge-to-Edge Image with Bottom Shadows */}
+                  <div className="relative w-full aspect-[16/10] overflow-hidden bg-[#1e1d1b] border-b border-white/10 group-hover:border-[#FFD78A]/40 transition-colors shadow-[0_8px_16px_rgba(0,0,0,0.7)]">
+                    <Image
+                      src={feature.image}
+                      alt={feature.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                    />
+                    {/* Subtle Gradient vignette on image bottom for sleek depth */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
+                    {/* Ambient gold line at bottom of image */}
+                    <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FFD78A]/40 to-transparent group-hover:via-[#FFD78A] transition-all duration-500" />
+                  </div>
+
+                  {/* Feature Content with compact internal padding */}
+                  <div className="flex flex-col flex-1 items-center justify-between p-4 sm:p-5 pt-3.5 pb-4 text-center">
+                    <div className="flex flex-col items-center w-full">
+                      {/* Feature Title */}
+                      <h3 className="text-base sm:text-lg font-bold font-serif-luxury text-white tracking-wide mb-1.5 group-hover:text-[#FFD78A] transition-colors">
+                        {feature.title}
+                      </h3>
+
+                      {/* Small Center Divider Line */}
+                      <div className="w-8 h-[2px] bg-[#FFD78A] group-hover:w-14 transition-all duration-300 my-1.5" />
+
+                      {/* Feature Description */}
+                      <p className="text-stone-200 text-xs sm:text-sm font-sans-modern leading-relaxed mt-0.5">
+                        {feature.desc}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-
-                {/* Feature Title */}
-                <h3 className="text-lg sm:text-xl font-bold font-serif-luxury text-[#FAF7F2] tracking-wide mb-2">
-                  {feature.title}
-                </h3>
-
-                {/* Small Center Divider Line */}
-                <div className="w-10 h-[2px] bg-[#b9965b] group-hover:w-16 transition-all duration-300 my-2" />
-
-                {/* Feature Description */}
-                <p className="text-stone-300 text-sm font-sans-modern leading-relaxed mt-2">
-                  {feature.desc}
-                </p>
               </ScrollReveal>
             );
           })}
@@ -140,28 +134,28 @@ export const TrustedMatchmakingSection: React.FC = () => {
 
         {/* Bottom Bar: CTA Button + Slogan */}
         <ScrollReveal direction="up" delay={0.35}>
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-6 border-t border-white/10">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-6 border-t border-white/15">
             {/* CTA Buttons */}
             <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
               <Link
                 href="/submit-biodata"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#9a6a4f] hover:bg-[#b17b5d] text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[5px] transition-all duration-300 shadow-md shadow-[#9a6a4f]/30 hover:shadow-xl hover:shadow-[#9a6a4f]/50 group text-sm sm:text-base tracking-wide"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 btn-primary-glow text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[6px] transition-all duration-300 group text-sm sm:text-base tracking-wide"
               >
                 <span>Join Asaan Shaadi</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" />
               </Link>
               <Link
                 href="/about"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-stone-200 border border-white/10 hover:border-white/20 font-sans-modern font-medium px-6 py-3.5 rounded-[5px] transition-all duration-300 text-sm tracking-wide"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/15 text-stone-100 border border-white/20 hover:border-[#FFD78A]/50 font-sans-modern font-medium px-6 py-3.5 rounded-[6px] transition-all duration-300 text-sm tracking-wide shadow-sm"
               >
                 <span>Who We Are & Our Story</span>
               </Link>
             </div>
 
             {/* Slogan with decorative line */}
-            <div className="inline-flex items-center gap-3 text-stone-400">
-              <span className="w-10 h-[2px] bg-[#b9965b]" />
-              <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-300">
+            <div className="inline-flex items-center gap-3 text-stone-300">
+              <span className="w-10 h-[2px] bg-[#FFD78A]" />
+              <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-200">
                 A step closer to a blessful tomorrow
               </span>
             </div>

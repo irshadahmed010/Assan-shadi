@@ -9,6 +9,7 @@ export async function GET(request: NextRequest) {
 
     const filter: ProfileFilter = {
       gender: (searchParams.get("gender") as Gender) || undefined,
+      status: (searchParams.get("status") as any) || undefined,
       city: searchParams.get("city") || undefined,
       ageMin: searchParams.get("ageMin") ? parseInt(searchParams.get("ageMin")!) : undefined,
       ageMax: searchParams.get("ageMax") ? parseInt(searchParams.get("ageMax")!) : undefined,

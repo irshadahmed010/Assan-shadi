@@ -2,6 +2,7 @@ export type Gender = "male" | "female";
 export type MaritalStatus = "never_married" | "divorced" | "widowed";
 export type ProfileStatus = "pending" | "approved" | "rejected" | "archived";
 export type InquiryStatus = "pending" | "reviewed" | "contacted" | "closed";
+export type LeadStatus = "new" | "contacted" | "follow_up" | "closed";
 
 export interface Profile {
   id: string;
@@ -42,7 +43,7 @@ export interface Profile {
 
 export interface Inquiry {
   id: string;
-  profile_id: string;
+  profile_id?: string;
   profile_code: string;
   sender_name: string;
   sender_relation: string;
@@ -52,6 +53,56 @@ export interface Inquiry {
   message: string;
   status: InquiryStatus;
   created_at: string;
+}
+
+export interface Lead {
+  id: string;
+  full_name: string;
+  gender: "Male" | "Female";
+  mobile_number: string;
+  email_address: string;
+  status: LeadStatus;
+  created_at: string;
+  seeking_for?: string;
+  note?: string;
+  source?: string;
+}
+
+export interface Author {
+  name: string;
+  role: string;
+  avatar: string;
+}
+
+export interface BlogPost {
+  id: string;
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  readTime: string;
+  publishedAt: string;
+  author: Author;
+  imageUrl: string;
+  tags: string[];
+  featured?: boolean;
+  status: "published" | "draft";
+  content?: string;
+  sections?: { heading?: string; content: string[] }[];
+  keyTakeaways?: string[];
+  created_at?: string;
+}
+
+export interface GalleryItem {
+  id: string;
+  src: string;
+  title: string;
+  caption: string;
+  category: string;
+  categoryLabel: string;
+  city: string;
+  year: string;
+  created_at?: string;
 }
 
 export interface AdminUser {
@@ -70,7 +121,20 @@ export interface ProfileFilter {
   education?: string;
   maritalStatus?: MaritalStatus | "all";
   sect?: string;
+  status?: ProfileStatus | "all";
   query?: string;
+}
+
+export interface DashboardStats {
+  totalProfiles: number;
+  pendingProfiles: number;
+  approvedProfiles: number;
+  totalLeads: number;
+  newLeads: number;
+  totalInquiries: number;
+  pendingInquiries: number;
+  totalBlogs: number;
+  totalGallery: number;
 }
 
 export interface ApiResponse<T = unknown> {

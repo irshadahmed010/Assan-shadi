@@ -55,18 +55,18 @@ const config: Config = {
         },
 
         gold: {
-          50: "#FBF8F2",
-          100: "#F3EAD9",
-          200: "#E5D2B0",
-          300: "#D6B987",
-          400: "#C7A66C",
-          500: "#B9965B",
-          600: "#9D7B47",
-          700: "#816235",
-          800: "#654C28",
-          900: "#4D381C",
-          950: "#2B1E0D",
-          DEFAULT: "#B9965B",
+          50: "#FDFBF7",
+          100: "#FAF3E6",
+          200: "#F5E6CA",
+          300: "#EED3A3",
+          400: "#FFD78A",
+          500: "#E5C384",
+          600: "#C59B48",
+          700: "#A67D32",
+          800: "#7E5C20",
+          900: "#553D14",
+          950: "#2E2008",
+          DEFAULT: "#E5C384",
         },
       },
 
@@ -85,6 +85,7 @@ const config: Config = {
         ],
         playfair: ["var(--font-playfair)", "Georgia", "serif"],
         jakarta: ["var(--font-plus-jakarta)", "Arial", "sans-serif"],
+        mono: ["var(--font-plus-jakarta)", "Arial", "sans-serif"],
       },
 
       boxShadow: {

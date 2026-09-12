@@ -7,7 +7,7 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 -- 1. PROFILES TABLE
 CREATE TABLE IF NOT EXISTS public.profiles (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    id VARCHAR(100) PRIMARY KEY,
     profile_code VARCHAR(20) UNIQUE NOT NULL,
     full_name VARCHAR(150) NOT NULL,
     gender VARCHAR(10) NOT NULL CHECK (gender IN ('male', 'female')),
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS public.profiles (
     caste VARCHAR(60),
     mother_tongue VARCHAR(60) NOT NULL,
     city VARCHAR(100) NOT NULL,
-    country VARCHAR(100) DEFAULT 'Pakistan' NOT NULL,
+    country VARCHAR(100) DEFAULT 'India' NOT NULL,
     education VARCHAR(100) NOT NULL,
     degree_title VARCHAR(150) NOT NULL,
     profession VARCHAR(150) NOT NULL,
@@ -45,8 +45,8 @@ CREATE TABLE IF NOT EXISTS public.profiles (
 
 -- 2. INQUIRIES / PROPOSALS TABLE
 CREATE TABLE IF NOT EXISTS public.inquiries (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    profile_id UUID NOT NULL REFERENCES public.profiles(id) ON DELETE CASCADE,
+    id VARCHAR(100) PRIMARY KEY,
+    profile_id VARCHAR(100) NOT NULL,
     profile_code VARCHAR(20) NOT NULL,
     sender_name VARCHAR(150) NOT NULL,
     sender_relation VARCHAR(60) NOT NULL,
@@ -60,13 +60,15 @@ CREATE TABLE IF NOT EXISTS public.inquiries (
 
 -- 3. ADMIN USERS TABLE
 CREATE TABLE IF NOT EXISTS public.admin_users (
-    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    id VARCHAR(100) PRIMARY KEY DEFAULT ('admin-' || floor(extract(epoch from now()) * 1000)::text),
     email VARCHAR(150) UNIQUE NOT NULL,
     password_hash TEXT NOT NULL,
     name VARCHAR(150) NOT NULL,
     role VARCHAR(30) DEFAULT 'moderator' CHECK (role IN ('superadmin', 'moderator')),
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
+
+
 
 -- Indexes for lightning fast searches and filtering
 CREATE INDEX IF NOT EXISTS idx_profiles_status ON public.profiles(status);
@@ -132,3 +134,80 @@ ON public.admin_users FOR ALL
 TO service_role 
 USING (true) 
 WITH CHECK (true);
+
+-- 4. LEADS TABLE (General & Inquiries)
+CREATE TABLE IF NOT EXISTS public.leads (
+    id VARCHAR(100) PRIMARY KEY DEFAULT ('lead-' || floor(extract(epoch from now()) * 1000)::text),
+    full_name VARCHAR(150) NOT NULL,
+    gender VARCHAR(10) NOT NULL DEFAULT 'Male' CHECK (gender IN ('Male', 'Female')),
+    mobile_number VARCHAR(50) NOT NULL,
+    email_address VARCHAR(150),
+    seeking_for VARCHAR(50) DEFAULT 'Myself',
+    note TEXT,
+    source VARCHAR(50) DEFAULT 'Quick Profile Submission',
+    status VARCHAR(20) DEFAULT 'new' CHECK (status IN ('new', 'contacted', 'follow_up', 'closed')),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 5. QUICK PROFILES TABLE (Dedicated table for Homepage Quick Profile Submission form)
+CREATE TABLE IF NOT EXISTS public.quick_profiles (
+    id VARCHAR(100) PRIMARY KEY DEFAULT ('qp-' || floor(extract(epoch from now()) * 1000)::text),
+    full_name VARCHAR(150) NOT NULL,
+    gender VARCHAR(10) NOT NULL DEFAULT 'Male' CHECK (gender IN ('Male', 'Female')),
+    mobile_number VARCHAR(50) NOT NULL,
+    email_address VARCHAR(150),
+    seeking_for VARCHAR(50) DEFAULT 'Myself',
+    note TEXT,
+    status VARCHAR(20) DEFAULT 'new' CHECK (status IN ('new', 'contacted', 'follow_up', 'closed')),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+
+
+-- 5. BLOGS TABLE
+CREATE TABLE IF NOT EXISTS public.blogs (
+    id VARCHAR(100) PRIMARY KEY,
+    slug VARCHAR(150) UNIQUE NOT NULL,
+    title VARCHAR(250) NOT NULL,
+    excerpt TEXT NOT NULL,
+    category VARCHAR(100) NOT NULL,
+    read_time VARCHAR(30) DEFAULT '5 min read',
+    published_at VARCHAR(50),
+    author JSONB,
+    image_url TEXT,
+    tags TEXT[],
+    featured BOOLEAN DEFAULT FALSE,
+    status VARCHAR(20) DEFAULT 'published' CHECK (status IN ('published', 'draft')),
+    content TEXT,
+    sections JSONB,
+    key_takeaways TEXT[],
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 6. GALLERY TABLE
+CREATE TABLE IF NOT EXISTS public.gallery (
+    id VARCHAR(100) PRIMARY KEY,
+    src TEXT NOT NULL,
+    title VARCHAR(150) NOT NULL,
+    caption TEXT NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    category_label VARCHAR(100) NOT NULL,
+    city VARCHAR(100) NOT NULL,
+    year VARCHAR(10) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+ALTER TABLE public.leads ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.quick_profiles ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.blogs ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.gallery ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Public can view published blogs" ON public.blogs FOR SELECT USING (status = 'published');
+CREATE POLICY "Public can view gallery" ON public.gallery FOR SELECT USING (true);
+CREATE POLICY "Public can insert leads" ON public.leads FOR INSERT WITH CHECK (true);
+CREATE POLICY "Admins full access to leads" ON public.leads FOR ALL TO service_role USING (true) WITH CHECK (true);
+CREATE POLICY "Public can insert quick_profiles" ON public.quick_profiles FOR INSERT WITH CHECK (true);
+CREATE POLICY "Admins full access to quick_profiles" ON public.quick_profiles FOR ALL TO service_role USING (true) WITH CHECK (true);
+CREATE POLICY "Admins full access to blogs" ON public.blogs FOR ALL TO service_role USING (true) WITH CHECK (true);
+CREATE POLICY "Admins full access to gallery" ON public.gallery FOR ALL TO service_role USING (true) WITH CHECK (true);
+

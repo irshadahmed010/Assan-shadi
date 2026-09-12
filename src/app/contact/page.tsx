@@ -63,10 +63,29 @@ export default function ContactPage() {
     }
 
     setIsSubmitting(true);
-    // Simulate brief send delay
-    await new Promise((r) => setTimeout(r, 800));
-    setIsSubmitting(false);
-    setSubmitted(true);
+    try {
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          full_name: formData.fullName.trim(),
+          mobile_number: formData.mobileNumber.trim(),
+          email_address: formData.emailAddress.trim(),
+          seeking_for: formData.seekingAllianceFor,
+          note: formData.note.trim(),
+          source: "contact_page",
+        }),
+      });
+      const data = await res.json();
+      if (!data.success) {
+        throw new Error(data.error || "Failed to submit inquiry");
+      }
+      setSubmitted(true);
+    } catch (err: any) {
+      setFormError(err.message || "Failed to send message. Please try again or call us.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

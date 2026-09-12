@@ -40,11 +40,30 @@ export const BiodataSection: React.FC = () => {
     setFormError(null);
     setIsSubmitting(true);
 
-    // Simulate sending inquiry
-    await new Promise((r) => setTimeout(r, 700));
+    try {
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          full_name: fullName.trim(),
+          mobile_number: mobileNumber.trim(),
+          email_address: emailAddress.trim(),
+          gender: gender,
+          source: "Quick Profile Submission",
+        }),
+      });
 
-    setIsSubmitting(false);
-    setShowSuccessModal(true);
+      const data = await res.json();
+      if (!data.success) {
+        throw new Error(data.error || "Failed to submit profile. Please try again.");
+      }
+
+      setShowSuccessModal(true);
+    } catch (err: any) {
+      setFormError(err.message || "Failed to submit profile. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleCloseModal = () => {
@@ -65,6 +84,9 @@ export const BiodataSection: React.FC = () => {
       id="register"
       className="relative py-10 sm:py-12 lg:py-14 bg-[#252525] text-[#FAF7F2] overflow-hidden border-b border-white/10 scroll-mt-20 sm:scroll-mt-24"
     >
+      {/* Anchor for Quick Profile Submission */}
+      <span id="quick-profile" className="absolute -top-24 pointer-events-none" />
+      <span id="quick-profile-submission" className="absolute -top-24 pointer-events-none" />
       {/* Soft Ambient Background Glows */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/3 -left-32 w-96 h-96 bg-[#9a6a4f]/15 rounded-full blur-3xl" />
@@ -82,42 +104,42 @@ export const BiodataSection: React.FC = () => {
         {/* Top Header Section (Outside Form Card) */}
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10 lg:mb-12 space-y-3">
           <ScrollReveal direction="up">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#9a6a4f]/20 border border-[#9a6a4f]/40 text-[#e8a379] text-xs font-semibold uppercase tracking-widest font-sans-modern">
-              <FileText className="w-3.5 h-3.5 text-[#b9965b]" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#c2794c]/20 border border-[#c2794c]/50 text-[#FFD78A] text-xs font-bold uppercase tracking-widest font-sans-modern">
+              <FileText className="w-3.5 h-3.5 text-[#FFD78A]" />
               <span>SUBMIT YOUR BIODATA</span>
             </div>
           </ScrollReveal>
 
           <ScrollReveal direction="up" delay={0.1}>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif-luxury tracking-tight leading-snug text-[#FAF7F2]">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif-luxury tracking-tight leading-snug text-white">
               Take the First Step{" "}
-              <span className="text-[#c88a64] italic font-serif-luxury font-medium">
+              <span className="text-[#FFD78A] italic font-serif-luxury font-medium">
                 Towards a Beautiful Relationship
               </span>
             </h2>
           </ScrollReveal>
 
           <ScrollReveal direction="up" delay={0.15}>
-            <p className="text-stone-300 text-xs sm:text-sm lg:text-base font-sans-modern leading-relaxed max-w-xl mx-auto">
+            <p className="text-stone-200 text-xs sm:text-sm lg:text-base font-sans-modern leading-relaxed max-w-xl mx-auto">
               Fill in your details to submit your biodata and connect with verified matches.
             </p>
           </ScrollReveal>
         </div>
 
         {/* Main Card Container */}
-        <div className="relative rounded-[5px] bg-[#1e1e1e]/95 border border-[#9a6a4f]/35 p-5 sm:p-8 lg:p-10 shadow-2xl overflow-hidden backdrop-blur-md">
+        <div className="relative rounded-[6px] bg-[#1e1e1e]/98 border border-white/15 p-5 sm:p-8 lg:p-10 shadow-2xl overflow-hidden backdrop-blur-md">
           {/* Subtle top gold accent line */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#b9965b] to-transparent" />
+          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FFD78A] to-transparent" />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-center">
             {/* Left Column: Form (lg:col-span-7) */}
             <div className="lg:col-span-7 space-y-4">
               <ScrollReveal direction="up" delay={0.1}>
-                <div className="border-b border-white/10 pb-3">
+                <div className="border-b border-white/15 pb-3">
                   <h3 className="text-lg sm:text-xl font-bold font-serif-luxury text-white">
                     Quick Profile Submission
                   </h3>
-                  <p className="text-xs text-stone-400 font-sans-modern mt-0.5">
+                  <p className="text-xs text-[#FFD78A] font-sans-modern font-semibold mt-0.5">
                     100% Confidential • Verified Matrimonial Process
                   </p>
                 </div>
@@ -127,7 +149,7 @@ export const BiodataSection: React.FC = () => {
               <ScrollReveal direction="up" delay={0.15}>
                 <form onSubmit={handleSubmit} className="space-y-3.5 pt-1">
                   {formError && (
-                    <div className="p-3 rounded-[5px] bg-red-500/10 border border-red-500/30 text-red-300 text-xs font-sans-modern">
+                    <div className="p-3 rounded-[6px] bg-red-500/15 border border-red-500/30 text-red-200 text-xs font-sans-modern">
                       {formError}
                     </div>
                   )}
@@ -136,8 +158,8 @@ export const BiodataSection: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
                     {/* Full Name */}
                     <div className="relative">
-                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-stone-400">
-                        <User className="w-4 h-4 text-[#e8a379]" />
+                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                        <User className="w-4 h-4 text-[#FFD78A]" />
                       </div>
                       <input
                         type="text"
@@ -145,14 +167,14 @@ export const BiodataSection: React.FC = () => {
                         onChange={(e) => setFullName(e.target.value)}
                         placeholder="Full Name *"
                         required
-                        className="w-full pl-10 pr-3.5 py-2.5 sm:py-3 rounded-[5px] bg-[#272727] border border-white/10 hover:border-white/20 focus:border-[#b9965b] text-white text-xs sm:text-sm font-sans-modern placeholder:text-stone-400 outline-none transition-colors"
+                        className="w-full pl-10 pr-3.5 py-2.5 sm:py-3 rounded-[6px] bg-[#272727] border border-white/15 hover:border-white/25 focus:border-[#FFD78A] text-white text-xs sm:text-sm font-sans-modern placeholder:text-stone-400 outline-none transition-colors"
                       />
                     </div>
 
                     {/* WhatsApp / Calling Number */}
                     <div className="relative">
-                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-stone-400">
-                        <Phone className="w-4 h-4 text-[#e8a379]" />
+                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                        <Phone className="w-4 h-4 text-[#FFD78A]" />
                       </div>
                       <input
                         type="tel"
@@ -160,7 +182,7 @@ export const BiodataSection: React.FC = () => {
                         onChange={(e) => setMobileNumber(e.target.value)}
                         placeholder="WhatsApp / Calling Number *"
                         required
-                        className="w-full pl-10 pr-3.5 py-2.5 sm:py-3 rounded-[5px] bg-[#272727] border border-white/10 hover:border-white/20 focus:border-[#b9965b] text-white text-xs sm:text-sm font-sans-modern placeholder:text-stone-400 outline-none transition-colors"
+                        className="w-full pl-10 pr-3.5 py-2.5 sm:py-3 rounded-[6px] bg-[#272727] border border-white/15 hover:border-white/25 focus:border-[#FFD78A] text-white text-xs sm:text-sm font-sans-modern placeholder:text-stone-400 outline-none transition-colors"
                       />
                     </div>
                   </div>
@@ -169,27 +191,27 @@ export const BiodataSection: React.FC = () => {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
                     {/* Email Address */}
                     <div className="relative">
-                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-stone-400">
-                        <Mail className="w-4 h-4 text-[#e8a379]" />
+                      <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                        <Mail className="w-4 h-4 text-[#FFD78A]" />
                       </div>
                       <input
                         type="email"
                         value={emailAddress}
                         onChange={(e) => setEmailAddress(e.target.value)}
                         placeholder="Email Address"
-                        className="w-full pl-10 pr-3.5 py-2.5 sm:py-3 rounded-[5px] bg-[#272727] border border-white/10 hover:border-white/20 focus:border-[#b9965b] text-white text-xs sm:text-sm font-sans-modern placeholder:text-stone-400 outline-none transition-colors"
+                        className="w-full pl-10 pr-3.5 py-2.5 sm:py-3 rounded-[6px] bg-[#272727] border border-white/15 hover:border-white/25 focus:border-[#FFD78A] text-white text-xs sm:text-sm font-sans-modern placeholder:text-stone-400 outline-none transition-colors"
                       />
                     </div>
 
                     {/* Gender Selector Toggle */}
-                    <div className="grid grid-cols-2 gap-2 bg-[#272727] p-1 rounded-[5px] border border-white/10">
+                    <div className="grid grid-cols-2 gap-2 bg-[#272727] p-1 rounded-[6px] border border-white/15">
                       <button
                         type="button"
                         onClick={() => setGender("Male")}
                         className={`flex items-center justify-center gap-1.5 py-2 px-3 rounded-[5px] text-xs font-sans-modern font-semibold transition-all ${
                           gender === "Male"
-                            ? "bg-[#9a6a4f] text-white shadow-md"
-                            : "text-stone-400 hover:text-white"
+                            ? "bg-gradient-to-r from-[#c2794c] to-[#a86036] text-white shadow-md font-bold"
+                            : "text-stone-300 hover:text-white"
                         }`}
                       >
                         <User className="w-3.5 h-3.5" />
@@ -201,8 +223,8 @@ export const BiodataSection: React.FC = () => {
                         onClick={() => setGender("Female")}
                         className={`flex items-center justify-center gap-1.5 py-2 px-3 rounded-[5px] text-xs font-sans-modern font-semibold transition-all ${
                           gender === "Female"
-                            ? "bg-[#9a6a4f] text-white shadow-md"
-                            : "text-stone-400 hover:text-white"
+                            ? "bg-gradient-to-r from-[#c2794c] to-[#a86036] text-white shadow-md font-bold"
+                            : "text-stone-300 hover:text-white"
                         }`}
                       >
                         <User className="w-3.5 h-3.5" />
@@ -216,7 +238,7 @@ export const BiodataSection: React.FC = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-3 rounded-[5px] bg-gradient-to-r from-[#9a6a4f] to-[#b17b5d] hover:from-[#b17b5d] hover:to-[#c8a66b] text-white font-sans-modern font-bold text-xs sm:text-sm transition-all duration-300 shadow-xl shadow-[#9a6a4f]/35 hover:shadow-2xl hover:scale-[1.01] disabled:opacity-60 group shrink-1"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-3.5 rounded-[6px] btn-primary-glow text-white font-sans-modern font-bold text-xs sm:text-sm transition-all duration-300 disabled:opacity-60 group shrink-1"
                     >
                       <span>{isSubmitting ? "Submitting..." : "Submit My Biodata"}</span>
                       <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
@@ -226,26 +248,26 @@ export const BiodataSection: React.FC = () => {
                   </div>
 
                   {/* 3 Trust Points Row */}
-                  <div className="pt-4 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-stone-300 font-sans-modern">
+                  <div className="pt-4 border-t border-white/15 grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-stone-200 font-sans-modern">
                     <div className="flex items-center gap-2">
-                      <div className="w-6 h-6 rounded-[5px] bg-[#9a6a4f]/20 text-[#e8a379] flex items-center justify-center shrink-0">
+                      <div className="w-6 h-6 rounded-[5px] bg-[#c2794c]/20 text-[#FFD78A] flex items-center justify-center shrink-0">
                         <ShieldCheck className="w-3.5 h-3.5" />
                       </div>
-                      <span className="font-medium text-[11px] sm:text-xs">100% Privacy Guaranteed</span>
+                      <span className="font-semibold text-[11px] sm:text-xs">100% Privacy Guaranteed</span>
                     </div>
 
-                    <div className="flex items-center gap-2 sm:border-l sm:border-white/10 sm:pl-3">
-                      <div className="w-6 h-6 rounded-[5px] bg-[#9a6a4f]/20 text-[#e8a379] flex items-center justify-center shrink-0">
+                    <div className="flex items-center gap-2 sm:border-l sm:border-white/15 sm:pl-3">
+                      <div className="w-6 h-6 rounded-[5px] bg-[#c2794c]/20 text-[#FFD78A] flex items-center justify-center shrink-0">
                         <CheckCircle2 className="w-3.5 h-3.5" />
                       </div>
-                      <span className="font-medium text-[11px] sm:text-xs">Verified Profiles</span>
+                      <span className="font-semibold text-[11px] sm:text-xs">Verified Profiles</span>
                     </div>
 
-                    <div className="flex items-center gap-2 sm:border-l sm:border-white/10 sm:pl-3">
-                      <div className="w-6 h-6 rounded-[5px] bg-[#9a6a4f]/20 text-[#e8a379] flex items-center justify-center shrink-0">
+                    <div className="flex items-center gap-2 sm:border-l sm:border-white/15 sm:pl-3">
+                      <div className="w-6 h-6 rounded-[5px] bg-[#c2794c]/20 text-[#FFD78A] flex items-center justify-center shrink-0">
                         <Zap className="w-3.5 h-3.5" />
                       </div>
-                      <span className="font-medium text-[11px] sm:text-xs">Fast Match Alerts</span>
+                      <span className="font-semibold text-[11px] sm:text-xs">Fast Match Alerts</span>
                     </div>
                   </div>
                 </form>

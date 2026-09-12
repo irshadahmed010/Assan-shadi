@@ -36,16 +36,16 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     const variantStyles = {
       primary:
-        "bg-[#9a6a4f] hover:bg-[#b17b5d] text-white shadow-sm hover:shadow-md focus:ring-[#9a6a4f]",
+        "bg-gradient-to-r from-[#c2794c] to-[#a86036] hover:from-[#d4895c] hover:to-[#be6f42] text-white font-semibold shadow-[0_4px_18px_rgba(194,121,76,0.38)] hover:shadow-[0_6px_25px_rgba(194,121,76,0.55)] focus:ring-[#c2794c]",
       secondary:
-        "bg-[#333333] hover:bg-[#444444] text-white shadow-sm hover:shadow focus:ring-[#333333]",
-      gold: "bg-[#b9965b] hover:bg-[#9d7b47] text-[#171615] font-semibold shadow-sm hover:shadow-md focus:ring-[#b9965b]",
+        "bg-[#2f2d2a] hover:bg-[#3d3a36] text-stone-100 border border-white/15 hover:border-[#FFD78A]/50 shadow-sm focus:ring-[#c2794c]",
+      gold: "bg-gradient-to-r from-[#FFD78A] via-[#E5C384] to-[#C59B48] hover:from-[#FFF0D4] hover:to-[#E5C384] text-stone-950 font-bold shadow-[0_4px_20px_rgba(229,195,132,0.4)] focus:ring-[#E5C384]",
       outline:
-        "border border-white/20 hover:border-[#b9965b] bg-white/5 hover:bg-white/10 text-[#FAF7F2] focus:ring-[#9a6a4f]",
+        "border border-white/25 hover:border-[#FFD78A] bg-white/10 hover:bg-white/15 text-[#FAF7F2] font-medium shadow-sm focus:ring-[#c2794c]",
       ghost:
-        "text-[#FAF7F2] hover:bg-white/10 hover:text-[#b9965b] focus:ring-[#9a6a4f]",
+        "text-stone-200 hover:bg-white/10 hover:text-[#FFD78A] focus:ring-[#c2794c]",
       danger:
-        "bg-[#c24141] hover:bg-[#a32e2e] text-white shadow-sm hover:shadow focus:ring-[#c24141]",
+        "bg-[#d33a3a] hover:bg-[#b82e2e] text-white font-semibold shadow-sm hover:shadow focus:ring-[#d33a3a]",
     };
 
     return (

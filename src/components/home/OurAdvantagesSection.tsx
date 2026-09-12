@@ -594,24 +594,24 @@ export const OurAdvantagesSection: React.FC = () => {
             <div className="inline-flex items-center gap-3 mb-3.5">
               <span
                 ref={eyebrowLineRef}
-                className="w-12 h-[2px] bg-gradient-to-r from-[#b9965b] to-[#f59e0b] will-change-transform"
+                className="w-12 h-[2px] bg-gradient-to-r from-[#FFD78A] to-[#f59e0b] will-change-transform"
               />
-              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#b9965b] font-semibold font-sans-modern flex items-center gap-2">
+              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#FFD78A] font-bold font-sans-modern flex items-center gap-2">
                 <span>Why Choose Asaan Shaadi</span>
-                <Sparkles className="w-3.5 h-3.5 text-[#b9965b]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#FFD78A]" />
               </span>
             </div>
 
             {/* Main Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-[#FAF7F2] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-white mb-4">
               Our{" "}
-              <span className="text-[#c88a64] italic font-serif-luxury font-medium">
+              <span className="text-[#FFD78A] italic font-serif-luxury font-medium">
                 Advantages
               </span>
             </h2>
 
             {/* Subtitle */}
-            <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed">
+            <p className="text-stone-200 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed">
               More than a platform — we're a community built on trust, faith and
               genuine intentions.
             </p>
@@ -619,7 +619,7 @@ export const OurAdvantagesSection: React.FC = () => {
 
           {/* Right/Center: Floating Poetic Callout */}
           <div className="flex items-start gap-8 lg:mr-20">
-            <div ref={quoteRef} className="self-start text-stone-200">
+            <div ref={quoteRef} className="self-start text-stone-100">
               <p className="font-serif-luxury italic text-base sm:text-lg leading-snug">
                 “Trust
                 <br />
@@ -632,16 +632,16 @@ export const OurAdvantagesSection: React.FC = () => {
               {/* Scroll-Drawn Underline */}
               <div
                 ref={quoteLineRef}
-                className="w-12 h-[2px] bg-gradient-to-r from-[#b9965b] to-[#f59e0b] mt-2.5 will-change-transform"
+                className="w-12 h-[2px] bg-gradient-to-r from-[#FFD78A] to-[#f59e0b] mt-2.5 will-change-transform"
               />
             </div>
 
             {/* Ambient Vertical Slogan (visible on large screens) */}
             <div
               ref={verticalSloganRef}
-              className="hidden xl:block text-stone-400/80 pl-6 border-l border-white/10"
+              className="hidden xl:block text-stone-300 pl-6 border-l border-white/15"
             >
-              <p className="font-serif-luxury italic text-sm text-stone-400 leading-tight">
+              <p className="font-serif-luxury italic text-sm text-stone-300 leading-tight">
                 Same
                 <br />
                 Values
@@ -650,7 +650,7 @@ export const OurAdvantagesSection: React.FC = () => {
                 <br />
                 Tomorrows
               </p>
-              <div className="w-8 h-[1.5px] bg-[#b9965b]/50 mt-2" />
+              <div className="w-8 h-[1.5px] bg-[#FFD78A]/60 mt-2" />
             </div>
           </div>
         </div>
@@ -659,11 +659,11 @@ export const OurAdvantagesSection: React.FC = () => {
         <div className="relative mb-14">
           {/* Scroll-Drawn Glowing Horizontal Divider Beam between Row 1 and Row 2 */}
           <div className="hidden lg:block absolute top-[50%] left-0 right-0 -translate-y-1/2 z-0 pointer-events-none px-2">
-            <div className="relative w-full h-[2px] bg-white/5">
+            <div className="relative w-full h-[2px] bg-white/10">
               {/* Active Golden Drawn Line */}
               <div
                 ref={gridLineRef}
-                className="absolute inset-0 bg-gradient-to-r from-[#b9965b]/40 via-[#f59e0b] to-[#c88a64]/80 shadow-[0_0_10px_rgba(245,158,11,0.5)] will-change-transform"
+                className="absolute inset-0 bg-gradient-to-r from-[#FFD78A]/40 via-[#f59e0b] to-[#c2794c]/80 shadow-[0_0_10px_rgba(245,158,11,0.5)] will-change-transform"
               />
               {/* Traveling Glowing Orb at the tip of the drawn line */}
               <div
@@ -691,42 +691,42 @@ export const OurAdvantagesSection: React.FC = () => {
                   key={item.id}
                   onMouseMove={handleCardMouseMove}
                   onMouseLeave={handleCardMouseLeave}
-                  className="advantage-card group relative bg-[#242220]/90 hover:bg-[#2c2825] border border-white/10 hover:border-[#b9965b]/60 rounded-[5px] p-5 sm:p-6 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#9a6a4f]/25 flex items-center gap-4 backdrop-blur-md min-h-[114px] overflow-hidden will-change-transform cursor-pointer"
+                  className="advantage-card group relative bg-[#242220]/95 hover:bg-[#2c2825] border border-white/15 hover:border-[#FFD78A]/70 rounded-[6px] p-5 sm:p-6 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#c2794c]/25 flex items-center gap-4 backdrop-blur-md min-h-[114px] overflow-hidden will-change-transform cursor-pointer"
                 >
                   {/* Modern Bento Spotlight Glow Following Cursor */}
                   <div
-                    className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[5px]"
+                    className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[6px]"
                     style={{
-                      background: `radial-gradient(280px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(185, 150, 91, 0.18), transparent 70%)`,
+                      background: `radial-gradient(280px circle at var(--mouse-x, 0px) var(--mouse-y, 0px), rgba(229, 195, 132, 0.22), transparent 70%)`,
                     }}
                   />
 
-                  {/* Subtle Numeric Badge in Top Right */}
-                  <span className="absolute top-2.5 right-3 text-[10px] font-mono tracking-widest text-[#b9965b]/35 group-hover:text-[#b9965b]/90 transition-colors">
+                  {/* Subtle Numeric Badge in Top Right - Bright and readable */}
+                  <span className="absolute top-2.5 right-3 text-xs font-mono font-bold tracking-widest text-[#FFD78A]/80 group-hover:text-[#FFD78A] transition-colors">
                     {item.badge}
                   </span>
 
                   {/* Circular Icon with Warm Brand Accent & Hover Ripple */}
                   <div className="relative shrink-0">
-                    <div className="w-14 h-14 rounded-full bg-[#9a6a4f]/20 group-hover:bg-[#9a6a4f]/35 border border-[#9a6a4f]/40 group-hover:border-[#b9965b]/60 flex items-center justify-center text-[#e8a379] group-hover:text-[#ffd6b8] transition-all duration-300 shadow-md shadow-[#9a6a4f]/20">
+                    <div className="w-14 h-14 rounded-full bg-[#c2794c]/20 group-hover:bg-[#c2794c]/35 border border-[#c2794c]/50 group-hover:border-[#FFD78A]/70 flex items-center justify-center text-[#FFD78A] group-hover:text-white transition-all duration-300 shadow-md shadow-[#c2794c]/25">
                       <Icon className="w-6 h-6 stroke-[1.9] transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
                     </div>
                     {/* Expanding Ripple on Hover */}
-                    <div className="absolute inset-0 rounded-full border border-[#b9965b]/0 group-hover:border-[#b9965b]/40 group-hover:scale-125 transition-all duration-500 pointer-events-none" />
+                    <div className="absolute inset-0 rounded-full border border-[#FFD78A]/0 group-hover:border-[#FFD78A]/40 group-hover:scale-125 transition-all duration-500 pointer-events-none" />
                   </div>
 
                   {/* Content */}
                   <div className="flex-1 min-w-0 z-10">
-                    <h3 className="text-sm sm:text-base font-bold font-serif-luxury text-[#FAF7F2] tracking-wide group-hover:text-white transition-colors leading-snug">
+                    <h3 className="text-sm sm:text-base font-bold font-serif-luxury text-white tracking-wide group-hover:text-[#FFD78A] transition-colors leading-snug">
                       {item.title}
                     </h3>
-                    <p className="text-stone-300 text-xs sm:text-sm font-sans-modern leading-snug mt-1">
+                    <p className="text-stone-200 text-xs sm:text-sm font-sans-modern leading-snug mt-1">
                       {item.desc}
                     </p>
                   </div>
 
                   {/* Bottom Edge Accent Glow Line on Hover */}
-                  <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#b9965b]/0 to-transparent group-hover:via-[#b9965b] transition-all duration-500" />
+                  <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FFD78A]/0 to-transparent group-hover:via-[#FFD78A] transition-all duration-500" />
                 </div>
               );
             })}
@@ -736,12 +736,12 @@ export const OurAdvantagesSection: React.FC = () => {
         {/* Bottom Bar: CTA Button + Slogan */}
         <div
           ref={bottomBarRef}
-          className="flex flex-col sm:flex-row items-center justify-between gap-5 pt-6 border-t border-white/10"
+          className="flex flex-col sm:flex-row items-center justify-between gap-5 pt-6 border-t border-white/15"
         >
-          {/* CTA Button with user's rounded-[5px] & Shimmer sweep */}
+          {/* CTA Button with user's rounded-[6px] & Shimmer sweep */}
           <Link
             href="/submit-biodata"
-            className="w-full sm:w-auto relative inline-flex items-center justify-center gap-3 bg-[#9a6a4f] hover:bg-[#b17b5d] text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[5px] transition-all duration-300 shadow-md shadow-[#9a6a4f]/30 hover:shadow-xl hover:shadow-[#9a6a4f]/50 group text-sm sm:text-base tracking-wide overflow-hidden"
+            className="w-full sm:w-auto relative inline-flex items-center justify-center gap-3 btn-primary-glow text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[6px] transition-all duration-300 group text-sm sm:text-base tracking-wide overflow-hidden"
           >
             {/* Shimmer Sweep Animation */}
             <span className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 group-hover:left-[100%] transition-all duration-700 ease-in-out pointer-events-none" />
@@ -751,12 +751,12 @@ export const OurAdvantagesSection: React.FC = () => {
           </Link>
 
           {/* Slogan with Scroll-Drawn Line */}
-          <div className="inline-flex items-center gap-3 text-stone-400">
+          <div className="inline-flex items-center gap-3 text-stone-300">
             <span
               ref={sloganLineRef}
-              className="w-12 h-[2px] bg-gradient-to-r from-[#b9965b] to-[#f59e0b] will-change-transform"
+              className="w-12 h-[2px] bg-gradient-to-r from-[#FFD78A] to-[#f59e0b] will-change-transform"
             />
-            <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-300">
+            <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-200">
               Good people. Brighter tomorrows.
             </span>
           </div>

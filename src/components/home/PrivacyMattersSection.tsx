@@ -69,23 +69,23 @@ export const PrivacyMattersSection: React.FC = () => {
           <div className="max-w-2xl">
             {/* Eyebrow */}
             <div className="inline-flex items-center gap-3 mb-3.5">
-              <span className="w-10 h-[2px] bg-gradient-to-r from-[#b9965b] to-[#f59e0b]" />
-              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#b9965b] font-semibold font-sans-modern flex items-center gap-2">
+              <span className="w-10 h-[2px] bg-gradient-to-r from-[#FFD78A] to-[#f59e0b]" />
+              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#FFD78A] font-bold font-sans-modern flex items-center gap-2">
                 <span>VERIFIED &amp; SECURE</span>
-                <Sparkles className="w-3.5 h-3.5 text-[#b9965b]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#FFD78A]" />
               </span>
             </div>
 
             {/* Main Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-[#FAF7F2] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-white mb-4">
               Your Privacy{" "}
-              <span className="text-[#c88a64] font-medium italic font-serif-luxury">
+              <span className="text-[#FFD78A] font-medium italic font-serif-luxury">
                 Matters
               </span>
             </h2>
 
             {/* Subtitle */}
-            <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed">
+            <p className="text-stone-200 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed">
               Your trust is sacred. We are committed to keeping your information safe,
               private, and only for serious matrimonial purposes.
             </p>
@@ -94,8 +94,8 @@ export const PrivacyMattersSection: React.FC = () => {
           {/* Right Callouts */}
           <div className="flex items-start gap-8 lg:gap-12 self-start">
             {/* Poetic Quote */}
-            <div className="text-stone-200">
-              <p className="font-serif-luxury italic text-lg sm:text-xl text-[#c88a64] leading-tight">
+            <div className="text-stone-100">
+              <p className="font-serif-luxury italic text-lg sm:text-xl text-[#FFD78A] leading-tight">
                 “Deen
                 <br />
                 Dua
@@ -104,19 +104,19 @@ export const PrivacyMattersSection: React.FC = () => {
                 <br />
                 Always”
               </p>
-              <div className="w-12 h-[2px] bg-gradient-to-r from-[#b9965b] to-[#f59e0b] mt-3" />
+              <div className="w-12 h-[2px] bg-gradient-to-r from-[#FFD78A] to-[#f59e0b] mt-3" />
             </div>
 
             {/* Ambient Vertical Slogan (Visible on Large Screens) */}
-            <div className="hidden xl:block text-stone-400 pl-6 border-l border-white/10">
-              <p className="font-serif-luxury italic text-sm text-stone-300/90 leading-tight">
+            <div className="hidden xl:block text-stone-300 pl-6 border-l border-white/15">
+              <p className="font-serif-luxury italic text-sm text-stone-300 leading-tight">
                 Private
                 <br />
                 Respectful
                 <br />
                 Meaningful
               </p>
-              <div className="w-8 h-[1.5px] bg-[#b9965b]/50 mt-2.5" />
+              <div className="w-8 h-[1.5px] bg-[#FFD78A]/60 mt-2.5" />
             </div>
           </div>
         </div>
@@ -128,39 +128,39 @@ export const PrivacyMattersSection: React.FC = () => {
             return (
               <div
                 key={item.id}
-                className="group relative bg-[#242220]/80 hover:bg-[#2c2825] border border-white/10 hover:border-[#b9965b]/60 rounded-2xl p-6 sm:p-7 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#9a6a4f]/20 flex flex-col items-start gap-4 backdrop-blur-md overflow-hidden cursor-pointer"
+                className="group relative bg-[#242220]/95 hover:bg-[#2c2825] border border-white/15 hover:border-[#FFD78A]/70 rounded-2xl p-6 sm:p-7 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#c2794c]/20 flex flex-col items-start gap-4 backdrop-blur-md overflow-hidden cursor-pointer"
               >
                 {/* Glow Backdrop on Hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#9a6a4f]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#c2794c]/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
                 {/* Circular Icon Container matching mockup */}
-                <div className="w-14 h-14 rounded-full bg-[#9a6a4f]/25 group-hover:bg-[#9a6a4f]/40 border border-[#9a6a4f]/40 group-hover:border-[#b9965b]/60 flex items-center justify-center text-[#e8a379] group-hover:text-[#ffd6b8] transition-all duration-300 shadow-md shadow-[#9a6a4f]/20 shrink-0">
+                <div className="w-14 h-14 rounded-full bg-[#c2794c]/20 group-hover:bg-[#c2794c]/35 border border-[#c2794c]/50 group-hover:border-[#FFD78A]/70 flex items-center justify-center text-[#FFD78A] group-hover:text-white transition-all duration-300 shadow-md shadow-[#c2794c]/25 shrink-0">
                   <Icon className="w-6 h-6 stroke-[1.9] transition-transform duration-300 group-hover:scale-110" />
                 </div>
 
                 {/* Content */}
                 <div className="relative z-10">
-                  <h3 className="text-base sm:text-lg font-bold font-serif-luxury text-[#FAF7F2] tracking-wide group-hover:text-white transition-colors mb-2">
+                  <h3 className="text-base sm:text-lg font-bold font-serif-luxury text-white tracking-wide group-hover:text-[#FFD78A] transition-colors mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-stone-300 text-xs sm:text-sm font-sans-modern leading-relaxed">
+                  <p className="text-stone-200 text-xs sm:text-sm font-sans-modern leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
 
                 {/* Bottom Edge Accent Glow on Hover */}
-                <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#b9965b]/0 to-transparent group-hover:via-[#b9965b] transition-all duration-500" />
+                <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FFD78A]/0 to-transparent group-hover:via-[#FFD78A] transition-all duration-500" />
               </div>
             );
           })}
         </div>
 
         {/* Bottom Bar: CTA Button + Slogan */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-5 pt-6 border-t border-white/10">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-5 pt-6 border-t border-white/15">
           {/* Rounded Pill Copper Button */}
           <Link
             href="/submit-biodata"
-            className="w-full sm:w-auto relative inline-flex items-center justify-center gap-2.5 bg-[#9a6a4f] hover:bg-[#b17b5d] text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[5px] transition-all duration-300 shadow-lg shadow-[#9a6a4f]/30 hover:shadow-xl hover:shadow-[#9a6a4f]/50 group text-sm sm:text-base tracking-wide overflow-hidden"
+            className="w-full sm:w-auto relative inline-flex items-center justify-center gap-2.5 btn-primary-glow text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[6px] transition-all duration-300 group text-sm sm:text-base tracking-wide overflow-hidden"
           >
             {/* Shimmer effect */}
             <span className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/25 to-transparent transform -skew-x-12 group-hover:left-[100%] transition-all duration-700 ease-in-out pointer-events-none" />
@@ -170,9 +170,9 @@ export const PrivacyMattersSection: React.FC = () => {
           </Link>
 
           {/* Slogan line */}
-          <div className="inline-flex items-center gap-3 text-stone-400">
-            <span className="w-12 h-[2px] bg-gradient-to-r from-[#b9965b] to-[#f59e0b]" />
-            <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-300">
+          <div className="inline-flex items-center gap-3 text-stone-300">
+            <span className="w-12 h-[2px] bg-gradient-to-r from-[#FFD78A] to-[#f59e0b]" />
+            <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-200">
               A More Secure Tomorrow Together
             </span>
           </div>

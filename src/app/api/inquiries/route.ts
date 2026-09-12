@@ -101,3 +101,43 @@ export async function PATCH(request: NextRequest) {
     );
   }
 }
+
+export async function DELETE(request: NextRequest) {
+  try {
+    const admin = await getCurrentAdmin();
+    if (!admin) {
+      return NextResponse.json(
+        { success: false, error: "Unauthorized: Admin session required" },
+        { status: 401 }
+      );
+    }
+
+    const { searchParams } = new URL(request.url);
+    const id = searchParams.get("id");
+    if (!id) {
+      return NextResponse.json(
+        { success: false, error: "Inquiry ID is required" },
+        { status: 400 }
+      );
+    }
+
+    const deleted = await dbService.deleteInquiry(id);
+    if (!deleted) {
+      return NextResponse.json(
+        { success: false, error: "Inquiry not found" },
+        { status: 404 }
+      );
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: "Inquiry deleted successfully",
+    });
+  } catch (error) {
+    console.error("DELETE /api/inquiries error:", error);
+    return NextResponse.json(
+      { success: false, error: "Failed to delete inquiry" },
+      { status: 500 }
+    );
+  }
+}

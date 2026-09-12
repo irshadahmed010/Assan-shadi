@@ -10,7 +10,6 @@ import {
   Eye,
   EyeOff,
   ArrowLeft,
-  KeyRound,
   ShieldCheck,
   HeartHandshake,
 } from "lucide-react";
@@ -47,12 +46,6 @@ export default function AdminLoginPage() {
     } finally {
       setIsLoading(false);
     }
-  };
-
-  const handleFillTestCredentials = () => {
-    setEmail("admin@assanshadi.com");
-    setPassword("Admin@123456");
-    setErrorMessage(null);
   };
 
   return (
@@ -138,7 +131,7 @@ export default function AdminLoginPage() {
                   autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@assanshadi.com"
+                  placeholder="admin@example.com"
                   className="w-full rounded-[5px] border border-[#3d3d3d] bg-[#1E1B18]/90 pl-10 pr-4 py-2.5 sm:py-3 text-sm text-[#FAF7F2] placeholder:text-[#a8a29e]/50 focus:border-[#B9965B] focus:outline-none focus:ring-2 focus:ring-[#B9965B]/20 transition-all"
                 />
               </div>
@@ -194,21 +187,6 @@ export default function AdminLoginPage() {
               Sign In to Admin Portal
             </Button>
           </form>
-
-          {/* Quick Demo Fill Helper */}
-          <div className="pt-4 border-t border-white/10 text-center space-y-2">
-            <button
-              type="button"
-              onClick={handleFillTestCredentials}
-              className="text-xs text-[#B9965B] hover:text-[#d6b987] font-medium cursor-pointer inline-flex items-center gap-1.5 py-1 px-2.5 rounded-lg hover:bg-[#B9965B]/10 transition-colors"
-            >
-              <KeyRound className="w-3.5 h-3.5" />
-              <span>Fill Default Demo Admin Credentials</span>
-            </button>
-            <p className="text-[11px] text-[#a8a29e]">
-              Default: <span className="text-[#FAF7F2]">admin@assanshadi.com</span> / <span className="text-[#FAF7F2]">Admin@123456</span>
-            </p>
-          </div>
         </div>
 
         {/* Security / Confidentiality Footer Note */}

@@ -56,8 +56,8 @@ export const BeginYourJourneySection: React.FC = () => {
           <div className="lg:col-span-8 max-w-3xl">
             {/* Eyebrow */}
             <div className="inline-flex items-center gap-3 mb-3.5">
-              <span className="w-10 h-[2px] bg-[#9a6a4f]" />
-              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#9a6a4f] font-bold font-sans-modern">
+              <span className="w-10 h-[2px] bg-[#8a431c]" />
+              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#8a431c] font-bold font-sans-modern">
                 JOIN OUR COMMUNITY
               </span>
             </div>
@@ -65,13 +65,13 @@ export const BeginYourJourneySection: React.FC = () => {
             {/* Heading */}
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-stone-900 mb-4">
               Begin Your{" "}
-              <span className="text-[#c88a64] font-medium italic font-serif-luxury">
+              <span className="text-[#8a431c] font-serif-luxury font-bold italic">
                 Journey
               </span>
             </h2>
 
             {/* Subtitle */}
-            <p className="text-stone-600 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed max-w-2xl mb-8 sm:mb-10">
+            <p className="text-stone-700 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed max-w-2xl mb-8 sm:mb-10">
               Become a part of a trusted community, where faith, values and meaningful
               connections lead to lifelong happiness.
             </p>
@@ -83,16 +83,16 @@ export const BeginYourJourneySection: React.FC = () => {
                 return (
                   <div key={item.id} className="flex items-start gap-3.5 group">
                     {/* Rounded Circle Icon Container matching mockup */}
-                    <div className="w-12 h-12 rounded-full bg-[#f3ead9] border border-[#e8dfd1] flex items-center justify-center text-[#9a6a4f] group-hover:bg-[#ecd9be] transition-colors shrink-0 shadow-sm">
+                    <div className="w-12 h-12 rounded-full bg-[#faede4] border border-[#ecd5c5] flex items-center justify-center text-[#8a431c] group-hover:bg-[#f7ded0] transition-colors shrink-0 shadow-sm">
                       <Icon className="w-5 h-5 stroke-[1.9]" />
                     </div>
 
                     {/* Text content */}
                     <div>
-                      <h3 className="text-sm sm:text-base font-bold font-serif-luxury text-stone-900 leading-snug">
+                      <h3 className="text-sm sm:text-base font-bold font-serif-luxury text-stone-950 leading-snug">
                         {item.title}
                       </h3>
-                      <p className="text-stone-600 text-xs sm:text-sm font-sans-modern leading-snug mt-1">
+                      <p className="text-stone-700 text-xs sm:text-sm font-sans-modern leading-snug mt-1">
                         {item.desc}
                       </p>
                     </div>
@@ -105,7 +105,7 @@ export const BeginYourJourneySection: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 pt-2">
               <Link
                 href="/submit-biodata"
-                className="relative inline-flex items-center justify-center gap-2.5 bg-[#9a6a4f] hover:bg-[#83563e] text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[5px] transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-[#9a6a4f]/25 group text-sm sm:text-base tracking-wide overflow-hidden"
+                className="relative inline-flex items-center justify-center gap-2.5 btn-primary-glow text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[6px] transition-all duration-300 group text-sm sm:text-base tracking-wide overflow-hidden"
               >
                 {/* Shimmer effect */}
                 <span className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/25 to-transparent transform -skew-x-12 group-hover:left-[100%] transition-all duration-700 ease-in-out pointer-events-none" />
@@ -115,9 +115,9 @@ export const BeginYourJourneySection: React.FC = () => {
               </Link>
 
               {/* Tagline */}
-              <div className="inline-flex items-center gap-3 text-stone-500">
-                <span className="w-10 h-[2px] bg-[#9a6a4f]" />
-                <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-600">
+              <div className="inline-flex items-center gap-3 text-stone-600">
+                <span className="w-10 h-[2px] bg-[#8a431c]" />
+                <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-bold text-stone-700">
                   SAME VALUES. BRIGHTER TOMORROWS.
                 </span>
               </div>
@@ -126,8 +126,8 @@ export const BeginYourJourneySection: React.FC = () => {
 
           {/* Right Column: Poetic Quote Overlay on the couple image */}
           <div className="lg:col-span-4 flex lg:justify-end">
-            <div className="bg-white/75 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none p-4 lg:p-0 rounded-2xl border border-stone-200/60 lg:border-none self-end lg:mr-4">
-              <p className="font-serif-luxury italic text-stone-800 text-lg sm:text-xl lg:text-2xl leading-snug">
+            <div className="bg-white/85 lg:bg-transparent backdrop-blur-sm lg:backdrop-blur-none p-4 lg:p-0 rounded-2xl border border-stone-200/80 lg:border-none self-end lg:mr-4">
+              <p className="font-serif-luxury italic text-stone-900 text-lg sm:text-xl lg:text-2xl leading-snug font-bold">
                 “New
                 <br />
                 Beginnings
@@ -136,7 +136,7 @@ export const BeginYourJourneySection: React.FC = () => {
                 <br />
                 Together”
               </p>
-              <div className="w-12 h-[2px] bg-[#9a6a4f] mt-3" />
+              <div className="w-12 h-[2px] bg-[#8a431c] mt-3" />
             </div>
           </div>
         </div>

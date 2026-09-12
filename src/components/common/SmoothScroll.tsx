@@ -57,6 +57,16 @@ export const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
   );
 
   useEffect(() => {
+    // Disable Lenis completely on /admin routes to allow native, unrestricted dashboard scrolling
+    if (pathname?.startsWith("/admin")) {
+      if (lenisRef.current) {
+        lenisRef.current.destroy();
+        lenisRef.current = null;
+        setGlobalLenis(null);
+      }
+      return;
+    }
+
     // Check if user prefers reduced motion
     const prefersReducedMotion =
       typeof window !== "undefined" &&
@@ -166,6 +176,15 @@ export const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
 
   // On route change, handle scroll to top or scroll to hash
   useEffect(() => {
+    if (pathname?.startsWith("/admin")) {
+      if (lenisRef.current) {
+        lenisRef.current.destroy();
+        lenisRef.current = null;
+        setGlobalLenis(null);
+      }
+      return;
+    }
+
     if (lenisRef.current) {
       if (typeof window !== "undefined" && window.location.hash) {
         const hashId = window.location.hash.replace("#", "");

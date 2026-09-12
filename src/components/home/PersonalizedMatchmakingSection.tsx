@@ -103,23 +103,23 @@ export const PersonalizedMatchmakingSection: React.FC = () => {
           <div className="max-w-2xl">
             {/* Eyebrow */}
             <div className="inline-flex items-center gap-3 mb-3.5">
-              <span className="w-10 h-[2px] bg-gradient-to-r from-[#b9965b] to-[#f59e0b]" />
-              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#b9965b] font-semibold font-sans-modern flex items-center gap-2">
+              <span className="w-10 h-[2px] bg-gradient-to-r from-[#FFD78A] to-[#f59e0b]" />
+              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#FFD78A] font-bold font-sans-modern flex items-center gap-2">
                 <span>CONCIERGE &amp; ADVISORY</span>
-                <Sparkles className="w-3.5 h-3.5 text-[#b9965b]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#FFD78A]" />
               </span>
             </div>
 
             {/* Heading */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-[#FAF7F2] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-white mb-4">
               Personalized Matchmaking —{" "}
-              <span className="text-[#c88a64] font-medium italic font-serif-luxury">
+              <span className="text-[#FFD78A] font-medium italic font-serif-luxury">
                 Expert Guidance
               </span>
             </h2>
 
             {/* Subtitle */}
-            <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed">
+            <p className="text-stone-200 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed">
               For distinguished families, busy professionals, and overseas individuals who
               prefer a discreet, sunnah-aligned, and assisted journey to finding a spouse.
             </p>
@@ -128,27 +128,27 @@ export const PersonalizedMatchmakingSection: React.FC = () => {
           {/* Right Poetic Callouts */}
           <div className="flex items-start gap-8 lg:gap-12 self-start">
             {/* Poetic Quote */}
-            <div className="text-stone-200">
-              <p className="font-serif-luxury italic text-lg sm:text-xl text-[#c88a64] leading-tight">
+            <div className="text-stone-100">
+              <p className="font-serif-luxury italic text-lg sm:text-xl text-[#FFD78A] leading-tight">
                 “Guidance with Wisdom,
                 <br />
                 Matches Built
                 <br />
                 on Faith”
               </p>
-              <div className="w-12 h-[2px] bg-gradient-to-r from-[#b9965b] to-[#f59e0b] mt-3" />
+              <div className="w-12 h-[2px] bg-gradient-to-r from-[#FFD78A] to-[#f59e0b] mt-3" />
             </div>
 
             {/* Slogan */}
-            <div className="hidden xl:block text-stone-400 pl-6 border-l border-white/10">
-              <p className="font-serif-luxury italic text-sm text-stone-300/90 leading-tight">
+            <div className="hidden xl:block text-stone-300 pl-6 border-l border-white/15">
+              <p className="font-serif-luxury italic text-sm text-stone-300 leading-tight">
                 Bespoke
                 <br />
                 Confidential
                 <br />
                 Sunnah-Aligned
               </p>
-              <div className="w-8 h-[1.5px] bg-[#b9965b]/50 mt-2.5" />
+              <div className="w-8 h-[1.5px] bg-[#FFD78A]/60 mt-2.5" />
             </div>
           </div>
         </div>
@@ -163,23 +163,23 @@ export const PersonalizedMatchmakingSection: React.FC = () => {
                 return (
                   <div
                     key={pillar.id}
-                    className="group relative bg-[#242220]/85 hover:bg-[#2b2724] border border-white/10 hover:border-[#b9965b]/60 rounded-2xl p-5 sm:p-6 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#9a6a4f]/20 flex flex-col justify-between backdrop-blur-md overflow-hidden"
+                    className="group relative bg-[#242220]/95 hover:bg-[#2b2724] border border-white/15 hover:border-[#FFD78A]/60 rounded-2xl p-5 sm:p-6 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#c2794c]/20 flex flex-col justify-between backdrop-blur-md overflow-hidden"
                   >
                     {/* Top Icon & Title */}
                     <div>
-                      <div className="w-12 h-12 rounded-full bg-[#9a6a4f]/20 group-hover:bg-[#9a6a4f]/35 border border-[#9a6a4f]/40 group-hover:border-[#b9965b]/60 flex items-center justify-center text-[#e8a379] group-hover:text-[#ffd6b8] transition-all duration-300 mb-4 shadow-sm">
+                      <div className="w-12 h-12 rounded-full bg-[#c2794c]/20 group-hover:bg-[#c2794c]/35 border border-[#c2794c]/50 group-hover:border-[#FFD78A]/60 flex items-center justify-center text-[#FFD78A] group-hover:text-white transition-all duration-300 mb-4 shadow-sm">
                         <Icon className="w-5 h-5 stroke-[1.9] transition-transform duration-300 group-hover:scale-110" />
                       </div>
-                      <h3 className="text-base font-bold font-serif-luxury text-[#FAF7F2] tracking-wide group-hover:text-white transition-colors mb-2">
+                      <h3 className="text-base font-bold font-serif-luxury text-white tracking-wide group-hover:text-[#FFD78A] transition-colors mb-2">
                         {pillar.title}
                       </h3>
-                      <p className="text-stone-300 text-xs sm:text-sm font-sans-modern leading-relaxed">
+                      <p className="text-stone-200 text-xs sm:text-sm font-sans-modern leading-relaxed">
                         {pillar.desc}
                       </p>
                     </div>
 
                     {/* Bottom Accent Glow Line */}
-                    <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-[#b9965b]/0 to-transparent group-hover:via-[#b9965b] transition-all duration-500 mt-4" />
+                    <div className="w-full h-[2px] bg-gradient-to-r from-transparent via-[#FFD78A]/0 to-transparent group-hover:via-[#FFD78A] transition-all duration-500 mt-4" />
                   </div>
                 );
               })}
@@ -187,22 +187,30 @@ export const PersonalizedMatchmakingSection: React.FC = () => {
 
             {/* Action Bar: Book Consultation & WhatsApp Hotline */}
             <div className="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-              <button
-                type="button"
-                onClick={() => setIsModalOpen(true)}
-                className="relative inline-flex items-center justify-center gap-2.5 bg-[#9a6a4f] hover:bg-[#b17b5d] text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[5px] transition-all duration-300 shadow-lg shadow-[#9a6a4f]/30 hover:shadow-xl hover:shadow-[#9a6a4f]/50 group text-sm sm:text-base tracking-wide overflow-hidden"
+              <a
+                href="#quick-profile"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const target = document.getElementById("quick-profile") || document.getElementById("register");
+                  if (target) {
+                    target.scrollIntoView({ behavior: "smooth" });
+                  } else {
+                    window.location.href = "/#quick-profile";
+                  }
+                }}
+                className="relative inline-flex items-center justify-center gap-2.5 btn-primary-glow text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[6px] transition-all duration-300 group text-sm sm:text-base tracking-wide overflow-hidden cursor-pointer"
               >
                 {/* Shimmer effect */}
                 <span className="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/25 to-transparent transform -skew-x-12 group-hover:left-[100%] transition-all duration-700 ease-in-out pointer-events-none" />
                 <span className="relative z-10">Request Private Consultation</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5 relative z-10" />
-              </button>
+              </a>
 
               <a
-                href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20am%20inquiring%20about%20Personalized%20Matchmaking%20Consultancy."
+                href="https://wa.me/919620078691?text=Assalam-o-Alaikum,%20I%20am%20inquiring%20about%20Personalized%20Matchmaking%20Consultancy."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[5px] border border-white/20 hover:border-[#b9965b]/70 bg-white/5 hover:bg-white/10 text-stone-200 hover:text-white font-sans-modern text-sm sm:text-base font-medium transition-all duration-300"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[6px] border border-white/25 hover:border-[#FFD78A]/70 bg-white/10 hover:bg-white/15 text-stone-100 hover:text-white font-sans-modern text-sm sm:text-base font-semibold transition-all duration-300 shadow-sm"
               >
                 <MessageCircle className="w-4 h-4 text-[#25D366]" />
                 <span>WhatsApp Advisor Hotline</span>
@@ -264,12 +272,12 @@ export const PersonalizedMatchmakingSection: React.FC = () => {
         </div>
 
         {/* 3 Steps: The Guided Journey */}
-        <div className="pt-10 border-t border-white/10">
+        <div className="pt-10 border-t border-white/15">
           <div className="text-center max-w-xl mx-auto mb-8">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#b9965b] font-sans-modern">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#FFD78A] font-sans-modern">
               HOW CONCIERGE WORKS
             </span>
-            <h3 className="text-xl sm:text-2xl font-bold font-serif-luxury text-[#FAF7F2] mt-1">
+            <h3 className="text-xl sm:text-2xl font-bold font-serif-luxury text-white mt-1">
               Your 3-Step Journey to Nikah
             </h3>
           </div>
@@ -278,20 +286,20 @@ export const PersonalizedMatchmakingSection: React.FC = () => {
             {steps.map((s, idx) => (
               <div
                 key={s.step}
-                className="relative bg-[#242220]/60 border border-white/10 rounded-2xl p-6 transition-all duration-300 hover:border-[#b9965b]/50 hover:bg-[#242220]"
+                className="relative bg-[#242220]/90 border border-white/15 rounded-2xl p-6 transition-all duration-300 hover:border-[#FFD78A]/60 hover:bg-[#282622]"
               >
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-2xl font-bold font-serif-luxury text-[#c88a64]/80">
+                  <span className="text-2xl font-bold font-serif-luxury text-[#FFD78A]">
                     {s.step}
                   </span>
-                  <span className="text-[11px] uppercase tracking-widest text-[#b9965b] font-mono">
+                  <span className="text-[11px] uppercase tracking-widest text-[#FFD78A] font-bold font-mono">
                     Phase {idx + 1}
                   </span>
                 </div>
                 <h4 className="text-base font-bold font-serif-luxury text-white mb-2">
                   {s.title}
                 </h4>
-                <p className="text-stone-300 text-xs sm:text-sm font-sans-modern leading-relaxed">
+                <p className="text-stone-200 text-xs sm:text-sm font-sans-modern leading-relaxed">
                   {s.desc}
                 </p>
               </div>

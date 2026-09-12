@@ -62,14 +62,14 @@ export const Navbar: React.FC = () => {
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-full h-full drop-shadow-sm"
+                  className="w-full h-full drop-shadow-[0_2px_8px_rgba(229,195,132,0.35)]"
                 >
                   <defs>
                     <linearGradient id="goldKnotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#816235" />
-                      <stop offset="35%" stopColor="#B9965B" />
-                      <stop offset="65%" stopColor="#D8BE8D" />
-                      <stop offset="100%" stopColor="#9D7B47" />
+                      <stop offset="0%" stopColor="#C59B48" />
+                      <stop offset="35%" stopColor="#FFD78A" />
+                      <stop offset="70%" stopColor="#E5C384" />
+                      <stop offset="100%" stopColor="#FFFDF9" />
                     </linearGradient>
                   </defs>
                   
@@ -111,11 +111,11 @@ export const Navbar: React.FC = () => {
               </div>
 
               <div className="flex flex-col">
-                <span className="text-xl sm:text-2xl font-bold font-serif-luxury tracking-tight text-[#9a6a4f] group-hover:text-[#b17b5d] transition-colors leading-none">
+                <span className="text-xl sm:text-2xl font-bold font-serif-luxury tracking-tight text-[#FAF7F2] group-hover:text-[#FFD78A] transition-colors leading-none">
                   Assan Shadi
                 </span>
-                <span className="text-[9px] sm:text-[10px] font-medium tracking-wider text-[#756D65] mt-1">
-                  Trusted. Personal. For Life.
+                <span className="text-[9.5px] sm:text-[10.5px] font-semibold tracking-[0.2em] uppercase text-[#E5C384] mt-1 font-sans-modern">
+                  Trusted • Personal • For Life
                 </span>
               </div>
             </Link>
@@ -129,16 +129,16 @@ export const Navbar: React.FC = () => {
                     key={link.href}
                     href={link.href}
                     className={cn(
-                      "relative py-1 text-[14px] font-medium transition-colors duration-200",
+                      "relative py-1 text-[14.5px] font-medium transition-colors duration-200",
                       isActive
-                        ? "text-[#B9965B] font-semibold"
-                        : "text-[#FAF7F2] hover:text-[#B9965B]"
+                        ? "text-[#FFD78A] font-semibold"
+                        : "text-stone-200 hover:text-[#FFD78A]"
                     )}
                   >
                     {link.label}
                     {/* Active Bottom Red Underline matching reference */}
                     {isActive && (
-                      <span className="absolute bottom-[-4px] left-0 right-0 h-[2px] bg-[#B9965B] rounded-full animate-in fade-in" />
+                      <span className="absolute bottom-[-4px] left-0 right-0 h-[2px] bg-[#FFD78A] rounded-full animate-in fade-in" />
                     )}
                   </Link>
                 );
@@ -147,10 +147,10 @@ export const Navbar: React.FC = () => {
 
             {/* Desktop Right Side CTA */}
             <div className="hidden md:flex items-center gap-3 sm:gap-4 font-sans-modern">
-              {/* Warm Brown Pill CTA Button with Arrow */}
+              {/* Warm Terracotta-Bronze Pill CTA Button with Arrow */}
               <Link
                 href="/submit-biodata"
-                className="inline-flex items-center gap-2 bg-[#9a6a4f] hover:bg-[#b17b5d] text-white text-[13.5px] font-medium px-5 py-2.5 rounded-[5px] shadow-sm transition-all duration-200 hover:shadow hover:scale-[1.02] active:scale-[0.98]"
+                className="inline-flex items-center gap-2 btn-primary-glow text-white text-[13.5px] font-semibold px-5 py-2.5 rounded-[6px] transition-all duration-200"
               >
                 <span>Create Your Profile</span>
                 <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
@@ -162,17 +162,17 @@ export const Navbar: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2 rounded-full text-[#FAF7F2] hover:bg-white/5 transition-colors"
+                className="p-2 rounded-full text-[#FAF7F2] hover:bg-white/10 transition-colors"
                 aria-label="Toggle Navigation Menu"
               >
-                {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+                {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5 text-[#FAF7F2]" />}
               </button>
             </div>
           </div>
 
         {/* Mobile Dropdown Drawer */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-2 rounded-2xl bg-[#1e1e1e]/95 backdrop-blur-xl border border-white/10 p-4 shadow-2xl animate-in slide-in-from-top-2 duration-200 font-sans-modern">
+          <div className="md:hidden mt-2 rounded-2xl bg-[#1e1e1e]/98 backdrop-blur-xl border border-white/15 p-4 shadow-2xl animate-in slide-in-from-top-2 duration-200 font-sans-modern">
             <div className="space-y-1">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
@@ -184,22 +184,22 @@ export const Navbar: React.FC = () => {
                     className={cn(
                       "flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-medium transition-colors",
                       isActive
-                        ? "bg-white/10 text-[#B9965B] font-semibold"
-                        : "text-[#FAF7F2] hover:bg-white/5 hover:text-[#B9965B]"
+                        ? "bg-white/15 text-[#FFD78A] font-bold"
+                        : "text-stone-200 hover:bg-white/10 hover:text-[#FFD78A]"
                     )}
                   >
                     <span>{link.label}</span>
-                    {isActive && <div className="w-1.5 h-1.5 rounded-full bg-[#B9965B]" />}
+                    {isActive && <div className="w-1.5 h-1.5 rounded-full bg-[#FFD78A]" />}
                   </Link>
                 );
               })}
             </div>
 
-            <div className="pt-3 mt-3 border-t border-white/10 flex flex-col gap-2">
+            <div className="pt-3 mt-3 border-t border-white/15 flex flex-col gap-2">
               <Link
                 href="/submit-biodata"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 bg-[#9a6a4f] text-white text-sm font-medium py-2.5 rounded-[5px] shadow-sm"
+                className="flex items-center justify-center gap-2 btn-primary-glow text-white text-sm font-semibold py-2.5 rounded-[6px]"
               >
                 <span>Create Your Profile</span>
                 <ArrowRight className="w-4 h-4" />
@@ -207,10 +207,10 @@ export const Navbar: React.FC = () => {
               <a
                 href="tel:+919620078691"
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2.5 bg-[#252525] hover:bg-[#2e2e2e] text-[#FAF7F2] hover:text-[#e8c078] border border-white/10 hover:border-[#b9965b]/50 py-2.5 px-4 rounded-[5px] text-sm font-medium transition-all shadow-sm group"
+                className="flex items-center justify-center gap-2.5 bg-[#2a2a2a] hover:bg-[#333333] text-[#FAF7F2] hover:text-[#FFD78A] border border-white/15 py-2.5 px-4 rounded-[6px] text-sm font-medium transition-all shadow-sm group"
               >
-                <div className="w-6 h-6 rounded-full bg-[#b9965b]/20 flex items-center justify-center text-[#e8c078] group-hover:scale-110 transition-transform">
-                  <Phone className="w-3.5 h-3.5 text-[#e8c078]" />
+                <div className="w-6 h-6 rounded-full bg-[#E5C384]/20 flex items-center justify-center text-[#FFD78A] group-hover:scale-110 transition-transform">
+                  <Phone className="w-3.5 h-3.5 text-[#FFD78A]" />
                 </div>
                 <span className="font-semibold tracking-wide">Call: +91 96200 78691</span>
               </a>

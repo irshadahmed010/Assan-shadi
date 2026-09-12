@@ -110,21 +110,21 @@ export const HappyMarriagesSection: React.FC = () => {
           {/* Left: Eyebrow + Main Title + Subtitle */}
           <div className="max-w-2xl">
             {/* Modern Eyebrow Tag */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-[5px] bg-[#9a6a4f]/20 border border-[#9a6a4f]/40 text-[#e8a379] text-xs font-semibold uppercase tracking-widest font-sans-modern mb-3.5">
-              <Heart className="w-3.5 h-3.5 text-[#b9965b] fill-[#b9965b]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-[6px] bg-[#c2794c]/20 border border-[#c2794c]/50 text-[#FFD78A] text-xs font-bold uppercase tracking-widest font-sans-modern mb-3.5">
+              <Heart className="w-3.5 h-3.5 text-[#FFD78A] fill-[#FFD78A]" />
               <span>REAL STORIES</span>
             </div>
 
             {/* Heading */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-[#FAF7F2]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-white">
               Happy{" "}
-              <span className="text-[#c88a64] font-medium italic font-serif-luxury">
+              <span className="text-[#FFD78A] font-medium italic font-serif-luxury">
                 Marriages
               </span>
             </h2>
 
             {/* Subtitle */}
-            <p className="text-stone-300 text-xs sm:text-sm lg:text-base font-sans-modern leading-relaxed mt-2 max-w-xl">
+            <p className="text-stone-200 text-xs sm:text-sm lg:text-base font-sans-modern leading-relaxed mt-2 max-w-xl">
               Alhamdulillah, countless families have found their righteous companions through
               Asaan Shaadi. Read the authentic experiences of our blessed couples.
             </p>
@@ -133,7 +133,7 @@ export const HappyMarriagesSection: React.FC = () => {
           {/* Right: Poetic Callout & Controls */}
           <div className="flex items-center justify-between sm:justify-end gap-6 pt-2">
             <div className="hidden sm:block text-right pr-2">
-              <p className="font-serif-luxury italic text-[#b9965b] text-sm leading-snug">
+              <p className="font-serif-luxury italic text-[#FFD78A] text-sm leading-snug">
                 “When intentions are sincere,
                 <br />
                 Allah unites the hearts.”
@@ -146,15 +146,15 @@ export const HappyMarriagesSection: React.FC = () => {
                 type="button"
                 onClick={() => handleManualScroll("left")}
                 aria-label="Previous stories"
-                className="w-10 h-10 rounded-[5px] border border-[#9a6a4f]/40 hover:border-[#b9965b] bg-[#25221f] hover:bg-[#302a24] text-[#FAF7F2] flex items-center justify-center transition-all duration-200 shadow-md active:scale-95"
+                className="w-10 h-10 rounded-[6px] border border-white/20 hover:border-[#FFD78A] bg-[#25221f] hover:bg-[#302a24] text-[#FFD78A] flex items-center justify-center transition-all duration-200 shadow-md active:scale-95"
               >
-                <ChevronLeft className="w-5 h-5 text-[#b9965b]" />
+                <ChevronLeft className="w-5 h-5 text-[#FFD78A]" />
               </button>
               <button
                 type="button"
                 onClick={() => handleManualScroll("right")}
                 aria-label="Next stories"
-                className="w-10 h-10 rounded-[5px] bg-[#9a6a4f] hover:bg-[#b17b5d] text-white flex items-center justify-center transition-all duration-200 shadow-md active:scale-95"
+                className="w-10 h-10 rounded-[6px] btn-primary-glow text-white flex items-center justify-center transition-all duration-200 shadow-md active:scale-95"
               >
                 <ChevronRight className="w-5 h-5 text-white" />
               </button>
@@ -192,17 +192,17 @@ export const HappyMarriagesSection: React.FC = () => {
             {infiniteStories.map((story, idx) => (
               <div
                 key={`${story.id}-${idx}`}
-                className="relative rounded-[5px] bg-[#221f1c]/95 border border-[#4a3b30] hover:border-[#b9965b] p-5 sm:p-6 w-[290px] sm:w-[350px] md:w-[390px] lg:w-[410px] shrink-0 transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgba(185,150,91,0.22)] backdrop-blur-md group flex flex-col justify-between"
+                className="relative rounded-[6px] bg-[#221f1c]/95 border border-white/15 hover:border-[#FFD78A]/70 p-5 sm:p-6 w-[290px] sm:w-[350px] md:w-[390px] lg:w-[410px] shrink-0 transition-all duration-300 shadow-lg hover:shadow-[0_8px_30px_rgba(229,195,132,0.22)] backdrop-blur-md group flex flex-col justify-between"
               >
-                {/* Permanent Top Accent Line (Stays fully visible on hover, rounded-t-[5px]) */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#b9965b]/50 to-transparent group-hover:via-[#b9965b] transition-all duration-300 rounded-t-[5px]" />
+                {/* Permanent Top Accent Line */}
+                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FFD78A]/50 to-transparent group-hover:via-[#FFD78A] transition-all duration-300 rounded-t-[6px]" />
 
                 {/* Card Top: Avatar, Names & Rating */}
                 <div>
                   <div className="flex items-center justify-between gap-3 mb-4">
-                    {/* Couple Avatar with sharp rounded-[5px] */}
+                    {/* Couple Avatar with sharp rounded-[6px] */}
                     <div className="flex items-center gap-3.5 min-w-0">
-                      <div className="relative w-13 h-13 sm:w-14 sm:h-14 rounded-[5px] overflow-hidden shrink-0 border border-[#b9965b]/50 shadow-md">
+                      <div className="relative w-13 h-13 sm:w-14 sm:h-14 rounded-[6px] overflow-hidden shrink-0 border border-[#E5C384]/50 shadow-md">
                         <Image
                           src={story.image}
                           alt={story.alt}
@@ -213,21 +213,21 @@ export const HappyMarriagesSection: React.FC = () => {
                       </div>
 
                       <div className="min-w-0">
-                        <h3 className="font-serif-luxury font-bold text-[#FAF7F2] group-hover:text-[#E5D2B0] text-sm sm:text-base tracking-tight truncate transition-colors">
+                        <h3 className="font-serif-luxury font-bold text-white group-hover:text-[#FFD78A] text-sm sm:text-base tracking-tight truncate transition-colors">
                           {story.author}
                         </h3>
-                        <p className="text-[11px] sm:text-xs text-[#b9965b]/90 font-sans-modern truncate">
+                        <p className="text-[11px] sm:text-xs text-[#FFD78A] font-semibold font-sans-modern truncate">
                           {story.location}
                         </p>
                       </div>
                     </div>
 
                     {/* 5 Stars */}
-                    <div className="flex items-center gap-0.5 text-[#b9965b] shrink-0">
+                    <div className="flex items-center gap-0.5 text-[#FFD78A] shrink-0">
                       {[...Array(story.rating)].map((_, starIdx) => (
                         <Star
                           key={starIdx}
-                          className="w-3.5 h-3.5 fill-[#b9965b] text-[#b9965b]"
+                          className="w-3.5 h-3.5 fill-[#FFD78A] text-[#FFD78A]"
                         />
                       ))}
                     </div>
@@ -235,21 +235,21 @@ export const HappyMarriagesSection: React.FC = () => {
 
                   {/* Testimonial Quote */}
                   <div className="relative pt-1">
-                    <Quote className="w-5 h-5 text-[#b9965b]/25 absolute -top-1 -left-1 pointer-events-none" />
-                    <p className="text-stone-300 text-xs sm:text-sm font-sans-modern leading-relaxed italic pl-3 relative z-10">
+                    <Quote className="w-5 h-5 text-[#FFD78A]/35 absolute -top-1 -left-1 pointer-events-none" />
+                    <p className="text-stone-200 text-xs sm:text-sm font-sans-modern leading-relaxed italic pl-3 relative z-10">
                       {story.quote}
                     </p>
                   </div>
                 </div>
 
                 {/* Card Footer: Verified Badge */}
-                <div className="pt-4 mt-4 border-t border-[#3d332a]/70 flex items-center justify-between text-xs">
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[5px] bg-[#9a6a4f]/20 border border-[#9a6a4f]/40 text-[#e8a379] text-[11px] font-medium font-sans-modern">
-                    <CheckCircle2 className="w-3 h-3 text-[#b9965b]" />
+                <div className="pt-4 mt-4 border-t border-white/10 flex items-center justify-between text-xs">
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-[5px] bg-[#c2794c]/20 border border-[#c2794c]/50 text-[#FFD78A] text-[11px] font-bold font-sans-modern">
+                    <CheckCircle2 className="w-3 h-3 text-[#FFD78A]" />
                     <span>{story.badge}</span>
                   </span>
 
-                  <span className="text-[11px] text-stone-400 font-sans-modern">
+                  <span className="text-[11px] text-stone-300 font-sans-modern">
                     Verified Match
                   </span>
                 </div>

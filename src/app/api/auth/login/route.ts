@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { adminLoginSchema } from "@/lib/validations";
-import { createSessionToken, verifyPassword, AUTH_COOKIE_NAME, DEFAULT_ADMIN, DEFAULT_ADMIN_PASSWORD_HASH } from "@/lib/auth";
-import { supabase, isSupabaseConfigured } from "@/lib/supabase";
+import { createSessionToken, verifyPassword, AUTH_COOKIE_NAME } from "@/lib/auth";
+import { supabase, supabaseAdmin, isSupabaseConfigured } from "@/lib/supabase";
+
+
 
 export async function POST(request: NextRequest) {
   try {
@@ -22,8 +24,9 @@ export async function POST(request: NextRequest) {
 
     let adminUser = null;
 
-    if (isSupabaseConfigured && supabase) {
-      const { data, error } = await supabase
+    const client = supabaseAdmin || supabase;
+    if (isSupabaseConfigured && client) {
+      const { data, error } = await client
         .from("admin_users")
         .select("*")
         .eq("email", cleanEmail)
@@ -39,16 +42,6 @@ export async function POST(request: NextRequest) {
             role: data.role,
           };
         }
-      }
-    }
-
-    // Default master admin fallback
-    if (!adminUser && cleanEmail === DEFAULT_ADMIN.email.toLowerCase()) {
-      const isDefaultMatch =
-        cleanPassword === "Admin@123456" ||
-        (await verifyPassword(cleanPassword, DEFAULT_ADMIN_PASSWORD_HASH));
-      if (isDefaultMatch) {
-        adminUser = DEFAULT_ADMIN;
       }
     }
 

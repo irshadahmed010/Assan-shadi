@@ -448,23 +448,23 @@ export const HeroSection: React.FC = () => {
             <div className="lg:col-span-7 xl:col-span-7 z-10 pt-2 sm:pt-4 lg:pt-0">
               {/* Eyebrow Text */}
               <div id="hero-eyebrow" className="flex items-center gap-3 mb-5 sm:mb-6">
-                <span className="text-[11px] sm:text-xs font-semibold tracking-[0.24em] text-[#B9965B] uppercase font-sans-modern">
+                <span className="text-[11px] sm:text-xs font-bold tracking-[0.24em] text-[#FFD78A] uppercase font-sans-modern">
                   More Than A Match
                 </span>
-                <span className="w-12 sm:w-16 h-[1.5px] bg-[#B9965B]/60 rounded-full" />
+                <span className="w-12 sm:w-16 h-[2px] bg-[#FFD78A] rounded-full" />
               </div>
 
               {/* Main Headline */}
-              <h1 className="font-serif-luxury tracking-tight leading-[1.08] sm:leading-[1.04] text-[#FAF7F2] text-4xl sm:text-5xl lg:text-[68px] xl:text-[76px] mb-6">
+              <h1 className="font-serif-luxury tracking-tight leading-[1.08] sm:leading-[1.04] text-white text-4xl sm:text-5xl lg:text-[68px] xl:text-[76px] mb-6">
                 <span
                   id="hero-title-line-1"
-                  className="block font-normal font-serif-luxury text-[#FAF7F2]"
+                  className="block font-normal font-serif-luxury text-white"
                 >
                   A Partnership
                 </span>
                 <span
                   id="hero-title-line-2"
-                  className="block font-serif-luxury italic font-normal text-[#B9965B]"
+                  className="block font-serif-luxury italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#FFD78A] via-[#E5C384] to-[#FFF0D4]"
                 >
                   For Life
                 </span>
@@ -473,7 +473,7 @@ export const HeroSection: React.FC = () => {
               {/* Description */}
               <p
                 id="hero-desc"
-                className="text-base sm:text-lg text-[#FAF7F2]/80 max-w-xl leading-relaxed mb-8 sm:mb-10 font-sans-modern font-normal"
+                className="text-base sm:text-lg text-stone-200 max-w-xl leading-relaxed mb-8 sm:mb-10 font-sans-modern font-normal"
               >
                 Where intentional commitment meets deep companionship. Verified profiles, family involvement, and a sunnah-centric approach designed to make honorable matrimony simple and beautiful.
               </p>
@@ -482,7 +482,7 @@ export const HeroSection: React.FC = () => {
               <div id="hero-cta" className="flex flex-wrap items-center gap-4 mb-6 sm:mb-8">
                 <Link
                   href="/submit-biodata"
-                  className="inline-flex items-center gap-2.5 bg-[#9a6a4f] hover:bg-[#b17b5d] text-white text-sm sm:text-[15px] font-medium px-7 sm:px-8 py-3.5 sm:py-4 rounded-[5px] shadow-[0_4px_20px_rgba(154,106,79,0.35)] hover:shadow-[0_8px_28px_rgba(154,106,79,0.5)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] group"
+                  className="inline-flex items-center gap-2.5 btn-primary-glow text-white text-sm sm:text-[15px] font-semibold px-7 sm:px-8 py-3.5 sm:py-4 rounded-[6px] group"
                 >
                   <span>Start Your Journey</span>
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -492,56 +492,56 @@ export const HeroSection: React.FC = () => {
               {/* Statistics Row */}
               <div
                 id="hero-stats"
-                className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 border-t border-white/10"
+                className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 border-t border-white/15"
               >
                 {/* 1. Complete Privacy Protected */}
                 <div className="stat-item flex flex-col items-start">
-                  <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#B9965B] mb-2.5">
+                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-[#FFD78A] mb-2.5 shadow-sm">
                     <Lock className="w-4 h-4" />
                   </div>
-                  <div className="text-sm sm:text-base font-bold font-serif-luxury text-[#FAF7F2] leading-snug mb-0.5">
+                  <div className="text-sm sm:text-base font-bold font-serif-luxury text-white leading-snug mb-0.5">
                     Complete Privacy
                   </div>
-                  <div className="text-xs text-stone-400 font-sans-modern font-normal">
+                  <div className="text-xs text-stone-300 font-sans-modern font-medium">
                     Protected
                   </div>
                 </div>
 
                 {/* 2. Trusted & Genuine Profiles */}
                 <div className="stat-item flex flex-col items-start">
-                  <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#B9965B] mb-2.5">
+                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-[#FFD78A] mb-2.5 shadow-sm">
                     <UserCheck className="w-4 h-4" />
                   </div>
-                  <div className="text-sm sm:text-base font-bold font-serif-luxury text-[#FAF7F2] leading-snug mb-0.5">
+                  <div className="text-sm sm:text-base font-bold font-serif-luxury text-white leading-snug mb-0.5">
                     Trusted &amp; Genuine
                   </div>
-                  <div className="text-xs text-stone-400 font-sans-modern font-normal">
+                  <div className="text-xs text-stone-300 font-sans-modern font-medium">
                     Profiles
                   </div>
                 </div>
 
                 {/* 3. Safe & Trusted Platform */}
                 <div className="stat-item flex flex-col items-start">
-                  <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#B9965B] mb-2.5">
+                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-[#FFD78A] mb-2.5 shadow-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
-                  <div className="text-sm sm:text-base font-bold font-serif-luxury text-[#FAF7F2] leading-snug mb-0.5">
+                  <div className="text-sm sm:text-base font-bold font-serif-luxury text-white leading-snug mb-0.5">
                     Safe &amp; Trusted
                   </div>
-                  <div className="text-xs text-stone-400 font-sans-modern font-normal">
+                  <div className="text-xs text-stone-300 font-sans-modern font-medium">
                     Platform
                   </div>
                 </div>
 
                 {/* 4. 24/7 Dedicated Support */}
                 <div className="stat-item flex flex-col items-start">
-                  <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-[#B9965B] mb-2.5">
+                  <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-[#FFD78A] mb-2.5 shadow-sm">
                     <Headset className="w-4 h-4" />
                   </div>
-                  <div className="text-sm sm:text-base font-bold font-serif-luxury text-[#FAF7F2] leading-snug mb-0.5">
+                  <div className="text-sm sm:text-base font-bold font-serif-luxury text-white leading-snug mb-0.5">
                     24/7 Dedicated
                   </div>
-                  <div className="text-xs text-stone-400 font-sans-modern font-normal">
+                  <div className="text-xs text-stone-300 font-sans-modern font-medium">
                     Support
                   </div>
                 </div>
@@ -576,18 +576,18 @@ export const HeroSection: React.FC = () => {
               {/* 'Better Together' Handwritten Script (Top Right) */}
               <div
                 ref={betterTogetherRef}
-                className="absolute top-3 sm:top-2 right-5 sm:-right-6 z-20 pointer-events-none select-none text-right p-3 rounded-[5px] bg-white"
+                className="absolute top-3 sm:top-2 right-5 sm:-right-6 z-20 pointer-events-none select-none text-right p-3 rounded-[6px] bg-white shadow-xl"
                 style={{ transform: "rotate(-10deg)" }}
               >
-                <div className="font-script text-[#9a6a4f] text-2xl sm:text-4xl lg:text-[35px] leading-[0.88] drop-shadow-xs">
+                <div className="font-script text-[#a85b30] text-2xl sm:text-4xl lg:text-[35px] leading-[0.88] drop-shadow-xs font-bold">
                   Better<br />
                   <span className="pl-4">Together</span>
                 </div>
                 {/* Ornamental Gold Divider Dash */}
                 <div className="flex items-center justify-end gap-1.5 mt-2 mr-2">
-                  <span className="w-5 h-[1.5px] bg-[#B9965B]" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#B9965B]" />
-                  <span className="w-5 h-[1.5px] bg-[#B9965B]" />
+                  <span className="w-5 h-[2px] bg-[#FFD78A]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FFD78A]" />
+                  <span className="w-5 h-[2px] bg-[#FFD78A]" />
                 </div>
               </div>
 
@@ -604,18 +604,18 @@ export const HeroSection: React.FC = () => {
                   }
                 }}
                 aria-label="Watch Our Story Video"
-                className="absolute bottom-4 sm:bottom-8 right-2 sm:right-6 z-20 cursor-pointer group bg-[#1e1e1e]/90 hover:bg-[#282828] backdrop-blur-md border border-white/15 rounded-[5px] p-2.5 sm:p-3 pr-5 sm:pr-6 shadow-[0_12px_32px_-6px_rgba(0,0,0,0.5)] hover:shadow-[0_18px_40px_-8px_rgba(154,106,79,0.3)] transition-all duration-300 flex items-center gap-3.5 select-none"
+                className="absolute bottom-4 sm:bottom-8 right-2 sm:right-6 z-20 cursor-pointer group bg-[#1e1e1e]/95 hover:bg-[#282828] backdrop-blur-md border border-white/25 hover:border-[#FFD78A]/60 rounded-[6px] p-2.5 sm:p-3 pr-5 sm:pr-6 shadow-[0_12px_32px_-6px_rgba(0,0,0,0.5)] hover:shadow-[0_18px_40px_-8px_rgba(194,121,76,0.4)] transition-all duration-300 flex items-center gap-3.5 select-none"
               >
                 {/* Play Button Icon */}
-                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white/10 shadow-sm flex items-center justify-center flex-shrink-0 text-[#B9965B] group-hover:scale-105 transition-transform duration-300 border border-white/15">
-                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-[#B9965B] text-[#B9965B] translate-x-0.5" />
+                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#FFD78A]/15 shadow-sm flex items-center justify-center flex-shrink-0 text-[#FFD78A] group-hover:scale-105 transition-transform duration-300 border border-white/20">
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-[#FFD78A] text-[#FFD78A] translate-x-0.5" />
                 </div>
                 {/* Text Labels */}
                 <div className="flex flex-col text-left">
-                  <span className="text-xs sm:text-[13.5px] font-semibold text-[#FAF7F2] tracking-tight group-hover:text-[#B9965B] transition-colors">
+                  <span className="text-xs sm:text-[13.5px] font-bold text-white tracking-tight group-hover:text-[#FFD78A] transition-colors">
                     Our Story
                   </span>
-                  <span className="text-[10.5px] sm:text-[11px] font-medium text-stone-400 font-sans-modern">
+                  <span className="text-[10.5px] sm:text-[11px] font-medium text-stone-300 font-sans-modern">
                     Watch Video
                   </span>
                 </div>

@@ -14,16 +14,16 @@
        PREMIUM BRAND COLORS
        ========================= */
 
-    /* Warm Brown */
-    --brand-primary: #9a6a4f;
-    --brand-primary-hover: #b17b5d;
-    --brand-primary-light: #f5ede6;
-    --brand-primary-dark: #493831;
+    /* Warm Terracotta-Bronze (High Contrast & Radiant) */
+    --brand-primary: #c2794c;
+    --brand-primary-hover: #d4895c;
+    --brand-primary-light: #faede4;
+    --brand-primary-dark: #6e3d23;
 
-    /* Champagne Gold */
-    --brand-gold: #b9965b;
-    --brand-gold-hover: #9d7b47;
-    --brand-gold-light: #f3ead9;
+    /* Radiant Champagne Gold */
+    --brand-gold: #e5c384;
+    --brand-gold-hover: #f3d99e;
+    --brand-gold-light: #faf3e6;
 
     /* Main Background / Charcoal Dark */
     --brand-dark: #252525;
@@ -33,14 +33,14 @@
     --brand-ivory: #faf7f2;
 
     /* Cards */
-    --brand-card: #2e2e2e;
+    --brand-card: #2b2927;
 
     /* Borders */
-    --brand-border: #3d3d3d;
+    --brand-border: rgba(255, 255, 255, 0.16);
 
     /* Typography */
     --brand-text: #faf7f2;
-    --brand-muted: #a8a29e;
+    --brand-muted: #d6d3d1;
   }
 
   body {
@@ -62,6 +62,11 @@
   textarea,
   label,
   nav,
+  code,
+  kbd,
+  samp,
+  pre,
+  .font-mono,
   .font-sans-modern {
     font-family: var(--font-plus-jakarta), Arial, sans-serif;
   }
@@ -72,24 +77,24 @@
    ================================= */
 
 .glass-card {
-  background: rgba(46, 46, 46, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(46, 46, 46, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .glass-card-dark {
-  background: rgba(30, 30, 30, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(185, 150, 91, 0.25);
+  background: rgba(30, 30, 30, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(229, 195, 132, 0.35);
 }
 
 .glass-nav {
-  background: rgba(37, 37, 37, 0.92);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(37, 37, 37, 0.95);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 /* =================================
@@ -97,7 +102,7 @@
    ================================= */
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, #816235 0%, #b9965b 50%, #d6b987 100%);
+  background: linear-gradient(135deg, #ffd78a 0%, #e5c384 50%, #f5ebd7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -105,10 +110,28 @@
 
 .burgundy-gradient-text,
 .brand-gradient-text {
-  background: linear-gradient(135deg, #493831 0%, #9a6a4f 50%, #b17b5d 100%);
+  background: linear-gradient(135deg, #f0aa82 0%, #c2794c 50%, #e89569 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.btn-primary-glow {
+  background: linear-gradient(135deg, #c2794c 0%, #a86036 100%);
+  box-shadow: 0 4px 20px rgba(194, 121, 76, 0.38);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary-glow:hover {
+  background: linear-gradient(135deg, #d4895c 0%, #be6f42 100%);
+  box-shadow: 0 8px 28px rgba(194, 121, 76, 0.55);
+  transform: translateY(-2px) scale(1.01);
+}
+
+.btn-gold-glow {
+  background: linear-gradient(135deg, #ffd78a 0%, #e5c384 50%, #c59b48 100%);
+  color: #171615;
+  box-shadow: 0 4px 20px rgba(229, 195, 132, 0.4);
 }
 
 /* =================================

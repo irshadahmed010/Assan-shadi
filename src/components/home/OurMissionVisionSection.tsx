@@ -297,25 +297,26 @@ export const OurMissionVisionSection: React.FC = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Region */}
-        <div ref={headingWrapperRef} className="max-w-2xl mb-14 lg:ml-auto">
+        <div ref={headingWrapperRef} className="max-w-2xl mx-auto mb-14 text-center">
           {/* Eyebrow */}
-          <div className="heading-segment inline-flex items-center gap-3 mb-3.5">
-            <span className="w-10 h-[2px] bg-[#b9965b]" />
-            <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#b9965b] font-semibold font-sans-modern">
+          <div className="heading-segment flex items-center justify-center gap-3 mb-3.5">
+            <span className="w-10 h-[2px] bg-[#FFD78A]" />
+            <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#FFD78A] font-bold font-sans-modern">
               Our Purpose
             </span>
+            <span className="w-10 h-[2px] bg-[#FFD78A]" />
           </div>
 
           {/* Heading */}
-          <h2 className="heading-segment text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-[#FAF7F2] mb-4">
+          <h2 className="heading-segment text-center text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-white mb-4">
             Our Intention,{" "}
-            <span className="text-[#c88a64] italic font-serif-luxury font-medium">
+            <span className="text-[#FFD78A] italic font-serif-luxury font-medium">
               Vision & Mission
             </span>
           </h2>
 
           {/* Subtitle */}
-          <p className="heading-segment text-stone-300 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed">
+          <p className="heading-segment text-stone-200 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed text-center">
             Guided by faith, driven by purpose — for stronger families and a
             better Ummah.
           </p>
@@ -331,27 +332,27 @@ export const OurMissionVisionSection: React.FC = () => {
             return (
               <div
                 key={pillar.id}
-                className="purpose-card group relative bg-[#2a2825]/90 hover:bg-[#322f2b] border border-white/10 hover:border-[#b9965b]/60 rounded-[5px] p-7 lg:p-8 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#9a6a4f]/20 hover:-translate-y-2 flex flex-col justify-between backdrop-blur-md min-h-[300px]"
+                className="purpose-card group relative bg-[#2a2825]/95 hover:bg-[#322f2b] border border-white/15 hover:border-[#FFD78A]/60 rounded-[6px] p-7 lg:p-8 transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#c2794c]/20 hover:-translate-y-2 flex flex-col justify-between backdrop-blur-md min-h-[300px]"
               >
                 <div>
                   {/* Card Header: Icon + Title */}
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-14 h-14 rounded-full bg-[#9a6a4f]/20 group-hover:bg-[#9a6a4f]/35 border border-[#9a6a4f]/45 flex items-center justify-center text-[#e8a379] group-hover:text-[#ffd6b8] group-hover:scale-110 transition-all duration-300 shadow-md shadow-[#9a6a4f]/20 shrink-0">
+                    <div className="w-14 h-14 rounded-full bg-[#c2794c]/20 group-hover:bg-[#c2794c]/35 border border-[#c2794c]/50 flex items-center justify-center text-[#FFD78A] group-hover:text-white group-hover:scale-110 transition-all duration-300 shadow-md shadow-[#c2794c]/25 shrink-0">
                       <Icon className="w-7 h-7" />
                     </div>
-                    <h3 className="text-xl font-bold font-serif-luxury text-[#FAF7F2] tracking-wide">
+                    <h3 className="text-xl font-bold font-serif-luxury text-white tracking-wide">
                       {pillar.title}
                     </h3>
                   </div>
 
                   {/* Body Text */}
-                  <p className="text-stone-300 text-sm font-sans-modern leading-relaxed">
+                  <p className="text-stone-200 text-sm font-sans-modern leading-relaxed">
                     {pillar.desc}
                   </p>
                 </div>
 
                 {/* Subtle Card Accent Line at Bottom */}
-                <div className="w-10 h-[2px] bg-[#b9965b]/40 group-hover:bg-[#b9965b] group-hover:w-16 transition-all duration-300 mt-6" />
+                <div className="w-10 h-[2px] bg-[#FFD78A]/50 group-hover:bg-[#FFD78A] group-hover:w-16 transition-all duration-300 mt-6" />
               </div>
             );
           })}
@@ -360,19 +361,19 @@ export const OurMissionVisionSection: React.FC = () => {
         {/* Bottom Region: CTA Button + Slogan */}
         <div
           ref={ctaWrapperRef}
-          className="flex flex-col sm:flex-row items-center justify-between gap-5 pt-6 border-t border-white/10"
+          className="flex flex-col sm:flex-row items-center justify-between gap-5 pt-6 border-t border-white/15"
         >
           <Link
             href="#register"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#9a6a4f] hover:bg-[#b17b5d] text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[5px] transition-all duration-300 shadow-md shadow-[#9a6a4f]/30 hover:shadow-xl hover:shadow-[#9a6a4f]/50 group text-sm sm:text-base tracking-wide"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 btn-primary-glow text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[6px] transition-all duration-300 group text-sm sm:text-base tracking-wide"
           >
             <span>Start Your Journey</span>
             <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" />
           </Link>
 
-          <div className="inline-flex items-center gap-3 text-stone-400">
-            <span className="w-10 h-[2px] bg-[#b9965b]" />
-            <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-300">
+          <div className="inline-flex items-center gap-3 text-stone-300">
+            <span className="w-10 h-[2px] bg-[#FFD78A]" />
+            <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-200">
               Stronger families. A brighter tomorrow.
             </span>
           </div>

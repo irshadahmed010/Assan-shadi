@@ -58,13 +58,8 @@ export async function getCurrentAdmin(): Promise<AdminUser | null> {
   }
 }
 
-// Built-in default admin credentials for quick testing/onboarding
-export const DEFAULT_ADMIN: AdminUser = {
-  id: "admin-master-001",
-  email: "admin@assanshadi.com",
-  name: "Assan Shadi Admin",
-  role: "superadmin",
-};
+export async function verifySession(): Promise<AdminUser | null> {
+  return getCurrentAdmin();
+}
 
-export const DEFAULT_ADMIN_PASSWORD_HASH =
-  "$2b$10$HYgnwkO2jL.SRBpoI0hZie4/xkWWYboyr16zF5gpZFgSOAys5UDsq"; // Admin@123456
+

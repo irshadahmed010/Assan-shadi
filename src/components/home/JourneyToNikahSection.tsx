@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { UserPlus, ShieldCheck, Search, Heart, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export const JourneyToNikahSection: React.FC = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -22,25 +22,25 @@ export const JourneyToNikahSection: React.FC = () => {
       num: "01",
       title: "Create Your Profile",
       desc: "Share your basic details and preferences.",
-      icon: UserPlus,
+      image: "/images/How_It_Works/img_05.png",
     },
     {
       num: "02",
       title: "Get Verified",
       desc: "We manually verify profiles with phone verification.",
-      icon: ShieldCheck,
+      image: "/images/How_It_Works/img_06.png",
     },
     {
       num: "03",
       title: "Find Compatible Matches",
       desc: "Explore genuine profiles that match your criteria.",
-      icon: Search,
+      image: "/images/How_It_Works/img_07.png",
     },
     {
       num: "04",
       title: "Connect & Take It Forward",
       desc: "Start a conversation and move towards Nikah with your families.",
-      icon: Heart,
+      image: "/images/How_It_Works/img_08.png",
     },
   ];
 
@@ -350,101 +350,88 @@ export const JourneyToNikahSection: React.FC = () => {
         </div>
 
         {/* Top Region: Headline & Quran Callout */}
-        <div className="relative z-10 flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 pt-4 sm:pt-6">
+        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-center gap-8 pt-4 sm:pt-6">
           {/* Headline & Subtitle */}
           <div ref={headerRef} className="max-w-xl">
             {/* Eyebrow */}
-            <div className="inline-flex items-center gap-3 mb-3.5">
-              <span className="w-9 h-[2px] bg-[#b9965b]" />
-              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#b9965b] font-semibold font-sans-modern">
+            <div className="flex items-center justify-center gap-3 mb-3.5">
+              <span className="w-9 h-[2px] bg-[#FFD78A]" />
+              <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#FFD78A] font-bold font-sans-modern">
                 How It Works
               </span>
+              <span className="w-9 h-[2px] bg-[#FFD78A]" />
             </div>
 
             {/* Main Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-[#FAF7F2] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-serif-luxury tracking-tight leading-[1.15] text-white mb-4 text-center">
               Your Journey{" "}
-              <span className="text-[#c88a64] italic font-serif-luxury font-medium">
+              <span className="text-[#FFD78A] italic font-serif-luxury font-medium">
                 to Nikah
               </span>
             </h2>
 
             {/* Subtitle */}
-            <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-sans-modern leading-relaxed">
+            <p className="text-stone-200 text-sm sm:text-base lg:text-lg font-sans-modern text-center leading-relaxed">
               A simple, secure and guided process to help you find a compatible life
               partner, the halal way.
             </p>
-          </div>
-
-          {/* Floating Quran Verse Callout */}
-          <div
-            ref={quoteRef}
-            className="self-start lg:self-center bg-[#252320]/75 backdrop-blur-md border border-[#b9965b]/30 rounded-2xl px-6 py-4 shadow-xl shadow-black/25 max-w-xs lg:mr-28"
-          >
-            <p className="font-serif-luxury italic text-lg sm:text-xl text-[#FAF7F2] tracking-wide text-center">
-              “And We created you in pairs”
-            </p>
-            <div className="flex items-center justify-center gap-2 mt-2">
-              <span className="w-5 h-[1px] bg-[#b9965b]" />
-              <span className="text-xs tracking-widest text-[#b9965b] uppercase font-sans-modern">
-                Qur'an 78:8
-              </span>
-            </div>
-          </div>
+          </div>  
+          {/* Hidden reference for GSAP animation safety */}
+          <div ref={quoteRef} className="hidden" />
         </div>
 
-        {/* Middle Region: 4 Sequential Step Cards + Connector Arrows */}
-        <div className="relative z-10 my-8 lg:my-0">
-          {/* Connector Arrows Overlay (Desktop Only) */}
-          <div
-            ref={arrowsRef}
-            className="hidden lg:grid grid-cols-4 gap-6 absolute inset-0 pointer-events-none z-20"
-          >
-            {[0, 1, 2].map((idx) => (
-              <div
-                key={idx}
-                className="connector-arrow flex items-center justify-end pr-[-12px]"
-                style={{ gridColumnStart: idx + 1 }}
-              >
-                <div className="translate-x-7 flex items-center text-[#b9965b]/80">
-                  <span className="w-8 border-b-2 border-dashed border-[#b9965b]/60" />
-                  <ArrowRight className="w-4 h-4 -ml-1 text-[#b9965b]" />
-                </div>
-              </div>
-            ))}
-          </div>
+        {/* Middle Region: 4 Sequential Step Cards */}
+        <div className="relative z-10 my-6 lg:my-0">
+          {/* Hidden reference container for GSAP compatibility */}
+          <div ref={arrowsRef} className="hidden" />
 
           {/* 4 Cards Grid */}
           <div
             ref={cardsRef}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-6 max-w-[1270px] mx-auto my-12"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-6 max-w-[1270px] mx-auto my-8 items-stretch"
           >
             {steps.map((step) => {
-              const Icon = step.icon;
               return (
                 <div
                   key={step.num}
-                  className="step-card group relative bg-[#242220]/90 hover:bg-[#2c2926] border border-white/10 hover:border-[#b9965b]/60 rounded-[5px] p-6 sm:p-7 text-center transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#9a6a4f]/20 hover:-translate-y-2 flex flex-col items-center justify-between min-h-[230px] backdrop-blur-md"
+                  className="step-card group relative h-full flex flex-col justify-between bg-[#242220]/95 hover:bg-[#2c2926] border-2  border-white/25 hover:border-[#FFD78A]/60 rounded-[5px] overflow-hidden transition-all duration-300 shadow-xl hover:shadow-2xl hover:shadow-[#c2794c]/20 hover:-translate-y-2 backdrop-blur-md"
                 >
-                  {/* Circular Icon with Brand Color */}
-                  <div className="w-16 h-16 rounded-full bg-[#9a6a4f]/20 group-hover:bg-[#9a6a4f]/35 border border-[#9a6a4f]/40 flex items-center justify-center text-[#e8a379] group-hover:text-[#ffd6b8] group-hover:scale-110 transition-all duration-300 mb-4 shadow-md shadow-[#9a6a4f]/25">
-                    <Icon className="w-7 h-7 stroke-[1.9]" />
+                  {/* Modern Edge-to-Edge Image with Bottom Shadows */}
+                  <div className="relative w-full aspect-[16/9] overflow-hidden bg-[#1e1d1b] border-b border-white/10 group-hover:border-[#FFD78A]/40 transition-colors shadow-[0_8px_16px_rgba(0,0,0,0.7)]">
+                    <Image
+                      src={step.image}
+                      alt={step.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+                    />
+                    {/* Step Number Badge */}
+                    <div className="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-black/75 backdrop-blur-md border border-[#FFD78A]/40 text-[#FFD78A] text-[10px] font-bold tracking-widest uppercase font-sans-modern shadow-md">
+                      STEP {step.num}
+                    </div>
+                    {/* Subtle Gradient vignette on image bottom for sleek depth */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
+                    {/* Ambient gold line at bottom of image */}
+                    <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FFD78A]/40 to-transparent group-hover:via-[#FFD78A] transition-all duration-500" />
                   </div>
 
-                  {/* Step Number */}
-                  <span className="text-xs font-semibold tracking-widest text-[#b9965b] uppercase font-sans-modern mb-1">
-                    {step.num}
-                  </span>
+                  {/* Feature Content with compact internal padding */}
+                  <div className="flex flex-col flex-1 items-center justify-between p-3.5 sm:p-4 pt-3 pb-3.5 text-center">
+                    <div className="flex flex-col items-center w-full">
+                      {/* Step Title */}
+                      <h3 className="text-sm sm:text-base font-bold font-serif-luxury text-white tracking-wide mb-1 group-hover:text-[#FFD78A] transition-colors">
+                        {step.title}
+                      </h3>
 
-                  {/* Step Title */}
-                  <h3 className="text-lg font-bold font-serif-luxury text-[#FAF7F2] tracking-wide mb-2">
-                    {step.title}
-                  </h3>
+                      {/* Small Center Divider Line */}
+                      <div className="w-8 h-[2px] bg-[#FFD78A] group-hover:w-12 transition-all duration-300 my-1" />
 
-                  {/* Step Description */}
-                  <p className="text-stone-300 text-xs sm:text-sm font-sans-modern leading-relaxed">
-                    {step.desc}
-                  </p>
+                      {/* Step Description */}
+                      <p className="text-stone-200 text-xs sm:text-sm font-sans-modern leading-relaxed mt-0.5">
+                        {step.desc}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               );
             })}
@@ -454,19 +441,19 @@ export const JourneyToNikahSection: React.FC = () => {
         {/* Bottom Region: CTA Button + Slogan */}
         <div
           ref={bottomBarRef}
-          className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-5 pt-4 border-t border-white/10"
+          className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-5 pt-4 border-t border-white/15"
         >
           <Link
             href="#register"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-[#9a6a4f] hover:bg-[#b17b5d] text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[5px] transition-all duration-300 shadow-md shadow-[#9a6a4f]/30 hover:shadow-xl hover:shadow-[#9a6a4f]/50 group text-sm sm:text-base tracking-wide"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 btn-primary-glow text-white font-sans-modern font-semibold px-8 py-3.5 rounded-[6px] transition-all duration-300 group text-sm sm:text-base tracking-wide"
           >
             <span>Start Your Journey</span>
             <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5" />
           </Link>
 
-          <div className="inline-flex items-center gap-3 text-stone-400">
-            <span className="w-10 h-[2px] bg-[#b9965b]" />
-            <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-300">
+          <div className="inline-flex items-center gap-3 text-stone-300">
+            <span className="w-10 h-[2px] bg-[#FFD78A]" />
+            <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-200">
               Halal connections for a brighter tomorrow
             </span>
           </div>
