@@ -22,7 +22,7 @@ export const RegisterBiodataForm: React.FC = () => {
     resolver: zodResolver(profileSchema),
     defaultValues: {
       religion: "Islam",
-      country: "Pakistan",
+      country: "India",
       family_type: "nuclear",
       religious_values: "practicing",
       is_photo_private: false,
@@ -185,7 +185,7 @@ export const RegisterBiodataForm: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <Input
               label="City"
-              placeholder="e.g. Lahore, Karachi, Islamabad, Dubai"
+              placeholder="e.g. Bengaluru, Mumbai, Hyderabad, Delhi"
               error={errors.city?.message}
               {...register("city")}
             />
@@ -265,7 +265,7 @@ export const RegisterBiodataForm: React.FC = () => {
 
             <Input
               label="Monthly Income Range (Optional)"
-              placeholder="e.g. PKR 300,000+ or AED 15,000"
+              placeholder="e.g. ₹ 1,50,000+ or AED 15,000"
               {...register("monthly_income")}
             />
           </div>

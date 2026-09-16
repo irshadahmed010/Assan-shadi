@@ -33,12 +33,12 @@ export const FloatingActions: React.FC = () => {
     }
   };
 
-  const whatsappNumber = "919620078691";
+  const whatsappNumber = "919845012439";
   const whatsappMessage = encodeURIComponent(
-    "Hello Assan Shaadi, I would like to inquire about matrimonial services."
+    "Hello Asaan Shaadi, I would like to inquire about matrimonial services."
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-  const phoneUrl = "tel:+919620078691";
+  const phoneUrl = "tel:+919845012439";
 
   return (
     <aside
@@ -72,7 +72,7 @@ export const FloatingActions: React.FC = () => {
       {/* Call Button */}
       <a
         href={phoneUrl}
-        title="Call Us Now: +91 96200 78691"
+        title="Call Us Now: +91 98450 12439"
         aria-label="Call Us Now"
         className="group relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-[#c4a165] to-[#8d623d] text-white shadow-xl hover:shadow-[#B9965B]/40 transition-all duration-300 hover:scale-105 active:scale-95 border border-amber-200/40"
       >
@@ -80,7 +80,7 @@ export const FloatingActions: React.FC = () => {
 
         {/* Desktop Tooltip */}
         <span className="hidden sm:block pointer-events-none absolute right-full mr-3 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded bg-[#181818]/95 border border-[#B9965B]/30 text-white text-[11px] font-sans-modern font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-lg">
-          Call Now: +91 96200 78691
+          Call Now: +91 98450 12439
         </span>
       </a>
 

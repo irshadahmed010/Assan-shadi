@@ -7,23 +7,23 @@ export const Testimonials: React.FC = () => {
   const reviews = [
     {
       quote:
-        "Assan Shadi restored our faith in matrimonial platforms. We had grown tired of matchmakers asking for lakhs in advance. Here, we found an educated, respectful boy for our daughter within 3 months with complete privacy.",
+        "Asaan Shaadi restored our faith in matrimonial platforms. We had grown tired of matchmakers asking for lakhs in advance. Here, we found an educated, respectful boy for our daughter within 3 months with complete privacy.",
       author: "Tariq Mehmood & Family",
-      location: "Lahore, Pakistan",
+      location: "Bengaluru, Karnataka",
       match: "Married in Dec 2025 • Software Engineer & Doctor",
     },
     {
       quote:
-        "The zero-dowry charter is what won my heart. As an overseas Pakistani, I wanted a partner who values character, deen, and simple family life. Assan Shadi's guardian verification ensured everything was 100% authentic.",
+        "The zero-dowry charter is what won my heart. As an NRI professional, I wanted a partner who values character, deen, and simple family life. Asaan Shaadi's guardian verification ensured everything was 100% authentic.",
       author: "Saad & Mahnoor",
-      location: "Dubai & Karachi",
+      location: "Dubai & Hyderabad",
       match: "Married in Jan 2026 • Supply Chain Manager & Architect",
     },
     {
       quote:
         "The photo privacy option gave my daughter complete peace of mind. Only families with verified credentials and serious proposal notes could request contact. Truly a blessing for dignified families.",
       author: "Mrs. Farzana Begum (Mother)",
-      location: "Islamabad, Pakistan",
+      location: "Mumbai, Maharashtra",
       match: "Nikah completed • Alhamdulillah",
     },
   ];

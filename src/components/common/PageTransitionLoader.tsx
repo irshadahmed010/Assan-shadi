@@ -192,7 +192,7 @@ function TransitionLoaderInner() {
               className="flex flex-col items-center"
             >
               <h2 className="text-xl sm:text-2xl font-bold font-serif-luxury tracking-wide text-[#FAF7F2]">
-                Assan Shadi
+                Asaan Shaadi
               </h2>
             </motion.div>
 

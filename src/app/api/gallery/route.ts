@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
       caption: body.caption?.trim() || "Blessed matrimonial union through Asaan Shaadi.",
       category,
       categoryLabel,
-      city: body.city?.trim() || "Bangalore",
+      city: body.city?.trim() || "Bengaluru",
       year: body.year?.trim() || new Date().getFullYear().toString(),
     });
 

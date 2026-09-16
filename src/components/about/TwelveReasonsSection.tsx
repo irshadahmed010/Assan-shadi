@@ -208,7 +208,7 @@ export const TwelveReasonsSection: React.FC = () => {
 
           <ScrollReveal direction="up" delay={0.2}>
             <p className="text-stone-300 text-sm sm:text-base font-sans-modern leading-relaxed">
-              From Bangalore to nationwide communities, discover why thousands trust our dignified matrimonial platform to find their life companion on their own terms.
+              From Bengaluru to nationwide communities, discover why thousands trust our dignified matrimonial platform to find their life companion on their own terms.
             </p>
           </ScrollReveal>
 

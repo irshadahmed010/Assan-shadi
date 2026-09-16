@@ -6,9 +6,9 @@ import { HowItWorksFaqSection } from "@/components/how-it-works/HowItWorksFaqSec
 import { HowItWorksCtaSection } from "@/components/how-it-works/HowItWorksCtaSection";
 
 export const metadata = {
-  title: "How It Works | Assan Shadi Matrimonial Process",
+  title: "How It Works | Asaan Shaadi Matrimonial Process",
   description:
-    "Learn how Assan Shadi connects families through 4 simple steps: Free profile creation, 100% phone verification, compatible matching, and respectful Nikah introductions.",
+    "Learn how Asaan Shaadi connects families through 4 simple steps: Free profile creation, 100% phone verification, compatible matching, and respectful Nikah introductions.",
 };
 
 export default function HowItWorksPage() {

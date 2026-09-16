@@ -207,7 +207,7 @@ export const PersonalizedMatchmakingSection: React.FC = () => {
               </a>
 
               <a
-                href="https://wa.me/919620078691?text=Assalam-o-Alaikum,%20I%20am%20inquiring%20about%20Personalized%20Matchmaking%20Consultancy."
+                href="https://wa.me/919845012439?text=Assalam-o-Alaikum,%20I%20am%20inquiring%20about%20Personalized%20Matchmaking%20Consultancy."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[6px] border border-white/25 hover:border-[#FFD78A]/70 bg-white/10 hover:bg-white/15 text-stone-100 hover:text-white font-sans-modern text-sm sm:text-base font-semibold transition-all duration-300 shadow-sm"
@@ -253,7 +253,7 @@ export const PersonalizedMatchmakingSection: React.FC = () => {
                         Direct Family Consultation
                       </h4>
                       <p className="text-xs text-stone-300 font-sans-modern">
-                        Discreet matchmaking across Pakistan &amp; Overseas
+                        Discreet matchmaking all across India &amp; NRIs
                       </p>
                     </div>
                   </div>
@@ -416,7 +416,7 @@ export const PersonalizedMatchmakingSection: React.FC = () => {
                       onChange={(e) =>
                         setFormData({ ...formData, city: e.target.value })
                       }
-                      placeholder="e.g. Lahore / London / Dubai"
+                      placeholder="e.g. Bengaluru / Mumbai / Delhi"
                       className="w-full bg-[#282624] border border-white/15 focus:border-[#b9965b] rounded-xl px-4 py-2.5 text-sm text-white placeholder-stone-500 focus:outline-none focus:ring-1 focus:ring-[#b9965b] transition-all"
                     />
                   </div>

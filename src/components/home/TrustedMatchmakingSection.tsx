@@ -60,10 +60,14 @@ export const TrustedMatchmakingSection: React.FC = () => {
         <ScrollReveal direction="up">
           <div className="max-w-2xl mb-14">
             {/* Eyebrow with decorative line */}
-            <div className="inline-flex items-center gap-3 mb-4">
-              <span className="w-10 h-[2px] bg-[#FFD78A]" />
+            <div className="inline-flex flex-wrap items-center gap-3 mb-4">
+              <span className="w-8 h-[2px] bg-[#FFD78A]" />
               <span className="text-xs sm:text-sm uppercase tracking-[0.25em] text-[#FFD78A] font-bold font-sans-modern">
                 Trusted Matchmaking
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-[4px] bg-[#FFD78A]/15 border border-[#FFD78A]/40 text-[#FFD78A] text-xs font-semibold">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                Completely Offline Services
               </span>
             </div>
 

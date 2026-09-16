@@ -68,7 +68,7 @@ export default function GalleryManagerPage() {
   const [formTitle, setFormTitle] = useState("");
   const [formCaption, setFormCaption] = useState("");
   const [formCategory, setFormCategory] = useState("nikah");
-  const [formCity, setFormCity] = useState("Bangalore");
+  const [formCity, setFormCity] = useState("Bengaluru");
   const [formYear, setFormYear] = useState(new Date().getFullYear().toString());
 
   // ImageKit file upload
@@ -276,7 +276,7 @@ export default function GalleryManagerPage() {
     setFormTitle("");
     setFormCaption("");
     setFormCategory(categories[0]?.id || "nikah");
-    setFormCity("Bangalore");
+    setFormCity("Bengaluru");
     setFormYear(new Date().getFullYear().toString());
     setAddModalOpen(true);
   };

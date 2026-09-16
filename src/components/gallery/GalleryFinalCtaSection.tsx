@@ -88,7 +88,7 @@ export const GalleryFinalCtaSection: React.FC = () => {
                 </Link>
 
                 <a
-                  href="https://wa.me/919620078691?text=Hello%20Asaan%20Shaadi,%20I%20would%20like%20to%20consult%20with%20a%20Matchmaking%20Supervisor"
+                  href="https://wa.me/919845012439?text=Hello%20Asaan%20Shaadi,%20I%20would%20like%20to%20consult%20with%20a%20Matchmaking%20Supervisor"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-[5px] bg-white/5 hover:bg-white/10 text-[#FAF7F2] border border-white/15 hover:border-white/30 font-sans-modern font-semibold text-sm transition-all"
@@ -104,7 +104,7 @@ export const GalleryFinalCtaSection: React.FC = () => {
               <div className="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 border-t border-white/10 text-xs text-stone-400 font-sans-modern">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>No Registration Fee</span>
+                  <span>Transparent Pricing</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-[#b9965b] shrink-0" />

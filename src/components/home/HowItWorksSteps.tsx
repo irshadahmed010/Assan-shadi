@@ -39,7 +39,7 @@ export const HowItWorksSteps: React.FC = () => {
         <ScrollReveal direction="up">
           <SectionHeading
             badge="The Process"
-            title="How Assan Shadi Works"
+            title="How Asaan Shaadi Works"
             subtitle="A transparent, 4-step path designed for parents, candidates, and guardians."
           />
         </ScrollReveal>

@@ -112,7 +112,7 @@ export const Navbar: React.FC = () => {
 
               <div className="flex flex-col">
                 <span className="text-xl sm:text-2xl font-bold font-serif-luxury tracking-tight text-[#FAF7F2] group-hover:text-[#FFD78A] transition-colors leading-none">
-                  Assan Shadi
+                  Asaan Shaadi
                 </span>
                 <span className="text-[9.5px] sm:text-[10.5px] font-semibold tracking-[0.2em] uppercase text-[#E5C384] mt-1 font-sans-modern">
                   Trusted • Personal • For Life
@@ -205,14 +205,14 @@ export const Navbar: React.FC = () => {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="tel:+919620078691"
+                href="tel:+919845012439"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2.5 bg-[#2a2a2a] hover:bg-[#333333] text-[#FAF7F2] hover:text-[#FFD78A] border border-white/15 py-2.5 px-4 rounded-[6px] text-sm font-medium transition-all shadow-sm group"
               >
                 <div className="w-6 h-6 rounded-full bg-[#E5C384]/20 flex items-center justify-center text-[#FFD78A] group-hover:scale-110 transition-transform">
                   <Phone className="w-3.5 h-3.5 text-[#FFD78A]" />
                 </div>
-                <span className="font-semibold tracking-wide">Call: +91 96200 78691</span>
+                <span className="font-semibold tracking-wide">Call: +91 98450 12439</span>
               </a>
             </div>
           </div>

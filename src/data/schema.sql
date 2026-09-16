@@ -1,5 +1,5 @@
 -- ==============================================================================
--- ASSAN SHADI - DATABASE SCHEMA (SUPABASE POSTGRESQL WITH ROW LEVEL SECURITY)
+-- ASAAN SHAADI - DATABASE SCHEMA (SUPABASE POSTGRESQL WITH ROW LEVEL SECURITY)
 -- ==============================================================================
 
 -- Enable UUID extension if not already enabled

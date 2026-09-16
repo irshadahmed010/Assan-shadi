@@ -48,7 +48,7 @@ export const HowItWorksPageHeader: React.FC = () => {
 
           {/* Heading */}
           <h1 className="text-sm sm:text-base md:text-lg font-bold font-serif-luxury text-[#FAF7F2] tracking-wide truncate flex items-center gap-2">
-            <span>How Assan Shadi Works</span>
+            <span>How Asaan Shaadi Works</span>
             <span className="hidden md:inline-block text-[11px] font-sans-modern font-normal text-stone-400">
               — Simple, Dignified
             </span>
@@ -62,7 +62,7 @@ export const HowItWorksPageHeader: React.FC = () => {
             <span className="font-medium hidden xs:inline">100% Halal Process</span>
             <span className="font-medium xs:hidden">Verified</span>
             <span className="hidden sm:inline text-stone-400">•</span>
-            <span className="hidden sm:inline text-stone-300">Bangalore Based</span>
+            <span className="hidden sm:inline text-stone-300">Bengaluru Based</span>
           </div>
         </div>
       </div>

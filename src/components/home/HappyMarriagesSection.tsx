@@ -16,7 +16,7 @@ export const HappyMarriagesSection: React.FC = () => {
       quote:
         "“Asaan Shaadi made our journey simple and blessed. We found not just a partner, but a true companion in faith and life. The wali verification gave both our families complete reassurance.”",
       author: "Ayaan & Saba",
-      location: "Married 2024 • Bangalore",
+      location: "Married 2024 • Bengaluru, Karnataka",
       badge: "Guardian Verified",
       rating: 5,
     },
@@ -27,7 +27,7 @@ export const HappyMarriagesSection: React.FC = () => {
       quote:
         "“A trusted platform with genuine profiles. Zero commercial exploitation and 100% family dignity. Alhamdulillah, we are happily married and grateful for this noble sunnah initiative.”",
       author: "Hamza & Areeba",
-      location: "Married 2025 • London & Lahore",
+      location: "Married 2025 • Delhi NCR & Bengaluru",
       badge: "Verified Nikah",
       rating: 5,
     },
@@ -38,7 +38,7 @@ export const HappyMarriagesSection: React.FC = () => {
       quote:
         "“It felt different here — more halal, more peaceful, and completely free from dowry culture. Strict photo privacy and respectful family interaction throughout the process.”",
       author: "Zaid & Hira",
-      location: "Married 2024 • Islamabad",
+      location: "Married 2024 • Lucknow, Uttar Pradesh",
       badge: "Zero Dowry Union",
       rating: 5,
     },
@@ -47,10 +47,10 @@ export const HappyMarriagesSection: React.FC = () => {
       image: "/images/muslim-wedding-couple.jpg",
       alt: "Bilal and Zainab blessed marriage story",
       quote:
-        "“Finding a compatible practicing spouse overseas seemed difficult until we used Asaan Shaadi. The personalized guidance helped both our families coordinate with utmost ease.”",
+        "“Finding a compatible practicing spouse with mutual family respect was seamless on Asaan Shaadi. The personalized guidance helped both our families coordinate with utmost ease.”",
       author: "Bilal & Zainab",
-      location: "Married 2025 • Toronto & Karachi",
-      badge: "Global Match",
+      location: "Married 2025 • Mumbai & Hyderabad",
+      badge: "Family Harmony",
       rating: 5,
     },
     {
@@ -60,7 +60,7 @@ export const HappyMarriagesSection: React.FC = () => {
       quote:
         "“What stood out most was the dignified approach. No superficial swiping or spam calls. Both families met with pure intentions, and Allah SWT blessed our marriage with barakah.”",
       author: "Farhan & Maryam",
-      location: "Married 2024 • Hyderabad",
+      location: "Married 2024 • Hyderabad, Telangana",
       badge: "Family First",
       rating: 5,
     },
@@ -71,7 +71,7 @@ export const HappyMarriagesSection: React.FC = () => {
       quote:
         "“SubhanAllah, the entire process was seamless. From verified biodatas to clear communication, Asaan Shaadi brings back purity and honor to Muslim matrimonial matchmaking.”",
       author: "Usman & Fatima",
-      location: "Married 2025 • Mumbai & Riyadh",
+      location: "Married 2025 • Mumbai & Pune",
       badge: "Sunnah Inspired",
       rating: 5,
     },

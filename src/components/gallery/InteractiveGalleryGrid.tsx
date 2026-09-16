@@ -35,7 +35,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
       "A timeless celebration of faith, pure intentions, and sacred vows.",
     category: "nikah",
     categoryLabel: "Nikah Ceremony",
-    city: "Bangalore",
+    city: "Bengaluru",
     year: "2025",
   },
   {
@@ -75,7 +75,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     caption: "Quiet companionship and mutual respect.",
     category: "walima",
     categoryLabel: "Walima & Reception",
-    city: "Bangalore",
+    city: "Bengaluru",
     year: "2024",
   },
   {
@@ -95,7 +95,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     caption: "Looking forward together towards a blessed future.",
     category: "walima",
     categoryLabel: "Walima & Reception",
-    city: "Islamabad",
+    city: "Lucknow",
     year: "2024",
   },
   {
@@ -115,7 +115,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
     caption: "Families connecting with respect and transparency.",
     category: "nikah",
     categoryLabel: "Nikah Ceremony",
-    city: "Bangalore",
+    city: "Bengaluru",
     year: "2025",
   },
   {

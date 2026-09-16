@@ -17,8 +17,8 @@ const FAQS = [
   },
   {
     id: "fees",
-    q: "Do you charge fees to create a profile?",
-    a: "No. Creating a profile and browsing verified matches is completely free. We also offer highly economical plans and optional add-ons if you desire personalized supervisor assistance.",
+    q: "What is your fee and payment structure?",
+    a: "We charge an initial registration fee, and upon successful marriage settlement (marriage fix time), a predetermined mutually agreed fixed amount is charged. Everything is discussed transparently upfront.",
   },
   {
     id: "supervisor",

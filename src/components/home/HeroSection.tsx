@@ -24,7 +24,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const HarvardLogo: React.FC = () => (
   <div className="flex items-center gap-2">
-    <svg className="h-7 w-auto" viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="h-7 w-auto"
+      viewBox="0 0 32 38"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M16 1C8 1 1 5 1 15C1 26 11 34 16 37C21 34 31 26 31 15C31 5 24 1 16 1Z"
         fill="#A51C30"
@@ -36,13 +41,44 @@ const HarvardLogo: React.FC = () => (
       <rect x="17" y="8" width="8" height="6.5" rx="0.8" fill="#FFFDF9" />
       <rect x="12" y="19" width="8" height="6.5" rx="0.8" fill="#FFFDF9" />
       {/* Book details */}
-      <text x="8.5" y="13" fill="#A51C30" fontSize="4" fontWeight="bold" fontFamily="serif">VE</text>
-      <text x="18.5" y="13" fill="#A51C30" fontSize="4" fontWeight="bold" fontFamily="serif">RI</text>
-      <text x="13" y="24" fill="#A51C30" fontSize="3.8" fontWeight="bold" fontFamily="serif">TAS</text>
+      <text
+        x="8.5"
+        y="13"
+        fill="#A51C30"
+        fontSize="4"
+        fontWeight="bold"
+        fontFamily="serif"
+      >
+        VE
+      </text>
+      <text
+        x="18.5"
+        y="13"
+        fill="#A51C30"
+        fontSize="4"
+        fontWeight="bold"
+        fontFamily="serif"
+      >
+        RI
+      </text>
+      <text
+        x="13"
+        y="24"
+        fill="#A51C30"
+        fontSize="3.8"
+        fontWeight="bold"
+        fontFamily="serif"
+      >
+        TAS
+      </text>
     </svg>
     <div className="flex flex-col text-left leading-none">
-      <span className="font-serif-luxury font-bold text-[12px] tracking-[0.14em] text-[#1E1B18]">HARVARD</span>
-      <span className="text-[7.5px] font-sans-modern tracking-[0.22em] text-[#756D65] uppercase font-medium mt-0.5">UNIVERSITY</span>
+      <span className="font-serif-luxury font-bold text-[12px] tracking-[0.14em] text-[#1E1B18]">
+        HARVARD
+      </span>
+      <span className="text-[7.5px] font-sans-modern tracking-[0.22em] text-[#756D65] uppercase font-medium mt-0.5">
+        UNIVERSITY
+      </span>
     </div>
   </div>
 );
@@ -50,15 +86,24 @@ const HarvardLogo: React.FC = () => (
 const StanfordLogo: React.FC = () => (
   <div className="flex items-center gap-1.5">
     <div className="flex flex-col text-left leading-none">
-      <span className="font-serif-luxury font-bold text-[15px] text-[#8C1515] tracking-tight">Stanford</span>
-      <span className="text-[8.5px] font-serif-luxury text-[#8C1515] tracking-[0.12em] uppercase font-medium">University</span>
+      <span className="font-serif-luxury font-bold text-[15px] text-[#8C1515] tracking-tight">
+        Stanford
+      </span>
+      <span className="text-[8.5px] font-serif-luxury text-[#8C1515] tracking-[0.12em] uppercase font-medium">
+        University
+      </span>
     </div>
   </div>
 );
 
 const MitLogo: React.FC = () => (
   <div className="flex items-center">
-    <svg className="h-6 w-auto" viewBox="0 0 54 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="h-6 w-auto"
+      viewBox="0 0 54 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       {/* M */}
       <rect x="0" y="0" width="6" height="28" fill="#A31F34" />
       <rect x="10" y="0" width="6" height="18" fill="#A31F34" />
@@ -74,7 +119,12 @@ const MitLogo: React.FC = () => (
 
 const OxfordLogo: React.FC = () => (
   <div className="flex items-center gap-2">
-    <svg className="h-7 w-auto" viewBox="0 0 32 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="h-7 w-auto"
+      viewBox="0 0 32 38"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M16 1C8 1 1 5 1 15C1 26 11 34 16 37C21 34 31 26 31 15C31 5 24 1 16 1Z"
         fill="#002147"
@@ -84,39 +134,86 @@ const OxfordLogo: React.FC = () => (
       {/* Crown top left */}
       <path d="M7 8 L9 13 L11 9 L13 13 L15 8 L13 15 L9 15 Z" fill="#D4AF37" />
       {/* Crown top right */}
-      <path d="M17 8 L19 13 L21 9 L23 13 L25 8 L23 15 L19 15 Z" fill="#D4AF37" />
+      <path
+        d="M17 8 L19 13 L21 9 L23 13 L25 8 L23 15 L19 15 Z"
+        fill="#D4AF37"
+      />
       {/* Open Book */}
       <rect x="10" y="18" width="12" height="9" rx="1" fill="#FFFDF9" />
-      <line x1="16" y1="18" x2="16" y2="27" stroke="#002147" strokeWidth="0.8" />
-      <text x="11.2" y="23" fill="#002147" fontSize="2.8" fontWeight="bold" fontFamily="serif">DOMI</text>
-      <text x="17" y="23" fill="#002147" fontSize="2.8" fontWeight="bold" fontFamily="serif">MINA</text>
+      <line
+        x1="16"
+        y1="18"
+        x2="16"
+        y2="27"
+        stroke="#002147"
+        strokeWidth="0.8"
+      />
+      <text
+        x="11.2"
+        y="23"
+        fill="#002147"
+        fontSize="2.8"
+        fontWeight="bold"
+        fontFamily="serif"
+      >
+        DOMI
+      </text>
+      <text
+        x="17"
+        y="23"
+        fill="#002147"
+        fontSize="2.8"
+        fontWeight="bold"
+        fontFamily="serif"
+      >
+        MINA
+      </text>
       {/* Crown bottom */}
-      <path d="M12 29 L14 33 L16 30 L18 33 L20 29 L18 35 L14 35 Z" fill="#D4AF37" />
+      <path
+        d="M12 29 L14 33 L16 30 L18 33 L20 29 L18 35 L14 35 Z"
+        fill="#D4AF37"
+      />
     </svg>
-    <span className="font-serif-luxury font-bold text-[14px] tracking-wide text-[#002147]">Oxford</span>
+    <span className="font-serif-luxury font-bold text-[14px] tracking-wide text-[#002147]">
+      Oxford
+    </span>
   </div>
 );
 
 const NyuLogo: React.FC = () => (
   <div className="flex items-center gap-1.5">
     <div className="w-6 h-6 bg-[#57068C] rounded flex items-center justify-center shadow-xs">
-      <svg className="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+      <svg
+        className="w-3.5 h-3.5 text-white"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+      >
         <path d="M12 2L9 8H15L12 2ZM11 10H13V18H11V10ZM8 20H16V22H8V20Z" />
       </svg>
     </div>
-    <span className="font-sans-modern font-black text-[15px] tracking-wider text-[#57068C]">NYU</span>
+    <span className="font-sans-modern font-black text-[15px] tracking-wider text-[#57068C]">
+      NYU
+    </span>
   </div>
 );
 
 const NusLogo: React.FC = () => (
   <div className="flex items-center gap-2">
-    <svg className="h-7 w-auto" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="h-7 w-auto"
+      viewBox="0 0 34 38"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M17 1C8 1 1 5 1 15C1 26 12 34 17 37C22 34 33 26 33 15C33 5 26 1 17 1Z"
         fill="#003D7C"
       />
       {/* Orange crest upper bar */}
-      <path d="M4 11 C4 7 10 4 17 4 C24 4 30 7 30 11 L30 14 L4 14 Z" fill="#EF7C00" />
+      <path
+        d="M4 11 C4 7 10 4 17 4 C24 4 30 7 30 11 L30 14 L4 14 Z"
+        fill="#EF7C00"
+      />
       {/* Lion emblem silhouette */}
       <circle cx="17" cy="9" r="3.5" fill="#FFFDF9" />
       {/* Open book */}
@@ -124,9 +221,13 @@ const NusLogo: React.FC = () => (
       <line x1="17" y1="19" x2="17" y2="30" stroke="#003D7C" strokeWidth="1" />
     </svg>
     <div className="flex flex-col text-left leading-none">
-      <span className="font-sans-modern font-black text-[14px] tracking-wide text-[#003D7C]">NUS</span>
+      <span className="font-sans-modern font-black text-[14px] tracking-wide text-[#003D7C]">
+        NUS
+      </span>
       <span className="text-[6.5px] font-sans-modern text-[#756D65] tracking-wider font-semibold uppercase mt-0.5">
-        National University<br />of Singapore
+        National University
+        <br />
+        of Singapore
       </span>
     </div>
   </div>
@@ -173,7 +274,7 @@ export const HeroSection: React.FC = () => {
             y: 0,
             scale: 1,
             filter: "blur(0px)",
-          }
+          },
         );
         return;
       }
@@ -181,8 +282,16 @@ export const HeroSection: React.FC = () => {
       // 1. Initial State Setup (Avoid visual jumps / layout shifts)
       gsap.set("#main-navbar", { y: -30, opacity: 0, filter: "blur(8px)" });
       gsap.set("#hero-eyebrow", { y: 22, opacity: 0, filter: "blur(4px)" });
-      gsap.set("#hero-title-line-1", { y: 35, opacity: 0, filter: "blur(6px)" });
-      gsap.set("#hero-title-line-2", { y: 35, opacity: 0, filter: "blur(6px)" });
+      gsap.set("#hero-title-line-1", {
+        y: 35,
+        opacity: 0,
+        filter: "blur(6px)",
+      });
+      gsap.set("#hero-title-line-2", {
+        y: 35,
+        opacity: 0,
+        filter: "blur(6px)",
+      });
       gsap.set("#hero-desc", { y: 25, opacity: 0, filter: "blur(4px)" });
       gsap.set("#hero-cta", { y: 20, opacity: 0 });
       gsap.set(".stat-item", { y: 25, opacity: 0, scale: 0.95 });
@@ -225,7 +334,7 @@ export const HeroSection: React.FC = () => {
             duration: 1.6,
             ease: "power2.out",
           },
-          "-=0.6"
+          "-=0.6",
         )
 
         // Step 3: Left eyebrow text reveals
@@ -237,7 +346,7 @@ export const HeroSection: React.FC = () => {
             filter: "blur(0px)",
             duration: 0.8,
           },
-          "-=1.3"
+          "-=1.3",
         )
 
         // Step 4: Headline Line 1: 'A Partnership'
@@ -250,7 +359,7 @@ export const HeroSection: React.FC = () => {
             duration: 0.9,
             ease: "expo.out",
           },
-          "-=0.6"
+          "-=0.6",
         )
 
         // Step 5: Headline Line 2: 'For Life'
@@ -263,7 +372,7 @@ export const HeroSection: React.FC = () => {
             duration: 0.9,
             ease: "expo.out",
           },
-          "-=0.7"
+          "-=0.7",
         )
 
         // Step 6: Description text
@@ -275,7 +384,7 @@ export const HeroSection: React.FC = () => {
             filter: "blur(0px)",
             duration: 0.85,
           },
-          "-=0.6"
+          "-=0.6",
         )
 
         // Step 7: CTA Buttons
@@ -286,7 +395,7 @@ export const HeroSection: React.FC = () => {
             opacity: 1,
             duration: 0.75,
           },
-          "-=0.5"
+          "-=0.5",
         )
 
         // Step 8: Statistics sequentially
@@ -299,7 +408,7 @@ export const HeroSection: React.FC = () => {
             duration: 0.75,
             stagger: 0.08,
           },
-          "-=0.5"
+          "-=0.5",
         )
 
         // Step 9: 'Better Together' handwritten script gently draws/fades in after image
@@ -313,7 +422,7 @@ export const HeroSection: React.FC = () => {
             duration: 1.1,
             ease: "power3.out",
           },
-          "-=0.4"
+          "-=0.4",
         )
 
         // Step 10: Floating 'Our Story' video card entrance
@@ -338,7 +447,7 @@ export const HeroSection: React.FC = () => {
               }
             },
           },
-          "-=0.7"
+          "-=0.7",
         );
 
       // 3. Staggered fade-up for University / Institution logos with ScrollTrigger
@@ -359,7 +468,7 @@ export const HeroSection: React.FC = () => {
             start: "top 94%",
             toggleActions: "play none none none",
           },
-        }
+        },
       );
 
       // 4. Subtle scroll-based parallax to hero image and ambient lighting
@@ -447,7 +556,10 @@ export const HeroSection: React.FC = () => {
             {/* ========================================================= */}
             <div className="lg:col-span-7 xl:col-span-7 z-10 pt-2 sm:pt-4 lg:pt-0">
               {/* Eyebrow Text */}
-              <div id="hero-eyebrow" className="flex items-center gap-3 mb-5 sm:mb-6">
+              <div
+                id="hero-eyebrow"
+                className="flex items-center justify-center lg:justify-start gap-3 mb-5 sm:mb-6"
+              >
                 <span className="text-[11px] sm:text-xs font-bold tracking-[0.24em] text-[#FFD78A] uppercase font-sans-modern">
                   More Than A Match
                 </span>
@@ -455,7 +567,7 @@ export const HeroSection: React.FC = () => {
               </div>
 
               {/* Main Headline */}
-              <h1 className="font-serif-luxury tracking-tight leading-[1.08] sm:leading-[1.04] text-white text-4xl sm:text-5xl lg:text-[68px] xl:text-[76px] mb-6">
+              <h1 className="font-serif-luxury tracking-tight leading-[1.08] sm:leading-[1.04] text-white text-4xl sm:text-5xl lg:text-[68px] xl:text-[76px] mb-6 text-center lg:text-left">
                 <span
                   id="hero-title-line-1"
                   className="block font-normal font-serif-luxury text-white"
@@ -473,20 +585,40 @@ export const HeroSection: React.FC = () => {
               {/* Description */}
               <p
                 id="hero-desc"
-                className="text-base sm:text-lg text-stone-200 max-w-xl leading-relaxed mb-8 sm:mb-10 font-sans-modern font-normal"
+                className="text-base sm:text-lg text-stone-200 max-w-xl leading-relaxed mb-8 sm:mb-10 font-sans-modern font-normal text-center lg:text-left mx-auto lg:mx-0"
               >
-                Where intentional commitment meets deep companionship. Verified profiles, family involvement, and a sunnah-centric approach designed to make honorable matrimony simple and beautiful.
+                Where intentional commitment meets deep companionship. Verified
+                profiles, family involvement, and a sunnah-centric approach
+                designed to make honorable matrimony simple and beautiful.
               </p>
 
-              {/* CTA Action Buttons */}
-              <div id="hero-cta" className="flex flex-wrap items-center gap-4 mb-6 sm:mb-8">
+              {/* CTA Action Buttons & Completely Offline Services Box */}
+              <div
+                id="hero-cta"
+                className="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-6 sm:mb-8"
+              >
                 <Link
                   href="/submit-biodata"
-                  className="inline-flex items-center gap-2.5 btn-primary-glow text-white text-sm sm:text-[15px] font-semibold px-7 sm:px-8 py-3.5 sm:py-4 rounded-[6px] group"
+                  className="inline-flex items-center gap-2.5 btn-primary-glow text-white text-sm sm:text-[15px] font-semibold px-6 sm:px-7 py-3 sm:py-3.5 rounded-[6px] group shrink-0"
                 >
                   <span>Start Your Journey</span>
                   <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
+
+                {/* Completely Offline Services Small Box */}
+                <div className="inline-flex items-center gap-2.5 px-3 py-1.5 sm:py-2 rounded-[6px]  transition-all group shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-[#FFD78A]/15 border border-[#FFD78A]/30 flex items-center justify-center text-[#FFD78A] shrink-0">
+                    <ShieldCheck className="w-3 h-3" />
+                  </div>
+                  <div className="flex flex-col text-left">
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-xs sm:text-[13px] font-bold text-[#FFD78A] font-sans-modern leading-tight">
+                        Completely Offline Services
+                      </span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Statistics Row */}
@@ -495,7 +627,7 @@ export const HeroSection: React.FC = () => {
                 className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 border-t border-white/15"
               >
                 {/* 1. Complete Privacy Protected */}
-                <div className="stat-item flex flex-col items-start">
+                <div className="stat-item flex flex-col items-center lg:items-start text-center lg:text-left">
                   <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-[#FFD78A] mb-2.5 shadow-sm">
                     <Lock className="w-4 h-4" />
                   </div>
@@ -508,7 +640,7 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* 2. Trusted & Genuine Profiles */}
-                <div className="stat-item flex flex-col items-start">
+                <div className="stat-item flex flex-col items-center lg:items-start text-center lg:text-left">
                   <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-[#FFD78A] mb-2.5 shadow-sm">
                     <UserCheck className="w-4 h-4" />
                   </div>
@@ -521,7 +653,7 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* 3. Safe & Trusted Platform */}
-                <div className="stat-item flex flex-col items-start">
+                <div className="stat-item flex flex-col items-center lg:items-start text-center lg:text-left">
                   <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-[#FFD78A] mb-2.5 shadow-sm">
                     <ShieldCheck className="w-4 h-4" />
                   </div>
@@ -534,7 +666,7 @@ export const HeroSection: React.FC = () => {
                 </div>
 
                 {/* 4. 24/7 Dedicated Support */}
-                <div className="stat-item flex flex-col items-start">
+                <div className="stat-item flex flex-col items-center lg:items-start text-center lg:text-left">
                   <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-[#FFD78A] mb-2.5 shadow-sm">
                     <Headset className="w-4 h-4" />
                   </div>
@@ -580,7 +712,8 @@ export const HeroSection: React.FC = () => {
                 style={{ transform: "rotate(-10deg)" }}
               >
                 <div className="font-script text-[#a85b30] text-2xl sm:text-4xl lg:text-[35px] leading-[0.88] drop-shadow-xs font-bold">
-                  Better<br />
+                  Better
+                  <br />
                   <span className="pl-4">Together</span>
                 </div>
                 {/* Ornamental Gold Divider Dash */}
@@ -622,7 +755,6 @@ export const HeroSection: React.FC = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </section>
 
@@ -650,14 +782,15 @@ export const HeroSection: React.FC = () => {
 
             {/* Modal Content */}
             <div className="text-left mb-5">
-              <span className="text-xs font-semibold tracking-[0.2em] text-[#B9965B] uppercase font-sans-modern">
-                Our Story • Assan Shadi
+              <span className="text-xs text-center font-semibold tracking-[0.2em] text-[#B9965B] uppercase font-sans-modern">
+                Our Story • Asaan Shaadi
               </span>
-              <h3 className="font-serif-luxury text-2xl sm:text-3xl text-[#FAF7F2] mt-1">
+              <h3 className="font-serif-luxury text-[16px] sm:text-[20px] text-[#FAF7F2] mt-1 text-center">
                 Celebrating Pure Unions & Dignified Companionship
               </h3>
-              <p className="text-sm text-stone-300 mt-1.5">
-                A documentary look into how verified, guardian-supported marriages bring lasting happiness.
+              <p className="text-sm text-stone-300 mt-1 text-center">
+                A documentary look into how verified, guardian-supported
+                marriages bring lasting happiness.
               </p>
             </div>
 
@@ -684,7 +817,7 @@ export const HeroSection: React.FC = () => {
                 onClick={() => setIsVideoOpen(false)}
                 className="inline-flex items-center gap-2 bg-[#9a6a4f] hover:bg-[#b17b5d] text-white text-xs font-medium px-4 py-2 rounded-full transition-all"
               >
-                <span>Browse Verified Profiles</span>
+                <span>Create Your Profile</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>

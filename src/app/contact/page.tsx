@@ -123,7 +123,7 @@ export default function ContactPage() {
 
               <ScrollReveal direction="up" delay={0.15}>
                 <p className="text-stone-300 text-xs sm:text-sm font-sans-modern leading-relaxed">
-                  Whether you have questions about our phone verification process, personalized supervisor assistance, or guardian inquiries, our Bangalore team is here to assist you with complete privacy.
+                  Whether you have questions about our phone verification process, personalized supervisor assistance, or guardian inquiries, our Bengaluru team is here to assist you with complete privacy.
                 </p>
               </ScrollReveal>
 
@@ -140,11 +140,11 @@ export default function ContactPage() {
                         Address
                       </span>
                       <h4 className="text-sm font-bold text-white font-serif-luxury">
-                        Bangalore Head Office
+                        Bengaluru Head Office
                       </h4>
                       <div className="text-xs text-stone-300 leading-relaxed font-sans-modern">
                         <p>B &apos; Surya Enclave Apartment, 8th Main,</p>
-                        <p>BTM Layout 1st Stage, Banglore-560029</p>
+                        <p>BTM Layout 1st Stage, Bengaluru - 560029</p>
                         <p>Karnataka, India</p>
                       </div>
                     </div>
@@ -163,22 +163,22 @@ export default function ContactPage() {
                       </span>
                       <div>
                         <a
-                          href="tel:+919620078691"
+                          href="tel:+919845012439"
                           className="text-base sm:text-lg font-bold text-white font-serif-luxury hover:text-[#e8c078] transition-colors block"
                         >
-                          +91 96200 78691
+                          +91 98450 12439
                         </a>
                       </div>
                       <div className="pt-1 flex flex-wrap gap-2">
                         <a
-                          href="tel:+919620078691"
+                          href="tel:+919845012439"
                           className="inline-flex items-center gap-1.5 px-3 py-1 rounded-[5px] bg-white/5 hover:bg-white/10 text-stone-300 text-xs font-sans-modern border border-white/10 transition-colors"
                         >
                           <Phone className="w-3 h-3 text-[#e8a379]" />
                           <span>Call Now</span>
                         </a>
                         <a
-                          href="https://wa.me/919620078691?text=Hello%20Asaan%20Shaadi,%20I%20would%20like%20to%20inquire%20about%20matrimonial%20services"
+                          href="https://wa.me/919845012439?text=Hello%20Asaan%20Shaadi,%20I%20would%20like%20to%20inquire%20about%20matrimonial%20services"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-1.5 px-3 py-1 rounded-[5px] bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 text-xs font-sans-modern border border-emerald-500/30 transition-colors"
@@ -203,10 +203,10 @@ export default function ContactPage() {
                       </span>
                       <div>
                         <a
-                          href="mailto:info@assanshaadi.com"
+                          href="mailto:info@asaanshaadi.com"
                           className="text-base sm:text-lg font-bold text-white font-serif-luxury hover:text-[#e8c078] transition-colors block truncate"
                         >
-                          info@assanshaadi.com
+                          info@asaanshaadi.com
                         </a>
                       </div>
                       <p className="text-xs text-stone-400 font-sans-modern">
@@ -222,7 +222,7 @@ export default function ContactPage() {
                 <div className="p-3.5 rounded-[5px] bg-[#24201c] border border-[#9a6a4f]/30 flex items-center gap-3">
                   <Clock className="w-4 h-4 text-[#e8a379] shrink-0" />
                   <span className="text-xs text-stone-300 font-sans-modern">
-                    <strong>Working Hours:</strong> Monday – Saturday, 10:00 AM – 7:00 PM IST
+                    <strong>Working Hours:</strong> Monday – Sunday, 10:00 AM – 10:00 PM IST
                   </span>
                 </div>
               </ScrollReveal>
@@ -424,15 +424,15 @@ export default function ContactPage() {
                 <span>Our Location</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-bold font-serif-luxury text-white">
-                Visit Our Bangalore Office
+                Visit Our Bengaluru Office
               </h3>
               <p className="text-xs sm:text-sm text-stone-400 font-sans-modern mt-1">
-                B &apos; Surya Enclave Apartment, 8th Main, BTM Layout 1st Stage, Banglore-560029, Karnataka
+                B &apos; Surya Enclave Apartment, 8th Main, BTM Layout 1st Stage, Bengaluru - 560029, Karnataka
               </p>
             </div>
 
             <a
-              href="https://maps.google.com/?q=Surya+Enclave+Apartment+BTM+Layout+1st+Stage+Bangalore+560029"
+              href="https://maps.google.com/?q=Surya+Enclave+Apartment+BTM+Layout+1st+Stage+Bengaluru+560029"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-[5px] bg-white/5 hover:bg-white/10 text-stone-200 border border-white/10 text-xs font-sans-modern font-semibold transition-colors shrink-0"
@@ -445,7 +445,7 @@ export default function ContactPage() {
           {/* Embedded Google Map Frame */}
           <div className="relative w-full h-[320px] sm:h-[400px] lg:h-[450px] rounded-[5px] overflow-hidden border-4 border-[#9a6a4f]/40 shadow-2xl bg-[#1e1e1e]">
             <iframe
-              title="Asaan Shaadi Bangalore Office Location"
+              title="Asaan Shaadi Bengaluru Office Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.756787311145!2d77.60835431482146!3d12.923382790887532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14ff358c9bf7%3A0x4ef21c1f4e1572c6!2sBTM%201st%20Stage%2C%20Bengaluru%2C%20Karnataka%20560029!5e0!3m2!1sen!2sin!4v1694348590123!5m2!1sen!2sin"
               width="100%"
               height="100%"
@@ -463,7 +463,7 @@ export default function ContactPage() {
                 <span>Asaan Shaadi Matchmaking Hub</span>
               </div>
               <p className="text-[11px] text-stone-300 font-sans-modern mt-1">
-                BTM Layout 1st Stage, Bangalore - 560029
+                BTM Layout 1st Stage, Bengaluru - 560029
               </p>
             </div>
           </div>

@@ -15,7 +15,7 @@ export const ShareButtons: React.FC<ShareButtonsProps> = ({ title, url }) => {
     if (typeof window !== "undefined") {
       return url || window.location.href;
     }
-    return url || "https://assanshadi.com/blog";
+    return url || "https://asaanshaadi.com/blog";
   };
 
   const handleCopyLink = async () => {

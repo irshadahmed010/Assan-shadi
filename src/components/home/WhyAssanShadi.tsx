@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { ShieldCheck, EyeOff, Ban, HeartHandshake, Award, Clock } from "lucide-react";
 
-export const WhyAssanShadi: React.FC = () => {
+export const WhyAsaanShaadi: React.FC = () => {
   const pillars = [
     {
       icon: ShieldCheck,
@@ -32,7 +32,7 @@ export const WhyAssanShadi: React.FC = () => {
     {
       icon: Award,
       title: "Sunnah Aligned Ethics",
-      desc: "Structured according to Islamic principles of simplicity (Assan Shadi), compatibility (Kafa'ah), and mutual compassion.",
+      desc: "Structured according to Islamic principles of simplicity (Asaan Shaadi), compatibility (Kafa'ah), and mutual compassion.",
       color: "text-[#9a6a4f] bg-[#f5ede6]",
     },
     {
@@ -49,7 +49,7 @@ export const WhyAssanShadi: React.FC = () => {
         <ScrollReveal direction="up">
           <SectionHeading
             badge="Our Ethical Standard"
-            title="Why Dignified Families Choose Assan Shadi"
+            title="Why Dignified Families Choose Asaan Shaadi"
             subtitle="Breaking the commercialization of marriage to bring back simplicity, honor, and barakah."
           />
         </ScrollReveal>

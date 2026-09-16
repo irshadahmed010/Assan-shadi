@@ -56,16 +56,16 @@ export const FaqSection: React.FC = () => {
       category: "pricing",
       question: "Do you charge expensive commissions after Nikah?",
       answer:
-        "No, never. Traditional matchmaking brokers and agencies often demand large, percentage-based commissions after Nikah is finalized. Asaan Shaadi is transparent and barakah-driven: we have zero hidden fees and never charge any commission upon your wedding.",
-      badge: "Zero Commission",
+        "We believe in complete transparency and clarity. We charge a registration fee initially upon signup, and when the marriage is successfully fixed, a mutually agreed predetermined fixed amount is charged as discussed with the family. There are no hidden fees or exorbitant percentage-based broker commissions.",
+      badge: "Transparent Pricing",
     },
     {
       id: "faq-5",
       category: "general",
-      question: "Can overseas Pakistanis and international Muslims find a match?",
+      question: "Can families from all cities and states in India find a match?",
       answer:
-        "Yes! We have hundreds of verified profiles from the UK, USA, Canada, UAE, Saudi Arabia, and Europe who are looking for compatible, practicing partners either in their home country or within Pakistan for relocation.",
-      badge: "Worldwide",
+        "Yes, absolutely! Asaan Shaadi serves Muslim families across all states and major cities in India—including Bengaluru, Hyderabad, Mumbai, Delhi NCR, Chennai, Pune, Kolkata, Lucknow, and more. We also assist Indian NRI families seeking compatible, practicing matches within India.",
+      badge: "All India",
     },
     {
       id: "faq-6",
@@ -272,7 +272,7 @@ export const FaqSection: React.FC = () => {
 
                 <div className="pt-3 flex flex-col gap-2.5">
                   <a
-                    href="https://wa.me/919620078691?text=Assalam%20o%20Alaikum,%20I%20have%20a%20question%20regarding%20Asaan%20Shaadi"
+                    href="https://wa.me/919845012439?text=Assalam%20o%20Alaikum,%20I%20have%20a%20question%20regarding%20Asaan%20Shaadi"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm transition-all duration-200 shadow-md shadow-emerald-950/40"

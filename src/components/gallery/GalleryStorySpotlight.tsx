@@ -66,7 +66,7 @@ export const GalleryStorySpotlight: React.FC = () => {
                   <div className="absolute top-3 left-3 backdrop-blur-md bg-[#1e1e1e]/90 border border-[#b9965b]/30 rounded-[5px] px-2.5 py-1 flex items-center gap-1.5 shadow-md">
                     <Sparkles className="w-3 h-3 text-[#e8c078]" />
                     <span className="text-[11px] font-sans-modern font-semibold text-stone-200">
-                      Featured Union • Bangalore
+                      Featured Union • Bengaluru
                     </span>
                   </div>
 
@@ -109,7 +109,7 @@ export const GalleryStorySpotlight: React.FC = () => {
                   When Zubair and Maryam&apos;s families began their search on Asaan Shaadi, they had one shared priority: finding a partner with genuine compatibility and shared values, free from burdensome wedding customs.
                 </p>
                 <p>
-                  Through our verified matchmaking service, both families connected with complete dignity and met at Bangalore Central Mosque for a quiet, beautiful Nikah with zero dowry demands.
+                  Through our verified matchmaking service, both families connected with complete dignity and met at Bengaluru Central Mosque for a quiet, beautiful Nikah with zero dowry demands.
                 </p>
               </div>
             </ScrollReveal>

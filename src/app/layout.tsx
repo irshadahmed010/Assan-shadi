@@ -21,26 +21,27 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Assan Shadi | Dignified & Simple Matrimonial Platform",
+  title: "Asaan Shaadi | Dignified & Simple Matrimonial Platform",
   description:
-    "Assan Shadi connects verified, dignified families seeking simple, sunnah-aligned marriage. 100% guardian-verified biodatas, photo privacy, and zero dowry culture.",
+    "Asaan Shaadi connects verified, dignified families seeking simple, sunnah-aligned marriage. 100% guardian-verified biodatas, photo privacy, and zero dowry culture.",
   keywords: [
     "Matrimonial",
-    "Assan Shadi",
+    "Asaan Shaadi",
     "Rishta",
     "Muslim Matrimony",
-    "Pakistani Matrimonial",
+    "Indian Muslim Matrimonial",
+    "Muslim Matrimony India",
     "Nikah",
     "Simple Wedding",
     "Verified Biodatas",
   ],
-  authors: [{ name: "Assan Shadi Matrimonial Foundation" }],
+  authors: [{ name: "Asaan Shaadi Matrimonial Foundation" }],
   openGraph: {
-    title: "Assan Shadi | Dignified & Simple Matrimonial Platform",
+    title: "Asaan Shaadi | Dignified & Simple Matrimonial Platform",
     description:
       "Find pure, verified matrimonial matches with privacy and respect. Zero commercial exploitation.",
-    url: "https://assanshadi.com",
-    siteName: "Assan Shadi",
+    url: "https://asaanshaadi.com",
+    siteName: "Asaan Shaadi",
     locale: "en_US",
     type: "website",
   },

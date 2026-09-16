@@ -10,7 +10,7 @@ import { AboutFinalCtaSection } from "@/components/about/AboutFinalCtaSection";
 export const metadata = {
   title: "Who We Are & About Us | Asaan Shaadi Matrimonial Foundation",
   description:
-    "Learn about Asaan Shaadi — Bangalore-founded registered matrimonial service. Discover our intention, vision, mission, and 12 reasons why singles choose our verified matchmaking platform.",
+    "Learn about Asaan Shaadi — Bengaluru-founded registered matrimonial service. Discover our intention, vision, mission, and 12 reasons why singles choose our verified matchmaking platform.",
 };
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
       {/* 1. Page Header (Exact 80px height banner, mobile responsive) */}
       <AboutPageHeader />
 
-      {/* 2. Who We Are & Bangalore Story (Our Genesis, Registered Company, Manual Checks) */}
+      {/* 2. Who We Are & Bengaluru Story (Our Genesis, Registered Company, Manual Checks) */}
       <WhoWeAreStorySection />
 
       {/* 3. Guiding Pillars of Purpose (Our Intention, Vision & Mission) */}

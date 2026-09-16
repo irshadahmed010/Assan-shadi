@@ -52,7 +52,7 @@ export const WhoWeAreStorySection: React.FC = () => {
             <ScrollReveal direction="up" delay={0.2}>
               <div className="space-y-4 text-stone-300 text-sm sm:text-base font-sans-modern leading-relaxed">
                 <p>
-                  We have been creating unforgettable reminiscences through matchmaking. It all began with creating several successful marriages for family and friends in Bangalore. To take the essence of matchmaking to succeeding level, <strong className="text-white font-semibold">Asaan Shaadi</strong> was created.
+                  We have been creating unforgettable reminiscences through matchmaking. It all began with creating several successful marriages for family and friends in Bengaluru. To take the essence of matchmaking to succeeding level, <strong className="text-white font-semibold">Asaan Shaadi</strong> was created.
                 </p>
                 <p>
                   The most important element of our network is that users notice their true match through our platform. We are proud to say that several users are wedged with our online wedding portal with happy endings. Our commitment lies in serving members to meet somebody special for a long-lasting, dignified relationship. Today, Asaan Shaadi is understood as one of the highest introductions and marital services providers. We are happy to welcome you to our matchmaking network and wish you success at each step of the manner.
@@ -71,7 +71,7 @@ export const WhoWeAreStorySection: React.FC = () => {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-sm font-semibold text-white font-serif-luxury">Bangalore Genesis</h4>
+                    <h4 className="text-sm font-semibold text-white font-serif-luxury">Bengaluru Genesis</h4>
                     <p className="text-xs text-stone-400 mt-0.5">Started with family & friends</p>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export const WhoWeAreStorySection: React.FC = () => {
                   <div className="absolute bottom-5 left-5 right-5 backdrop-blur-md bg-[#1e1e1e]/90 border border-white/15 rounded-xl p-4 shadow-2xl">
                     <div className="flex items-center justify-between gap-2 border-b border-white/10 pb-2 mb-2">
                       <span className="text-xs font-serif-luxury font-bold text-[#e8c078]">
-                        Bangalore • Pan India • Global
+                        Bengaluru • Pan India • Global
                       </span>
                       <span className="text-[10px] uppercase tracking-widest text-[#a3e635] font-semibold flex items-center gap-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />

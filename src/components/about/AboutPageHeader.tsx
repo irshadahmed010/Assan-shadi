@@ -62,7 +62,7 @@ export const AboutPageHeader: React.FC = () => {
             <span className="font-medium hidden xs:inline">100% Phone Verified</span>
             <span className="font-medium xs:hidden">Verified</span>
             <span className="hidden sm:inline text-stone-400">•</span>
-            <span className="hidden sm:inline text-stone-300">Bangalore Based</span>
+            <span className="hidden sm:inline text-stone-300">Bengaluru Based</span>
           </div>
         </div>
       </div>

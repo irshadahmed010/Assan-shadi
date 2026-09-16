@@ -58,7 +58,7 @@ export const ContactPageHeader: React.FC = () => {
         <div className="hidden sm:flex flex-col items-end gap-1.5 shrink-0">
           <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#9a6a4f]/20 border border-[#9a6a4f]/40 text-[#FAF7F2] text-xs font-sans-modern">
             <MapPin className="w-3.5 h-3.5 text-[#e8a379] shrink-0" />
-            <span className="font-semibold text-white">Bangalore Head Office</span>
+            <span className="font-semibold text-white">Bengaluru Head Office</span>
           </div>
 
           <div className="inline-flex items-center gap-1 text-[11px] text-[#e8c078] font-sans-modern">

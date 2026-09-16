@@ -43,7 +43,7 @@ export const Footer: React.FC = () => {
 
               <div className="flex flex-col">
                 <span className="text-2xl sm:text-[28px] font-bold font-serif-luxury tracking-tight text-[#FAF7F2] group-hover:text-[#FFD78A] transition-colors leading-none">
-                  Assan Shadi
+                  Asaan Shaadi
                 </span>
                 <span className="text-[10px] sm:text-[11px] font-semibold tracking-[0.25em] text-[#FFD78A] uppercase mt-1.5 font-sans-modern">
                   FAITH • FAMILIES • FOREVER
@@ -73,7 +73,7 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3 pt-2">
               {/* WhatsApp (Green Button) */}
               <a
-                href="https://wa.me/919620078691"
+                href="https://wa.me/919845012439"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat on WhatsApp"
@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
 
               {/* Phone Direct */}
               <a
-                href="tel:+919620078691"
+                href="tel:+919845012439"
                 aria-label="Call Us"
                 className="w-10 h-10 rounded-full border border-white/15 bg-white/5 hover:border-[#B9965B] hover:bg-[#B9965B]/15 text-[#FAF7F2]/80 hover:text-[#B9965B] flex items-center justify-center transition-all duration-300 hover:scale-105"
               >
@@ -217,7 +217,7 @@ export const Footer: React.FC = () => {
                     Address
                   </p>
                   <p className="text-xs sm:text-sm text-[#FAF7F2]/75 leading-relaxed">
-                    B &apos;Surya Enclave Apartment, 8th Main, BTM Layout 1st Stage, Banglore-560029 Karnataka, India
+                    B &apos;Surya Enclave Apartment, 8th Main, BTM Layout 1st Stage, Bengaluru - 560029, Karnataka, India
                   </p>
                 </div>
               </div>
@@ -232,10 +232,10 @@ export const Footer: React.FC = () => {
                     Phone
                   </p>
                   <a
-                    href="tel:+919620078691"
+                    href="tel:+919845012439"
                     className="text-xs sm:text-sm text-[#FAF7F2]/75 hover:text-[#B9965B] transition-colors block leading-relaxed"
                   >
-                    + 91 96200 78691
+                    +91 98450 12439
                   </a>
                 </div>
               </div>
@@ -250,10 +250,10 @@ export const Footer: React.FC = () => {
                     Email Us
                   </p>
                   <a
-                    href="mailto:info@assanshadi.com"
+                    href="mailto:info@asaanshaadi.com"
                     className="text-xs sm:text-sm text-[#FAF7F2]/75 hover:text-[#B9965B] transition-colors block leading-relaxed break-all"
                   >
-                    info@assanshadi.com
+                    info@asaanshaadi.com
                   </a>
                 </div>
               </div>
@@ -265,7 +265,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar: Copyright & Purity Tagline */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-[#FAF7F2]/60">
           <p className="text-center sm:text-left">
-            © 2026 Assan Shadi. All Rights Reserved.
+            © 2026 Asaan Shaadi. All Rights Reserved.
           </p>
           <div className="flex items-center gap-1.5 text-center sm:text-right">
             <span>Built with purity &amp; dignity for simple marriages</span>
