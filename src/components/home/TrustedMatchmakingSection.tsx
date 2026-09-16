@@ -82,7 +82,7 @@ export const TrustedMatchmakingSection: React.FC = () => {
             {/* Subtitle Description */}
             <p className="text-stone-200 text-base sm:text-lg font-sans-modern leading-relaxed">
               We combine trust, technology and values to help you find a
-              compatible life partner — the halal way.
+              compatible life partner — the dignified way.
             </p>
           </div>
         </ScrollReveal>

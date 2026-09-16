@@ -59,7 +59,7 @@ export const HowItWorksPageHeader: React.FC = () => {
         <div className="flex items-center gap-2 shrink-0">
           <div className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full bg-[#9a6a4f]/20 border border-[#9a6a4f]/40 text-[#FAF7F2] text-[11px] sm:text-xs font-sans-modern">
             <ShieldCheck className="w-3.5 h-3.5 text-[#e8a379] shrink-0" />
-            <span className="font-medium hidden xs:inline">100% Halal Process</span>
+            <span className="font-medium hidden xs:inline">100% Verified Process</span>
             <span className="font-medium xs:hidden">Verified</span>
             <span className="hidden sm:inline text-stone-400">•</span>
             <span className="hidden sm:inline text-stone-300">Bengaluru Based</span>

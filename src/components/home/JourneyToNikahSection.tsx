@@ -373,7 +373,7 @@ export const JourneyToNikahSection: React.FC = () => {
             {/* Subtitle */}
             <p className="text-stone-200 text-sm sm:text-base lg:text-lg font-sans-modern text-center leading-relaxed">
               A simple, secure and guided process to help you find a compatible life
-              partner, the halal way.
+              partner, the simple &amp; dignified way.
             </p>
           </div>  
           {/* Hidden reference for GSAP animation safety */}
@@ -454,7 +454,7 @@ export const JourneyToNikahSection: React.FC = () => {
           <div className="inline-flex items-center gap-3 text-stone-300">
             <span className="w-10 h-[2px] bg-[#FFD78A]" />
             <span className="text-xs sm:text-sm tracking-[0.22em] uppercase font-sans-modern font-semibold text-stone-200">
-              Halal connections for a brighter tomorrow
+              Blessed connections for a brighter tomorrow
             </span>
           </div>
         </div>

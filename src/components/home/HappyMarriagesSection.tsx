@@ -36,7 +36,7 @@ export const HappyMarriagesSection: React.FC = () => {
       image: "/images/couple-zaid-hira.jpg",
       alt: "Zaid and Hira blessed marriage story",
       quote:
-        "“It felt different here — more halal, more peaceful, and completely free from dowry culture. Strict photo privacy and respectful family interaction throughout the process.”",
+        "“It felt different here — more dignified, more peaceful, and completely free from dowry culture. Strict photo privacy and respectful family interaction throughout the process.”",
       author: "Zaid & Hira",
       location: "Married 2024 • Lucknow, Uttar Pradesh",
       badge: "Zero Dowry Union",

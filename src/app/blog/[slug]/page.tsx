@@ -338,7 +338,7 @@ export default async function SingleBlogPage({ params }: SingleBlogPageProps) {
       <section className="py-8 sm:py-12 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="p-5 sm:p-8 rounded-2xl sm:rounded-3xl bg-gradient-to-r from-[#2c1d17] to-[#1f1714] border border-[#b9965b]/30 text-center space-y-3 sm:space-y-4 shadow-xl">
           <h3 className="text-xl sm:text-3xl font-bold font-serif-luxury text-[#FAF7F2]">
-            Begin Your Halal Matrimonial Journey
+            Begin Your Matrimonial Journey
           </h3>
           <p className="text-xs sm:text-sm text-stone-300 font-sans-modern max-w-xl mx-auto">
             Find an aligned, righteous spouse through simple, dignified, and 100% guardian-verified matchmaking on Asaan Shaadi.

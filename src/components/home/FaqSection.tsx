@@ -33,7 +33,7 @@ export const FaqSection: React.FC = () => {
       question: "How is Asaan Shaadi different from conventional matchmaking apps?",
       answer:
         "Asaan Shaadi is built strictly upon Islamic values and family honor. We eliminate casual dating behavior, superficial swiping, and fake profiles. Every profile is manually reviewed, guardian (Wali) involvement is prioritized, and our entire process is designed with the sole intention of facilitating a blessed, honorable Nikah.",
-      badge: "Halal & Trusted",
+      badge: "Dignified & Trusted",
     },
     {
       id: "faq-2",
@@ -292,7 +292,7 @@ export const FaqSection: React.FC = () => {
               </div>
             </div>
 
-            {/* Halal Guarantee Trust Badge */}
+            {/* Guarantee Trust Badge */}
             <div className="rounded-2xl p-5 bg-white border border-stone-300 shadow-sm flex items-start gap-3.5">
               <div className="w-10 h-10 rounded-xl bg-[#c2794c]/15 border border-[#c2794c]/30 flex items-center justify-center text-[#8a431c] flex-shrink-0">
                 <HeartHandshake className="w-5 h-5" />

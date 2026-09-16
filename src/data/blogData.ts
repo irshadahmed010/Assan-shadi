@@ -156,15 +156,15 @@ export const BLOG_POSTS: BlogPost[] = [
       "Involve trusted family guardians to facilitate dignified conversations.",
     ],
     relatedSlugs: [
-      "communication-secrets-happy-halal-marriage",
+      "communication-secrets-happy-marriage",
       "role-of-wali-in-islamic-marriage",
       "dealing-with-in-laws-harmony-respect",
     ],
   },
   {
     id: "post-3",
-    slug: "communication-secrets-happy-halal-marriage",
-    title: "Communication Secrets for a Happy, Long-Lasting Halal Marriage",
+    slug: "communication-secrets-happy-marriage",
+    title: "Communication Secrets for a Happy, Long-Lasting Marriage",
     excerpt:
       "Transform disagreements into deeper connection. Practical, Sunnah-inspired communication strategies that cultivate softness, active listening, and unconditional respect.",
     category: "Communication & Love",
@@ -273,7 +273,7 @@ export const BLOG_POSTS: BlogPost[] = [
       "The husband must act as a fair, gentle bridge of understanding.",
     ],
     relatedSlugs: [
-      "communication-secrets-happy-halal-marriage",
+      "communication-secrets-happy-marriage",
       "10-vital-questions-before-nikah",
       "role-of-wali-in-islamic-marriage",
     ],
@@ -281,7 +281,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "post-5",
     slug: "budget-friendly-islamic-wedding-guide",
-    title: "A Practical Guide to a Beautiful, Budget-Friendly Halal Wedding",
+    title: "A Practical Guide to a Beautiful, Budget-Friendly Wedding",
     excerpt:
       "How to design an elegant, unforgettable wedding day without falling into interest-bearing loans, social pressure, or unnecessary stress. Real cost breakdown and tips.",
     category: "Budget & Simplicity",
@@ -296,7 +296,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     imageUrl:
       "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80",
-    tags: ["Budget", "Walima", "Financial Peace", "Halal Wedding"],
+    tags: ["Budget", "Walima", "Financial Peace", "Islamic Wedding"],
     quote: {
       translation:
         "Eat and drink, but do not be excessive. Indeed, He does not like those who commit excess.",
@@ -328,7 +328,7 @@ export const BLOG_POSTS: BlogPost[] = [
     relatedSlugs: [
       "sunnah-nikah-simplicity-blessing",
       "10-vital-questions-before-nikah",
-      "communication-secrets-happy-halal-marriage",
+      "communication-secrets-happy-marriage",
     ],
   },
   {

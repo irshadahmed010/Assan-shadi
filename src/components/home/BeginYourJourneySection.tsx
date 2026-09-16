@@ -14,8 +14,8 @@ export const BeginYourJourneySection: React.FC = () => {
       icon: Users,
     },
     {
-      id: "halal-respectful",
-      title: "Halal & Respectful",
+      id: "dignified-respectful",
+      title: "Dignified & Respectful",
       desc: "A safe and positive space for everyone.",
       icon: Heart,
     },

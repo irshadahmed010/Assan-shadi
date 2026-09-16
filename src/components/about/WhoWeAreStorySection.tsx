@@ -144,7 +144,7 @@ export const WhoWeAreStorySection: React.FC = () => {
                     <HeartHandshake className="w-4 h-4 text-[#e8a379]" />
                     <div>
                       <p className="text-[10px] uppercase tracking-wider text-stone-400 font-sans-modern">Real Connections</p>
-                      <p className="text-xs font-bold text-white font-serif-luxury">Halal & Meaningful</p>
+                      <p className="text-xs font-bold text-white font-serif-luxury">Dignified & Meaningful</p>
                     </div>
                   </div>
 
