@@ -23,17 +23,15 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: Brand & Badges & Socials (Span 5 on LG) */}
           <div className="lg:col-span-5 space-y-5">
-            {/* Logo Lockup */}
+            {/* Logo & Name */}
             <Link href="/" className="inline-flex items-center gap-3.5 group">
-              <span className="inline-flex items-center justify-center rounded-2xl bg-gradient-to-br from-[#FFFDF9] to-[#F1E0C0] p-2.5 ring-1 ring-[#B9965B]/50 shadow-lg transition-transform duration-300 group-hover:scale-105">
-                <Image
-                  src="/images/logo-mark.png"
-                  alt=""
-                  width={512}
-                  height={512}
-                  className="h-10 w-10 sm:h-11 sm:w-11 object-contain"
-                />
-              </span>
+              <Image
+                src="/images/logo-mark.png"
+                alt=""
+                width={512}
+                height={512}
+                className="h-32 w-auto sm:h-40 lg:h-48 object-contain transition-transform duration-300 group-hover:scale-105"
+              />
 
               <div className="flex flex-col">
                 <span className="text-2xl sm:text-[28px] font-bold font-serif-luxury tracking-tight text-[#FAF7F2] group-hover:text-[#FFD78A] transition-colors leading-none">
@@ -92,9 +90,8 @@ export const Footer: React.FC = () => {
               </a>
 
               {/* Instagram */}
-              {/* TODO(owner): replace with the real Instagram profile URL */}
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/asaan.shadi"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram Profile"
@@ -116,9 +113,8 @@ export const Footer: React.FC = () => {
               </a>
 
               {/* Facebook */}
-              {/* TODO(owner): replace with the real Facebook profile URL */}
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/share/1cDk4F6pFE/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook Page"

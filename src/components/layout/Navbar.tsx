@@ -55,18 +55,16 @@ export const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between gap-4 py-1 sm:py-2">
-            {/* Brand Logo & Tagline */}
+            {/* Brand Logo & Name */}
             <Link href="/" className="flex items-center gap-3 sm:gap-3.5 group flex-shrink-0">
-              <span className="inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-[#FFFDF9] to-[#F1E0C0] p-1.5 ring-1 ring-[#E5C384]/50 shadow-[0_2px_10px_rgba(229,195,132,0.25)] transition-transform duration-300 group-hover:scale-105">
-                <Image
-                  src="/images/logo-mark.png"
-                  alt=""
-                  width={512}
-                  height={512}
-                  priority
-                  className="h-8 w-8 sm:h-9 sm:w-9 object-contain"
-                />
-              </span>
+              <Image
+                src="/images/logo-mark.png"
+                alt=""
+                width={512}
+                height={512}
+                priority
+                className="h-20 w-auto sm:h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+              />
 
               <div className="flex flex-col">
                 <span className="text-xl sm:text-2xl font-bold font-serif-luxury tracking-tight text-[#FAF7F2] group-hover:text-[#FFD78A] transition-colors leading-none">
