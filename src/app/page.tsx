@@ -10,15 +10,16 @@ import { FaqSection } from "@/components/home/FaqSection";
 import { MomentsOfTogethernessSection } from "@/components/home/MomentsOfTogethernessSection";
 import { PersonalizedMatchmakingSection } from "@/components/home/PersonalizedMatchmakingSection";
 import { BiodataSection } from "@/components/home/BiodataSection";
+import { SeoContentSection } from "@/components/home/SeoContentSection";
 import { BeginYourJourneySection } from "@/components/home/BeginYourJourneySection";
 import { buildMetadata } from "@/lib/seo";
-import { SITE_DESCRIPTION } from "@/lib/site";
+import { SITE_DESCRIPTION, absoluteUrl } from "@/lib/site";
 import { HOME_FAQS } from "@/data/faqs";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Asaan Shaadi | Simple, Verified Muslim Matrimony in Bengaluru",
+  title: "Asaan Shaadi | Muslim Matrimonial Service in Bengaluru",
   description: SITE_DESCRIPTION,
-  path: "/",
+  path: absoluteUrl("/"),
   absoluteTitle: true,
 });
 
@@ -72,7 +73,10 @@ export default function HomePage() {
       {/* 11. Submit Your Biodata — Beautiful Relationship */}
       <BiodataSection />
 
-      {/* 12. Join Our Community — Begin Your Journey */}
+      {/* 12. SEO Content — About Asaan Shaadi Muslim Matrimonial Service */}
+      <SeoContentSection />
+
+      {/* 13. Join Our Community — Begin Your Journey */}
       <BeginYourJourneySection />
     </div>
   );

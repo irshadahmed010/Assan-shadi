@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Static Pages -->
+  <url>
+    <loc>https://asaanshaadi.com/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/submit-biodata</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/about</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/how-it-works</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/contact</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/blog</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/gallery</loc>
+    <priority>0.60</priority>
+  </url>
+
+  <!-- Blog Articles (Islamic Marriage Guidance) -->
+  <url>
+    <loc>https://asaanshaadi.com/blog/sunnah-nikah-simplicity-blessing</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/blog/10-vital-questions-before-nikah</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/blog/communication-secrets-happy-marriage</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/blog/dealing-with-in-laws-harmony-respect</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/blog/budget-friendly-islamic-wedding-guide</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://asaanshaadi.com/blog/role-of-wali-in-islamic-marriage</loc>
+    <priority>0.70</priority>
+  </url>
+</urlset>

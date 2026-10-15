@@ -11,7 +11,7 @@ export const SITE_URL = (
 export const SITE_NAME = "Asaan Shaadi";
 
 export const SITE_DESCRIPTION =
-  "Asaan Shaadi is a Bengaluru-based Muslim matrimonial service for simple, dowry-free Nikah, with guardian-verified biodatas, photo privacy and personal matchmaking.";
+  "Bengaluru's trusted Muslim matrimonial service for simple, dowry-free Nikah. Guardian-verified biodatas, photo privacy & personalised matchmaking.";
 
 export const BUSINESS = {
   name: SITE_NAME,

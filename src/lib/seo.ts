@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { SITE_NAME } from "./site";
+import { SITE_NAME, absoluteUrl } from "./site";
 
 interface BuildMetadataOptions {
   /** Page title. Rendered through the root "%s | Asaan Shaadi" template. */
   title: string;
   description: string;
-  /** Site-relative canonical path, e.g. "/about". */
+  /** Site-relative canonical path, e.g. "/about", OR an absolute URL. */
   path: string;
   /** Absolute or site-relative share image. Omit to use the generated OG image. */
   image?: string;
@@ -31,6 +31,9 @@ export function buildMetadata({
   publishedTime,
   modifiedTime,
 }: BuildMetadataOptions): Metadata {
+  // Always resolve to an absolute URL so canonical never points to a "different page"
+  const canonicalUrl = path.startsWith("http") ? path : absoluteUrl(path);
+
   // Fall back to the generated root images so every page has a share image.
   const ogImages = [{ url: image ?? "/opengraph-image" }];
   const twitterImages = [{ url: image ?? "/twitter-image" }];
@@ -38,11 +41,11 @@ export function buildMetadata({
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: canonicalUrl },
     openGraph: {
       title,
       description,
-      url: path,
+      url: canonicalUrl,
       siteName: SITE_NAME,
       locale: "en_IN",
       type,
